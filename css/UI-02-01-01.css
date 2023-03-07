@@ -1,3 +1,7 @@
+.formBox {
+  max-width: 1000px;
+}
+
 .formGrp + .formGrp {
   margin-top: 20px;
 }/*# sourceMappingURL=UI-02-01-01.css.map */

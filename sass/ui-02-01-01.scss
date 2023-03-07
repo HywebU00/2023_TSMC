@@ -1,3 +1,6 @@
+.formBox {
+  max-width: 1000px;
+}
 .formGrp {
   & + .formGrp {
     margin-top: 20px;
