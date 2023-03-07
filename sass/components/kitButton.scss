@@ -1,0 +1,100 @@
+@import '../assects/import';
+
+@mixin kitBtn {
+  margin: 5px;
+  font-size: rem(18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 1.2;
+  position: relative;
+  @media screen and (max-width: 1000px) {
+    font-size: rem(16);
+  }
+  &:disabled {
+    border: 1px solid #959595;
+    background: var(--grayColor2);
+  }
+  i.kitIcon {
+    margin: 0 5px 0 0;
+  }
+  &.kitBtn_right i.kitIcon {
+    margin: 0 0 0 4px;
+    order: 3;
+  }
+  &.kitBtn_arrow {
+    padding: 5px 35px 5px 10px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      right: 12px;
+      border-style: solid;
+      border-width: 2px;
+      border-width: 0 2px 2px 0;
+      top: 50%;
+      transform: translateY(-80%) rotate(45deg);
+    }
+  }
+  &.kitBtn_top {
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    i {
+      width: 40px;
+      aspect-ratio: 1/1;
+      margin-bottom: 5px;
+    }
+  }
+  &.kitBtn_icon {
+    padding: 0;
+    width: 42px;
+    aspect-ratio: 1/1;
+    i {
+      margin: 0;
+    }
+  }
+}
+
+@layer kitBtn {
+  .kitBtn {
+    background: var(--primaryColor);
+    border-color: var(--primaryColor);
+    color: #fff;
+    @include kitBtn;
+    &:active {
+      border-color: var(--primaryColor2);
+      background: var(--primaryColor2);
+    }
+    &.kitBtn_arrow {
+      &::before {
+        border-color: #fff;
+      }
+    }
+  }
+
+  ///白底
+  .kitBtn_w {
+    font-weight: 400;
+    color: var(--textColor);
+    background: #fff;
+    border-color: #999;
+    @include kitBtn;
+    &:active {
+      border-color: var(--primaryColor2);
+    }
+    i.kitIcon img {
+      filter: drop-shadow(26px 0 var(--grayColor4));
+    }
+    &.kitBtn_arrow {
+      &::before {
+        border-color: var(--textColor);
+      }
+    }
+  }
+}

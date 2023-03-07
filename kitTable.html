@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kit Table</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <style>
+      body {
+        padding: 20px;
+      }
+      h2 {
+        color: rgb(156, 0, 0);
+        margin: 1rem 0;
+      }
+      h3 {
+        background: #f4f4f4;
+        color: #a0a0a0;
+        line-height: 4;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>kit Table</h2>
+
+    <h3>1：一般</h3>
+    <div class="kitTable">
+      <div class="kitTable_tableOut">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>材料名稱</th>
+              <th>產品名稱</th>
+              <th>廠牌</th>
+              <th>型號</th>
+              <th>價格</th>
+              <th>數量</th>
+              <th>單位</th>
+              <th>供應商名稱</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td data-title="材料名稱">3M LAVA Esthetic</td>
+              <td data-title="產品名稱">“渥克”甘迪歐柏客樹脂瓷塊 / “VOCO” Grandio Blocs CAD/CAM block....</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">SF-123</td>
+              <td data-title="價格">1,500</td>
+              <td data-title="數量">1</td>
+              <td data-title="單位">袋</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td data-title="材料名稱">3M LAVA Esthetic</td>
+              <td data-title="產品名稱">“渥克”甘迪歐柏客樹脂瓷塊 / “VOCO” Grandio Blocs CAD/CAM block....</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">SF-123</td>
+              <td data-title="價格">1,500</td>
+              <td data-title="數量">1</td>
+              <td data-title="單位">袋</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <h3>2：Table+Check box</h3>
+    <div class="kitTable kitTable_typeB">
+      <div class="kitTable_tableOut">
+        <table>
+          <thead>
+            <th></th>
+            <th><input type="checkbox" /></th>
+            <th>No.</th>
+            <th>材料名稱</th>
+            <th>產品名稱</th>
+            <th>廠牌</th>
+            <th>型號</th>
+            <th>供應商名稱</th>
+            <th>數量</th>
+            <th>單位</th>
+          </thead>
+          <tbody>
+            <tr class="nextLv active">
+              <td><button type="button"></button></td>
+              <td><input type="checkbox" /></td>
+              <td>1.</td>
+              <td colspan="7" data-title="材料名稱">3M LAVA Plus</td>
+            </tr>
+            <tr class="details">
+              <td colspan="2"></td>
+              <td><input type="checkbox" /></td>
+              <td data-title="材料名稱">3M LAVA Plus</td>
+              <td data-title="產品名稱">Marginal Porcelain</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">xxxxxxxxx</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+              <td data-title="數量">10</td>
+              <td data-title="單位">包</td>
+            </tr>
+            <tr class="details">
+              <td colspan="2"></td>
+              <td><input type="checkbox" /></td>
+              <td data-title="材料名稱">3M LAVA Plus</td>
+              <td data-title="產品名稱">Marginal Porcelain</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">xxxxxxxxx</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+              <td data-title="數量">10</td>
+              <td data-title="單位">包</td>
+            </tr>
+            <tr class="details">
+              <td colspan="2"></td>
+              <td><input type="checkbox" /></td>
+              <td data-title="材料名稱">3M LAVA Plus</td>
+              <td data-title="產品名稱">Marginal Porcelain</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">xxxxxxxxx</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+              <td data-title="數量">10</td>
+              <td data-title="單位">包</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" /></td>
+              <td>2.</td>
+              <td data-title="材料名稱">3M LAVA Plus</td>
+              <td data-title="產品名稱">Marginal Porcelain</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">xxxxxxxxx</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+              <td data-title="數量">10</td>
+              <td data-title="單位">包</td>
+            </tr>
+            <tr class="kitTable_nextLv">
+              <td><button type="button"></button></td>
+              <td><input type="checkbox" /></td>
+              <td>3.</td>
+              <td colspan="7" data-title="材料名稱">3M LAVA Plus</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" /></td>
+              <td>4.</td>
+              <td data-title="材料名稱">3M LAVA Plus</td>
+              <td data-title="產品名稱">Marginal Porcelain</td>
+              <td data-title="廠牌">VOCO</td>
+              <td data-title="型號">xxxxxxxxx</td>
+              <td data-title="供應商名稱">崴仕專業牙材供應商</td>
+              <td data-title="數量">10</td>
+              <td data-title="單位">包</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <h3>3：Table+頁籤切換 /新增頁籤 內容</h3>
+    <div class="kitTable kitTable_typeC">
+      <div class="kitTable_title">主要材料</div>
+      <div class="kitTable_tableOut">
+        <table>
+          <tbody>
+            <tr>
+              <td>3M LAVA Plus</td>
+              <td>9,000</td>
+              <td>
+                <label>對應名稱：<input type="text" value="3M LAVA Plus-高醫" /></label>
+              </td>
+              <td>
+                <label>對應費用：<input type="text" value="10,000" /></label>
+              </td>
+            </tr>
+            <tr>
+              <td>3M LAVA Plus</td>
+              <td>9,000</td>
+              <td>
+                <label>對應名稱：<input type="text" value="3M LAVA Plus-高醫" /></label>
+              </td>
+              <td>
+                <label>對應費用：<input type="text" value="10,000" /></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="kitTable_title">主要材料</div>
+      <div class="kitTable_tableOut">
+        <table>
+          <tbody>
+            <tr>
+              <td>3M LAVA Plus</td>
+              <td>9,000</td>
+              <td>
+                <label>對應名稱：<input type="text" value="3M LAVA Plus-高醫" /></label>
+              </td>
+              <td>
+                <label>對應費用：<input type="text" value="10,000" /></label>
+              </td>
+            </tr>
+            <tr>
+              <td>3M LAVA Plus</td>
+              <td>9,000</td>
+              <td>
+                <label>對應名稱：<input type="text" value="3M LAVA Plus-高醫" /></label>
+              </td>
+              <td>
+                <label>對應費用：<input type="text" value="10,000" /></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

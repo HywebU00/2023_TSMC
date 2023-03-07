@@ -1,0 +1,5 @@
+.formGrp {
+  & + .formGrp {
+    margin-top: 20px;
+  }
+}

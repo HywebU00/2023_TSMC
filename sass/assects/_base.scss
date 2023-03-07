@@ -1,0 +1,14 @@
+@layer baseLayer {
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: var(--textColor_15);
+    &:hover {
+      color: var(--primaryColor);
+    }
+  }
+}

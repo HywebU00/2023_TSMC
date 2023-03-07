@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kit Button</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <style>
+      body {
+        padding: 20px;
+      }
+      h2 {
+        color: rgb(156, 0, 0);
+        margin: 1rem 0;
+      }
+      h3 {
+        background: #f4f4f4;
+        color: #a0a0a0;
+        line-height: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>kit Button</h2>
+    <!-- 1 -->
+    <h3>1：一般按鈕</h3>
+    <button class="kitBtn" type="button">搜尋</button>
+    <button class="kitBtn" type="button" disabled>搜尋</button>
+    <br />
+
+    <!-- 1 -->
+    <h3>2：Icon左+文字</h3>
+    <button class="kitBtn" type="button">
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+
+    <button class="kitBtn" type="button" disabled>
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+    <br />
+
+    <h3>3：Icon右+文字</h3>
+    <button class="kitBtn kitBtn_right" type="button">
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+
+    <button class="kitBtn kitBtn_right" type="button" disabled>
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+    <br />
+
+    <h3>4：Icon右+文字+箭頭</h3>
+    <button class="kitBtn kitBtn_arrow" type="button">
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+
+    <button class="kitBtn kitBtn_arrow" type="button" disabled>
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>新增產品
+    </button>
+    <br />
+
+    <h3>5：Icon上+文字</h3>
+    <button class="kitBtn kitBtn_top" type="button">
+      <i><img src="images/icon/tooth.svg" alt="" /></i>新增產品
+    </button>
+
+    <button class="kitBtn kitBtn_top" type="button" disabled>
+      <i><img src="images/icon/tooth.svg" alt="" /></i>新增產品
+    </button>
+    <br />
+
+    <h3>6：只有Icon</h3>
+    <button class="kitBtn kitBtn_icon" type="button">
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>
+    </button>
+
+    <button class="kitBtn kitBtn_icon" type="button" disabled>
+      <i class="kitIcon"><img src="images/icon/plus.svg" alt="" /></i>
+    </button>
+    <br />
+
+    <h3>7：白底</h3>
+    <button class="kitBtn_w" type="button">取消</button>
+    <button class="kitBtn_w" type="button" disabled>取消</button>
+  </body>
+</html>

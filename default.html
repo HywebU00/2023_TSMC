@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+  <body>
+    <!--滑過 aside.mainMenu 時，wrapper 增加 sideMenuOpen-->
+    <div class="wrapper sideMenuOpen">
+      <!-- 主選單 -->
+      <aside>
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <!-- 麵包屑 右上選單 -->
+            <div class="headInfo">
+              <ul class="breadcrumb">
+                <li><a href="#">組織管理</a></li>
+                <li>平台商管理</li>
+              </ul>
+
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container">
+            <!-- 內容上方標題區塊 -->
+            <div class="pageTopInfo">
+              <a href="#" class="back"></a>
+              <i class="kitIcon"><img src="images/icon/icon_bell.svg" /></i>aaa
+            </div>
+          </div>
+          <div class="main demo">
+            <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
+            <!-- //// class 都可以隨意命名 !!! ///// -->
+            <!-- flex start -->
+            <!-- type 1：自由分配 -->
+            <!-- 多欄 = 12 -->
+            <section class="flex_3_6_3">
+              <div class="container">
+                <h2>flex_3_6_3</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>次標題一</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                  <div class="col">
+                    <h3>次標題二</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                  <div class="col">
+                    <h3>次標題三</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="flex_4_8">
+              <div class="container">
+                <h2>flex_4_8</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>次標題一</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                  <div class="col">
+                    <h3>次標題二</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="flex_8_4">
+              <div class="container">
+                <h2>flex_8_4</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>次標題一</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                  <div class="col">
+                    <h3>次標題二</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis sequi quidem velit quae voluptas temporibus aliquam quasi doloremque sunt? Sapiente ea dolorem dolore sit itaque facere sunt voluptatem deleniti!</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr />
+            <!-- type 2：均分 -->
+            <!-- 2、 -->
+            <section class="flexEqual_2">
+              <div class="container">
+                <h2>均分 2 欄</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>title 1</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 2</h3>
+                    <p>col Lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 3、 -->
+            <section class="flexEqual_3">
+              <div class="container">
+                <h2>均分 3 欄</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>title 1</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 2</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 3</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 4、 -->
+            <section class="flexEqual_4">
+              <div class="container">
+                <h2>均分 4 欄</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>title 1</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 2</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 3</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                  <div class="col">
+                    <h3>title 4</h3>
+                    <p>col Lorem ipsum dolor sit amet, quos similique?</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 3 thumbnail、 -->
+            <section class="flexEqual_3">
+              <div class="container">
+                <h2>主標題 thumbnail</h2>
+                <div class="flexSet">
+                  <div class="thumbnail">
+                    <a href="#">
+                      <div class="imgContainer"><img src="images/demo/01.jpg" alt="圖說" /></div>
+                      <div class="caption">
+                        <time>2018-01-01</time>
+                        <h3>標題標題</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio temporibus dolor repellendus unde, rem ducimus aut cupiditate amet beatae minus repellat laboriosam reiciendis libero dolorem quo, recusandae deserunt, omnis qui?</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail">
+                    <a href="#">
+                      <div class="imgContainer"><img src="images/demo/01.jpg" alt="圖說" /></div>
+                      <div class="caption">
+                        <time>2018-01-01</time>
+                        <h3>標題標題</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio temporibus dolor repellendus unde, rem ducimus aut cupiditate amet beatae minus repellat laboriosam reiciendis libero dolorem quo, recusandae deserunt, omnis qui?</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail">
+                    <a href="#">
+                      <div class="imgContainer"><img src="images/demo/01.jpg" alt="圖說" /></div>
+                      <div class="caption">
+                        <time>2018-01-01</time>
+                        <h3>標題標題</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio temporibus dolor repellendus unde, rem ducimus aut cupiditate amet beatae minus repellat laboriosam reiciendis libero dolorem quo, recusandae deserunt, omnis qui?</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- mix -->
+            <section class="mixEqual_2">
+              <div class="container">
+                <h2>均分 併 自由分配</h2>
+                <div class="flexSet">
+                  <div class="col">
+                    <h3>次標題一</h3>
+                    <section class="inner_4_8">
+                      <div class="imgContainer"><img src="images/demo/01.jpg" alt="圖說" /></div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam, aperiam error accusamus, distinctio laboriosam minus nesciunt cum labore voluptate consectetur magni, illum in recusandae. Optio, ab voluptatibus suscipit magnam.</div>
+                    </section>
+                  </div>
+                  <div class="col">
+                    <h3>次標題二</h3>
+                    <section class="inner_4_8">
+                      <div class="imgContainer"><img src="images/demo/01.jpg" alt="圖說" /></div>
+                      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nam, aperiam error accusamus, distinctio laboriosam minus nesciunt cum labore voluptate consectetur magni, illum in recusandae. Optio, ab voluptatibus suscipit magnam.</div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- flex end -->
+        </main>
+        <footer>
+          <!-- 內容下方區塊 -->
+          <div class="container">
+            <script src="include/pagination.js"></script>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
