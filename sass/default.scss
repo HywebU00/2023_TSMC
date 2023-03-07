@@ -366,15 +366,18 @@
   }
 
   .pageTopInfo {
-    display: flex;
-    align-items: center;
-    font-size: rem(20);
-    position: relative;
-    z-index: 7;
-    padding: 20px;
-    background: #fff;
-    @media screen and (max-width: 1000px) {
-      font-size: rem(18);
+    padding: 20px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      font-size: rem(20);
+      position: relative;
+      z-index: 7;
+      padding: 20px;
+      background: #fff;
+      @media screen and (max-width: 1000px) {
+        font-size: rem(18);
+      }
     }
     .kitIcon {
       margin: 0 8px -2px 0;

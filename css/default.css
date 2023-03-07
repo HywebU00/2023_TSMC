@@ -1660,6 +1660,9 @@
     }
   }
   .pageTopInfo {
+    padding: 20px 0;
+  }
+  .pageTopInfo .container {
     display: flex;
     align-items: center;
     font-size: 1.25rem;
@@ -1669,7 +1672,7 @@
     background: #fff;
   }
   @media screen and (max-width: 1000px) {
-    .pageTopInfo {
+    .pageTopInfo .container {
       font-size: 1.125rem;
     }
   }
