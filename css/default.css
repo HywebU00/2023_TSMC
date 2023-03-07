@@ -1463,8 +1463,9 @@
       padding: 0 0px 0px 0px;
     }
   }
-  .mainContent .main {
-    padding-bottom: 50px;
+  .mainContent .main .container {
+    padding: 20px 20px 50px;
+    background: #fff;
   }
   header {
     background: #fff;
@@ -1664,6 +1665,8 @@
     font-size: 1.25rem;
     position: relative;
     z-index: 7;
+    padding: 20px;
+    background: #fff;
   }
   @media screen and (max-width: 1000px) {
     .pageTopInfo {
@@ -1692,9 +1695,6 @@
     border: 3px solid #000;
     border-width: 0 0 3px 3px;
     transform: rotate(45deg);
-  }
-  footer {
-    background: #fff;
   }
   footer .container {
     padding: 40px 0 60px;
