@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div > * {
+  vertical-align: middle;
+}
+
+[class^=i_]:before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+}
+
+.input_i {
+  position: relative;
+  width: 100%;
+}
+.input_i i {
+  position: absolute;
+  padding: 0.2em 0;
+  left: 0.5em;
+  top: 0.6em;
+  background: none;
+  border-right: 1px solid #ccc;
+  width: 2.4em;
+  pointer-events: none;
+}
+.input_i i:before {
+  width: 2.2em;
+  text-align: center;
+}
+.input_i i + input {
+  padding: 0.5em 0.5em 0.5em 3.5em;
+}
+.input_i input {
+  padding: 0.5em 3em 0.5em 0.5em;
+}
+.input_i input + i {
+  border-right: none;
+  border-left: 1px solid #ccc;
+  right: 0.5em;
+  left: auto;
+}
+.input_i button {
+  margin: 0 !important;
+}
+
+.password {
+  padding: 0.5em 3em 0.5em 3.5em !important;
+}
+
+.passwordEye {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border: none;
+  color: transparent;
+  width: 20px !important;
+  height: 20px !important;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.passwordEye::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../images/icon/icon_eye_c_dark.svg") center no-repeat;
+}
+.passwordEye.hide::before {
+  background: url("../images/icon/icon_eye_dark.svg") center no-repeat;
+}
+
+.i_man_dark:before {
+  background: url(../images/icon/icon_man_dark.svg) center center no-repeat;
+  background-size: contain;
+  margin-top: -0.1em;
+  margin-bottom: 0.1em;
+}
+
+.i_lock_dark:before {
+  background: url(../images/icon/icon_lock_dark.svg) center center no-repeat;
+  background-size: contain;
+  margin-top: -0.1em;
+  margin-bottom: 0.1em;
+}
+
+form {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.kitForm .formGrp {
+  margin: 1.5rem 0;
+  border-bottom: solid 1px #ddd;
+}
+.kitForm .formGrp.alert .formContent .help {
+  color: #F46A6A;
+}
+.kitForm .formGrp.alert .formContent input.getThis,
+.kitForm .formGrp.alert .formContent textarea.getThis,
+.kitForm .formGrp.alert .formContent select.getThis {
+  box-shadow: 0 0 0 3px #F46A6A;
+  border: transparent;
+}
+.kitForm .formGrp .formTitle {
+  color: #222;
+  font-weight: 500;
+}
+.kitForm .formGrp .formContent {
+  width: 100%;
+  padding: 0.5rem 0 1.5rem;
+}
+.kitForm .formGrp .formContent .help {
+  color: #222;
+  font-size: 80%;
+  padding: 0.25rem 0;
+}
+.kitForm .formGrp .searchGrp {
+  position: relative;
+}
+.kitForm .formGrp .searchGrp input[type=text] {
+  width: 100%;
+  padding-right: 120px;
+}
+.kitForm .formGrp .searchGrp input[type=submit],
+.kitForm .formGrp .searchGrp button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 90px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.kitForm .formGrp .searchGrp.withIcon input[type=submit],
+.kitForm .formGrp .searchGrp.withIcon button {
+  color: transparent;
+  background: deepskyblue;
+}
+.kitForm.setInline {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #ddd;
+}
+.kitForm.setInline input,
+.kitForm.setInline button,
+.kitForm.setInline select {
+  width: auto;
+  height: 36px;
+}
+.kitForm.setInline .formGrp,
+.kitForm.setInline .btnGrp,
+.kitForm.setInline .checkGrp {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+.kitForm.setInline .formGrp {
+  margin: 0;
+  margin-right: 0.75rem;
+  border-bottom: none;
+}
+.kitForm.setInline .formGrp .formContent {
+  width: auto;
+}
+.kitForm.setInline .btnGrp {
+  width: auto;
+  padding: 0;
+}
+.kitForm.setInline .checkGrp {
+  margin: 1rem 0.25rem;
+}
+.kitForm .btnGrp {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.kitForm button {
+  margin: 0.8rem 0.25rem;
+}
+.kitForm .checkGrp,
+.kitForm .radioGrp {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 0.25rem;
+}
+.kitForm .checkGrp input[type=radio],
+.kitForm .checkGrp input[type=checkbox],
+.kitForm .radioGrp input[type=radio],
+.kitForm .radioGrp input[type=checkbox] {
+  margin: 0 0.35rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.kitForm .checkGrp input[type=radio]:first-child,
+.kitForm .checkGrp input[type=checkbox]:first-child,
+.kitForm .radioGrp input[type=radio]:first-child,
+.kitForm .radioGrp input[type=checkbox]:first-child {
+  margin-left: 0;
+}
+.kitForm .checkGrp label,
+.kitForm .radioGrp label {
+  margin: 0.25rem 0.5rem;
+  margin-right: 1rem;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+}
+.kitForm .checkGrp.setGrid label,
+.kitForm .radioGrp.setGrid label {
+  flex: 1 1 100%;
+}
+.kitForm .checkGrp.setGrid .innerGrp,
+.kitForm .radioGrp.setGrid .innerGrp {
+  flex: 1 1 100%;
+  padding: 0.5rem 0 0 1.75rem;
+  background: #f5f5f5;
+}
+.kitForm .checkGrp.setGrid .innerGrp .checkGrp label,
+.kitForm .checkGrp.setGrid .innerGrp .radioGrp label,
+.kitForm .radioGrp.setGrid .innerGrp .checkGrp label,
+.kitForm .radioGrp.setGrid .innerGrp .radioGrp label {
+  flex: 0 1 auto;
+}
+.kitForm .inlineGrp input,
+.kitForm .inlineGrp button,
+.kitForm .inlineGrp select {
+  width: auto;
+  height: 36px;
+}
+.kitForm .inlineGrp .checkGrp {
+  display: inline-block;
+}
+.kitForm .inlineGrp .radioGrp {
+  display: inline-flex;
+}
+
+.necessary {
+  color: #F46A6A;
+  text-decoration: none;
+  padding: 0.45rem;
+  padding-left: 0;
+}
+
+.col_48,
+.col_84,
+.col_66,
+.col_444 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.col_48 input, .col_48 select,
+.col_84 input,
+.col_84 select,
+.col_66 input,
+.col_66 select,
+.col_444 input,
+.col_444 select {
+  flex: 0 1 auto;
+}
+
+.col_48 input:nth-child(1), .col_48 select:nth-child(1) {
+  flex-basis: calc(30% - 0.3rem);
+}
+.col_48 input:nth-child(2), .col_48 select:nth-child(2) {
+  flex-basis: calc(70% - 0.3rem);
+}
+
+.col_84 input:nth-child(1), .col_84 select:nth-child(1) {
+  flex-basis: calc(70% - 0.3rem);
+}
+.col_84 input:nth-child(2), .col_84 select:nth-child(2) {
+  flex-basis: calc(30% - 0.3rem);
+}
+
+.col_66 input, .col_66 select {
+  flex-basis: calc(50% - 0.3rem);
+}
+
+.col_444 input, .col_444 select {
+  flex-basis: calc(33.333% - 0.4rem);
+}
+
+.multiInput {
+  padding-right: 2rem;
+  background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
+  background-size: 1.25rem;
+}
+
+.checkedList ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.checkedList ul li {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f5f5f5;
+}
+
+input,
+textarea,
+select,
+button {
+  color: #222;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  margin: 0.3em 0;
+  background: #fff;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 0 0 3px transparent;
+}
+input[type=text]:hover,
+input[type=password]:hover,
+select:hover,
+textarea:hover {
+  box-shadow: 0 0 0 3px rgba(43, 144, 220, 0.5);
+  border-color: transparent;
+}
+input[type=text]:focus-visible,
+input[type=password]:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgb(9, 109, 217);
+  border-color: transparent;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+  background: #eee;
+}
+
+html input[readonly] {
+  cursor: not-allowed;
+  background: #eee;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+select {
+  padding-right: 2rem;
+  background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
+  background-size: 1.25rem;
+}
+select option {
+  outline: none;
+  border: none;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}/*# sourceMappingURL=form.css.map */
