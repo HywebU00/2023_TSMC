@@ -1568,6 +1568,7 @@
     left: 50%;
     transform: translateX(-50%);
     line-height: 1.4;
+    display: none;
   }
   header .account ul a,
   header .language ul a {
@@ -1580,6 +1581,10 @@
   header .language ul a:hover {
     color: var(--textColor_15);
     background: var(--grayColor2);
+  }
+  header .account.active ul,
+  header .language.active ul {
+    display: block;
   }
   header .account {
     margin-left: 20px;
@@ -1629,35 +1634,6 @@
     left: auto;
     right: 0;
     transform: translateX(0);
-  }
-  .sideMenuOpen aside {
-    width: 280px;
-    height: auto;
-  }
-  .sideMenuOpen aside .logo {
-    padding: 8px 16px 0;
-  }
-  .sideMenuOpen aside .logo img {
-    height: 36px;
-    display: block;
-  }
-  .sideMenuOpen aside .mainMenuBtn {
-    right: 25px;
-    transform: translateY(-50%);
-  }
-  .sideMenuOpen aside .mainMenu button {
-    padding: 0px 0px 0 25px;
-  }
-  .sideMenuOpen aside .mainMenu i {
-    margin: 0 10px 0 0;
-  }
-  .sideMenuOpen .mainContent {
-    padding-left: 280px;
-  }
-  @media screen and (max-width: 1000px) {
-    .sideMenuOpen .mainContent {
-      padding-left: 0px;
-    }
   }
   .pageTopInfo {
     padding: 20px 0;
@@ -1801,5 +1777,84 @@
   .demo .flexEqual_9 .flexSet .col,
   .demo .flexEqual_11 .flexSet .col {
     background: #00b0c6;
+  }
+  @media screen and (min-width: 1000px) {
+    aside {
+      width: 280px;
+      height: auto;
+    }
+    aside .logo {
+      padding: 8px 16px 0;
+    }
+    aside .logo img {
+      height: 36px;
+      display: block;
+    }
+    aside .mainMenuBtn {
+      right: 25px;
+      transform: translateY(-50%);
+    }
+    aside .mainMenu button {
+      padding: 0px 0px 0 25px;
+    }
+    aside .mainMenu i {
+      margin: 0 10px 0 0;
+    }
+    .mainContent {
+      padding-left: 280px;
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1000px) {
+    .mainContent {
+      padding-left: 0px;
+    }
+  }
+  .sideMenuOpen aside {
+    width: 280px;
+    height: auto;
+  }
+  .sideMenuOpen aside .mainMenu button {
+    padding: 0px 0px 0 25px;
+  }
+  .sideMenuOpen aside .mainMenu i {
+    margin: 0 10px 0 0;
+  }
+  .sideMenuOpen aside .logo {
+    padding: 8px 16px 0;
+  }
+  .sideMenuOpen aside .logo img {
+    height: 36px;
+    display: block;
+  }
+  .sideMenuOpen aside .mainMenuBtn {
+    right: 25px;
+    transform: translateY(-50%);
+  }
+  .sideMenuOpen .mainContent {
+    padding-left: 280px;
+  }
+  @media screen and (max-width: 1000px) {
+    .sideMenuOpen .mainContent {
+      padding-left: 0px;
+    }
+  }
+  .sideMenuClose aside {
+    width: 50px;
+  }
+  .sideMenuClose aside .mainMenu button {
+    padding: 0px 0px 0 14px;
+  }
+  .sideMenuClose aside .mainMenu i {
+    margin: 0 15px 0 0;
+  }
+  .sideMenuClose aside .logo {
+    padding: 4px 10px 0px;
+  }
+  .sideMenuClose aside .logo img {
+    display: none;
+  }
+  .sideMenuClose aside .mainMenuBtn {
+    right: 12px;
+    transform: translateY(-50%) rotate(180deg);
   }
 }/*# sourceMappingURL=default.css.map */

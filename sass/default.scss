@@ -13,6 +13,7 @@
       margin: 0 20px;
     }
   }
+
   aside {
     background: linear-gradient(0deg, #00ecde 2.54%, #0096bc 28.72%, #0060a8 99.23%);
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -264,6 +265,7 @@
         left: 50%;
         transform: translateX(-50%);
         line-height: 1.4;
+        display: none;
         a {
           padding: 5px 20px;
           margin: 0;
@@ -274,6 +276,9 @@
             background: var(--grayColor2);
           }
         }
+      }
+      &.active ul {
+        display: block;
       }
     }
     .account {
@@ -326,41 +331,6 @@
         left: auto;
         right: 0;
         transform: translateX(0);
-      }
-    }
-  }
-
-  .sideMenuOpen {
-    aside {
-      width: 280px;
-      height: auto;
-      .logo {
-        padding: 8px 16px 0;
-        img {
-          height: 36px;
-          display: block;
-        }
-      }
-
-      .mainMenuBtn {
-        right: 25px;
-        transform: translateY(-50%);
-      }
-
-      .mainMenu {
-        button {
-          padding: 0px 0px 0 25px;
-        }
-        i {
-          margin: 0 10px 0 0;
-        }
-      }
-    }
-
-    .mainContent {
-      padding-left: 280px;
-      @media screen and (max-width: 1000px) {
-        padding-left: 0px;
       }
     }
   }
@@ -510,6 +480,99 @@
         .col {
           background: #00b0c6;
         }
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    aside {
+      width: 280px;
+      height: auto;
+      .logo {
+        padding: 8px 16px 0;
+        img {
+          height: 36px;
+          display: block;
+        }
+      }
+
+      .mainMenuBtn {
+        right: 25px;
+        transform: translateY(-50%);
+      }
+
+      .mainMenu {
+        button {
+          padding: 0px 0px 0 25px;
+        }
+        i {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+
+    .mainContent {
+      padding-left: 280px;
+      @media screen and (max-width: 1000px) {
+        padding-left: 0px;
+      }
+    }
+  }
+  .sideMenuOpen {
+    aside {
+      width: 280px;
+      height: auto;
+
+      .mainMenu {
+        button {
+          padding: 0px 0px 0 25px;
+        }
+        i {
+          margin: 0 10px 0 0;
+        }
+      }
+      .logo {
+        padding: 8px 16px 0;
+        img {
+          height: 36px;
+          display: block;
+        }
+      }
+
+      .mainMenuBtn {
+        right: 25px;
+        transform: translateY(-50%);
+      }
+    }
+
+    .mainContent {
+      padding-left: 280px;
+      @media screen and (max-width: 1000px) {
+        padding-left: 0px;
+      }
+    }
+  }
+
+  .sideMenuClose {
+    aside {
+      width: 50px;
+
+      .mainMenu {
+        button {
+          padding: 0px 0px 0 14px;
+        }
+        i {
+          margin: 0 15px 0 0;
+        }
+      }
+      .logo {
+        padding: 4px 10px 0px;
+        img {
+          display: none;
+        }
+      }
+      .mainMenuBtn {
+        right: 12px;
+        transform: translateY(-50%) rotate(180deg);
       }
     }
   }

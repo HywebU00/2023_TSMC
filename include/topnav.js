@@ -1,7 +1,7 @@
 (function () {
   let content = `
               <nav class="topNav">
-                <div class="language">
+                <div class="language active">
                   <button type="button" title="語系">
                     <i class="kitIcon"><img src="images/icon/icon_world.svg" /></i>
                   </button>

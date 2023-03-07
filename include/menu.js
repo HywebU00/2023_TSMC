@@ -2,7 +2,7 @@
   let content = `
       <div class="mainMenu">
         <div class="logo"><img src="images/logo.svg" alt="" />
-        <!--點擊關閉主選單 wrapper 移除 sideMenuOpen-->
+        <!--點擊控制主選單開關-->
         <button type="button" class="mainMenuBtn" title="選單"></button></div>
         <nav>
           <ul>
