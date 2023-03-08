@@ -8,17 +8,20 @@
   justify-content: center;
   min-height: 42px;
   padding: 4px 10px;
-  border-radius: 2px;
+  border-radius: 3px;
   border-style: solid;
   border-width: 1px;
   line-height: 1.2;
   position: relative;
+  cursor: pointer;
   @media screen and (max-width: 1000px) {
     font-size: rem(16);
   }
+  &:disabled:active,
   &:disabled {
-    border: 1px solid #959595;
-    background: var(--grayColor2);
+    cursor: not-allowed;
+    border: 1px solid #b4b4b4;
+    background: #cacaca;
   }
   i.kitIcon {
     margin: 0 5px 0 0;
@@ -86,6 +89,7 @@
     border-color: #999;
     @include kitBtn;
     &:active {
+      color: var(--primaryColor2);
       border-color: var(--primaryColor2);
     }
     i.kitIcon img {

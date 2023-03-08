@@ -1314,20 +1314,22 @@
     justify-content: center;
     min-height: 42px;
     padding: 4px 10px;
-    border-radius: 2px;
+    border-radius: 3px;
     border-style: solid;
     border-width: 1px;
     line-height: 1.2;
     position: relative;
+    cursor: pointer;
   }
   @media screen and (max-width: 1000px) {
     .kitBtn {
       font-size: 1rem;
     }
   }
-  .kitBtn:disabled {
-    border: 1px solid #959595;
-    background: var(--grayColor2);
+  .kitBtn:disabled:active, .kitBtn:disabled {
+    cursor: not-allowed;
+    border: 1px solid #b4b4b4;
+    background: #cacaca;
   }
   .kitBtn i.kitIcon {
     margin: 0 5px 0 0;
@@ -1387,20 +1389,22 @@
     justify-content: center;
     min-height: 42px;
     padding: 4px 10px;
-    border-radius: 2px;
+    border-radius: 3px;
     border-style: solid;
     border-width: 1px;
     line-height: 1.2;
     position: relative;
+    cursor: pointer;
   }
   @media screen and (max-width: 1000px) {
     .kitBtn_w {
       font-size: 1rem;
     }
   }
-  .kitBtn_w:disabled {
-    border: 1px solid #959595;
-    background: var(--grayColor2);
+  .kitBtn_w:disabled:active, .kitBtn_w:disabled {
+    cursor: not-allowed;
+    border: 1px solid #b4b4b4;
+    background: #cacaca;
   }
   .kitBtn_w i.kitIcon {
     margin: 0 5px 0 0;
@@ -1442,6 +1446,7 @@
     margin: 0;
   }
   .kitBtn_w:active {
+    color: var(--primaryColor2);
     border-color: var(--primaryColor2);
   }
   .kitBtn_w i.kitIcon img {
