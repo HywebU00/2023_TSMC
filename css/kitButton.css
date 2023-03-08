@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     min-height: 42px;
-    padding: 4px 8px 3px;
+    padding: 4px 10px 3px;
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -30,12 +30,15 @@
   .kitBtn i.kitIcon {
     margin: -1px 5px 0 0;
   }
+  .kitBtn.kitBtn_right {
+    padding: 4px 15px 3px;
+  }
   .kitBtn.kitBtn_right i.kitIcon {
     margin: 0 0 0 4px;
     order: 3;
   }
   .kitBtn.kitBtn_arrow {
-    padding: 4px 35px 3px 10px;
+    padding: 4px 35px 3px 8px;
   }
   .kitBtn.kitBtn_arrow::before {
     content: "";
@@ -83,7 +86,7 @@
     align-items: center;
     justify-content: center;
     min-height: 42px;
-    padding: 4px 8px 3px;
+    padding: 4px 10px 3px;
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -104,12 +107,15 @@
   .kitBtn_w i.kitIcon {
     margin: -1px 5px 0 0;
   }
+  .kitBtn_w.kitBtn_right {
+    padding: 4px 15px 3px;
+  }
   .kitBtn_w.kitBtn_right i.kitIcon {
     margin: 0 0 0 4px;
     order: 3;
   }
   .kitBtn_w.kitBtn_arrow {
-    padding: 4px 35px 3px 10px;
+    padding: 4px 35px 3px 8px;
   }
   .kitBtn_w.kitBtn_arrow::before {
     content: "";
@@ -191,5 +197,9 @@
     right: 10px;
     border-width: 0 1px 1px 0;
     transform: translateY(-80%) rotate(45deg);
+  }
+  .kitBtn_radius {
+    padding: 4px 25px 3px;
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=kitButton.css.map */
