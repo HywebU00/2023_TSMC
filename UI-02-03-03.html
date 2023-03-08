@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UI-02-01-01</title>
+  <title>UI-02-03-03</title>
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/variable.css" />
@@ -42,7 +42,7 @@
         <div class="pageTopInfo">
           <div class="container">
             <!-- 上一頁 -->
-            <a href="#" class="back">建立平台商組織</a>
+            <a href="#" class="back">建立牙技所帳號</a>
           </div>
         </div>
 
@@ -51,10 +51,16 @@
             <div class="kitForm">
               <form action="">
                 <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>平台組織名稱</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>牙技所ID</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="alert" />
-                    <div class="helpAlert">此為必填欄位</div>
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" disabled/>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>牙技所名稱</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                    <div class="helpAlert">新悅美學牙體技術所</div>
                   </div>
                 </div>
                 <div class="formGrp">
@@ -82,7 +88,7 @@
                   </div>
                 </div>
                 <div class="formGrp alert">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>平台組織地址</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>牙技所地址</label>
                   <div class="formContent">
                     <div class="col_48">
                       <input type="text" id="" placeholder="" title="" value="" />
@@ -91,13 +97,13 @@
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle">平台組織統編</label>
+                  <label for="" class="formTitle">統編</label>
                   <div class="formContent">
                     <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle">平台組織聯絡電話</label>
+                  <label for="" class="formTitle">聯絡電話</label>
                   <div class="formContent">
                     <div class="col_48">
                       <input type="text" id="" placeholder="區號" title="" value="" />
@@ -114,19 +120,20 @@
                     </div>
                   </div>
                 </div>
-                <hr />
                 <div class="formGrp">
-                  <label for="" class="formTitle">客服電子郵件 Email</label>
-                  <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
-                  </div>
-                </div>
-                <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>客服電話 Phone</label>
+                  <label for="" class="formTitle">備註</label>
                   <div class="formContent">
                     <div class="col_48">
-                      <input type="text" id="" placeholder="區號" title="" value="" />
-                      <input type="text" id="" placeholder="市內電話號碼" title="" value="" />
+                      <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp alert">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>啟用狀態</label>
+                  <div class="formContent">
+                    <div class="radioGrp">
+                      <label><input type="radio" name="sampleRadio" value="" checked="">啟用</label>
+                      <label><input type="radio" name="sampleRadio" value="">停用</label>
                     </div>
                   </div>
                 </div>
