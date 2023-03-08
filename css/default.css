@@ -1421,7 +1421,6 @@
     transform: translateY(-20%) rotate(45deg);
   }
   aside nav > ul > li.active ul {
-    padding: 1.125rem 0;
     display: block;
   }
   aside nav a {
@@ -1653,6 +1652,8 @@
     padding: 0;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
   }
   .pageTopInfo .back::before {
     content: "";
@@ -1664,6 +1665,9 @@
     border-width: 0 0 3px 3px;
     transform: rotate(45deg);
   }
+  .pageTopInfo .back:hover::before {
+    border-color: var(--primaryColor);
+  }
   footer .container {
     padding: 40px 0 60px;
   }
@@ -1672,6 +1676,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
   }
   @media screen and (max-width: 1100px) {
     .pagination {
@@ -1712,7 +1717,7 @@
   .pagination .page {
     display: flex;
   }
-  .pagination .page li {
+  .pagination .page li a {
     background: #fff;
     border: 1px solid #d9d9d9;
     overflow: hidden;
@@ -1725,18 +1730,21 @@
     padding: 4px 16px;
     aspect-ratio: unset;
   }
-  .pagination .page li.prev {
+  .pagination .page li.prev a {
     border-radius: 30px 0 0 30px;
   }
-  .pagination .page li.next {
+  .pagination .page li.next a {
     border-radius: 0 30px 30px 0;
   }
-  .pagination .page li.active {
+  .pagination .page li a:hover, .pagination .page li.active a {
     color: #fff;
     background: var(--primaryColor);
   }
   .pagination .page li.disabled a {
     opacity: 0.5;
+    color: var(--grayColor5) !important;
+    cursor: not-allowed;
+    background: #fff !important;
   }
   .pagination .page a {
     display: block;

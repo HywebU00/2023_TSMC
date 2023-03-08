@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     min-height: 42px;
-    padding: 4px 10px;
+    padding: 4px 8px 3px;
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -28,14 +28,14 @@
     background: #cacaca;
   }
   .kitBtn i.kitIcon {
-    margin: 0 5px 0 0;
+    margin: -1px 5px 0 0;
   }
   .kitBtn.kitBtn_right i.kitIcon {
     margin: 0 0 0 4px;
     order: 3;
   }
   .kitBtn.kitBtn_arrow {
-    padding: 5px 35px 5px 10px;
+    padding: 4px 35px 3px 10px;
   }
   .kitBtn.kitBtn_arrow::before {
     content: "";
@@ -60,11 +60,10 @@
   }
   .kitBtn.kitBtn_icon {
     padding: 0;
-    width: 42px;
     aspect-ratio: 1/1;
   }
   .kitBtn.kitBtn_icon i {
-    margin: 0;
+    margin: 0 !important;
   }
   .kitBtn:active {
     border-color: var(--primaryColor2);
@@ -84,7 +83,7 @@
     align-items: center;
     justify-content: center;
     min-height: 42px;
-    padding: 4px 10px;
+    padding: 4px 8px 3px;
     border-radius: 3px;
     border-style: solid;
     border-width: 1px;
@@ -103,14 +102,14 @@
     background: #cacaca;
   }
   .kitBtn_w i.kitIcon {
-    margin: 0 5px 0 0;
+    margin: -1px 5px 0 0;
   }
   .kitBtn_w.kitBtn_right i.kitIcon {
     margin: 0 0 0 4px;
     order: 3;
   }
   .kitBtn_w.kitBtn_arrow {
-    padding: 5px 35px 5px 10px;
+    padding: 4px 35px 3px 10px;
   }
   .kitBtn_w.kitBtn_arrow::before {
     content: "";
@@ -135,11 +134,10 @@
   }
   .kitBtn_w.kitBtn_icon {
     padding: 0;
-    width: 42px;
     aspect-ratio: 1/1;
   }
   .kitBtn_w.kitBtn_icon i {
-    margin: 0;
+    margin: 0 !important;
   }
   .kitBtn_w:active {
     color: var(--primaryColor2);
@@ -150,5 +148,48 @@
   }
   .kitBtn_w.kitBtn_arrow::before {
     border-color: var(--textColor);
+  }
+  .kitBtn_m {
+    min-height: 32px;
+    font-size: 0.875rem;
+  }
+  .kitBtn_m i.kitIcon {
+    width: 16px;
+    margin: -1px 3px 0 0;
+  }
+  .kitBtn_m.kitBtn_right i.kitIcon {
+    margin: 0 0 0 3px;
+  }
+  .kitBtn_m.kitBtn_arrow {
+    padding: 5px 25px 5px 8px;
+  }
+  .kitBtn_m.kitBtn_arrow::before {
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-80%) rotate(45deg);
+  }
+  .kitBtn_s {
+    min-height: 20px;
+    font-size: 0.75rem;
+  }
+  .kitBtn_s i.kitIcon {
+    width: 12px;
+    margin: -1px 3px 0 0;
+  }
+  .kitBtn_s.kitBtn_right i.kitIcon {
+    margin: 0 0 0 3px;
+  }
+  .kitBtn_s.kitBtn_arrow {
+    padding: 5px 25px 5px 8px;
+  }
+  .kitBtn_s.kitBtn_arrow::before {
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    right: 10px;
+    border-width: 0 1px 1px 0;
+    transform: translateY(-80%) rotate(45deg);
   }
 }/*# sourceMappingURL=kitButton.css.map */
