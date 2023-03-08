@@ -136,7 +136,6 @@
   .kitForm.setInline {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid 1px #ddd;
   }
   .kitForm.setInline input,
   .kitForm.setInline button,
@@ -227,16 +226,23 @@
   .kitForm .inlineGrp > div {
     width: auto;
     margin: 0.1rem 0.25rem;
+    height: 42px;
   }
   .kitForm .inlineGrp .checkGrp label,
   .kitForm .inlineGrp .radioGrp label {
     margin: 0 1rem 0 0;
   }
-  .kitForm .inlineGrp .checkGrp {
-    display: inline-block;
-  }
-  .kitForm .inlineGrp .radioGrp {
+  .kitForm .inlineGrp .checkGrp,
+  .kitForm .inlineGrp .radioGrp,
+  .kitForm .inlineGrp .inlineTitle {
     display: inline-flex;
+  }
+  .kitForm .inlineGrp .inlineTitle {
+    display: inline-flex;
+    align-items: center;
+    height: 42px;
+    font-weight: 500;
+    margin-right: 1rem;
   }
   .kitForm .inlineGrp .formGrp {
     border-bottom: none;
@@ -244,7 +250,7 @@
   }
   .kitForm .inlineGrp .formGrp .formTitle {
     flex: 1 0 auto;
-    padding-top: 0.5em;
+    line-height: 42px;
   }
   .kitForm .inlineGrp .formGrp .formContent {
     padding: 0;
