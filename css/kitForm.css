@@ -206,7 +206,7 @@ input[type=checkbox]:first-child {
   .kitForm .checkGrp.setGrid .innerGrp,
   .kitForm .radioGrp.setGrid .innerGrp {
     flex: 1 1 100%;
-    padding: 0.5rem 0 0 1.75rem;
+    padding: 0.5rem 0 0 3rem;
     background: #f5f5f5;
   }
   .kitForm .checkGrp.setGrid .innerGrp .checkGrp label,
