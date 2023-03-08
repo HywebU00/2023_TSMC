@@ -15,34 +15,39 @@
     <link rel="stylesheet" href="css/UI-02-01-01.css" />
   </head>
   <body>
-    <!--選單關閉時點選wrapper 增加 sideMenuOpen ，選單開起時wrapper 增加 sideMenuClose-->
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
     <div class="wrapper">
-      <!-- 主選單 -->
       <aside>
+        <!-- 主選單 -->
         <script src="include/menu.js"></script>
       </aside>
       <div class="mainContent">
         <header>
           <div class="container">
-            <!-- 麵包屑 右上選單 -->
             <div class="headInfo">
+              <!-- 麵包屑 -->
               <ul class="breadcrumb">
                 <li><a href="#">組織管理</a></li>
                 <li>平台商管理</li>
               </ul>
 
+              <!-- 右上角選單 -->
               <script src="include/topnav.js"></script>
             </div>
           </div>
         </header>
         <main>
+          <!-- 內容上方標題區塊 -->
           <div class="pageTopInfo">
-            <!-- 內容上方標題區塊 -->
-            <div class="container"><a href="#" class="back"></a>建立平台商組織</div>
+            <div class="container">
+              <!-- 上一頁 -->
+              <a href="#" class="back"></a>建立平台商組織
+            </div>
           </div>
+
           <div class="main">
             <div class="container">
-              <div class="formBox">
+              <div class="kitForm">
                 <form action="">
                   <div class="formGrp">
                     <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>平台組織名稱</label>
@@ -79,18 +84,18 @@
                     <div class="formContent">
                       <div class="col_48">
                         <input type="text" id="" placeholder="" title="" value="" />
-                        <input type="text" id="" placeholder="" title="" value="" class="getThis" />
+                        <input type="text" id="" placeholder="" title="" value="" />
                       </div>
                     </div>
                   </div>
                   <div class="formGrp">
-                    <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>平台組織統編</label>
+                    <label for="" class="formTitle">平台組織統編</label>
                     <div class="formContent">
                       <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
                     </div>
                   </div>
                   <div class="formGrp">
-                    <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>電話</label>
+                    <label for="" class="formTitle">平台組織聯絡電話</label>
                     <div class="formContent">
                       <div class="col_48">
                         <input type="text" id="" placeholder="區號" title="" value="" />
@@ -99,17 +104,17 @@
                     </div>
                   </div>
                   <div class="formGrp">
-                    <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>傳真</label>
+                    <label for="" class="formTitle">傳真</label>
                     <div class="formContent">
                       <div class="col_48">
                         <input type="text" id="" placeholder="區號" title="" value="" />
-                        <input type="text" id="" placeholder="市內電話號碼" title="" value="" />
+                        <input type="text" id="" placeholder="傳真號碼" title="" value="" />
                       </div>
                     </div>
                   </div>
                   <hr />
                   <div class="formGrp">
-                    <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>客服電子郵件 Email</label>
+                    <label for="" class="formTitle">客服電子郵件 Email</label>
                     <div class="formContent">
                       <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
                     </div>
@@ -128,9 +133,11 @@
             </div>
           </div>
         </main>
+
         <footer>
           <!-- 內容下方區塊 -->
           <div class="container">
+            <!-- 取消/確認按鈕 -->
             <div class="bottomBtnBox">
               <button class="kitBtn_w" type="button">取消</button>
               <button class="kitBtn" type="button">確認</button>

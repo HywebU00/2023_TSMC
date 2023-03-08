@@ -12,22 +12,23 @@
     <link rel="stylesheet" href="css/default.css" />
   </head>
   <body>
-    <!--選單關閉時點選wrapper 增加 sideMenuOpen，選單開起時wrapper 增加 sideMenuClose-->
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
     <div class="wrapper sideMenuOpen">
-      <!-- 主選單 -->
       <aside>
+        <!-- 主選單 -->
         <script src="include/menu.js"></script>
       </aside>
       <div class="mainContent">
         <header>
           <div class="container">
-            <!-- 麵包屑 右上選單 -->
             <div class="headInfo">
+              <!-- 麵包屑 -->
               <ul class="breadcrumb">
                 <li><a href="#">組織管理</a></li>
                 <li>平台商管理</li>
               </ul>
 
+              <!-- 右上角選單 -->
               <script src="include/topnav.js"></script>
             </div>
           </div>
@@ -36,10 +37,10 @@
           <!-- 內容上方標題區塊 -->
           <div class="pageTopInfo">
             <div class="container">
-              <a href="#" class="back">aaa</a>
-            </div>
-            <div class="container">
-              <i class="kitIcon"><img src="images/icon/icon_bell.svg" /></i>aaa
+              <!-- 上一頁 -->
+              <a href="#" class="back">標題標題標題標題</a>
+              <!-- icon + 標題 -->
+              <i class="kitIcon"><img src="images/icon/icon_bell.svg" /></i>標題標題標題標題
             </div>
           </div>
           <div class="main demo">
@@ -225,6 +226,13 @@
         <footer>
           <!-- 內容下方區塊 -->
           <div class="container">
+            <!-- 取消/確認按鈕 -->
+            <div class="bottomBtnBox">
+              <button class="kitBtn_w" type="button">取消</button>
+              <button class="kitBtn" type="button">確認</button>
+            </div>
+
+            <!-- 頁數切換區塊 -->
             <script src="include/pagination.js"></script>
           </div>
         </footer>

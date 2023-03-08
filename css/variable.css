@@ -1,3 +1,29 @@
+@charset "UTF-8";
+/* 使用方式 background-color:var(--primaryColor); */
+:root {
+  /* color */
+  --primaryColor: #2b90dc;
+  --primaryColor2: #096dd9;
+  --primaryColor3: #daebf9;
+  --primaryColor4: #0161a9;
+  --successColor: #52c41a;
+  --successColor2: #b7eb8f;
+  --successColor3: #f6ffed;
+  --errorColor: #ff4d4f;
+  --warningColor: #fab97d;
+  --informationColor: #fffbe6;
+  --grayColor: #fff;
+  --grayColor2: #f8fafc;
+  --grayColor3: rgba(0, 0, 0, 0.4);
+  --grayColor4: rgba(0, 0, 0, 0.5);
+  --grayColor5: #2a3042;
+  --textColor: rgba(0, 0, 0, 0.85);
+  /* font size */
+  --fontSize18: 1.125rem;
+  --fontSize20: 1.25rem;
+  --fontSize24: 1.5rem;
+}
+
 @layer normalize {
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
   /* Document
@@ -194,7 +220,7 @@
     display: none;
   }
 }
-@layer baseLayer {
+@layer kitBase {
   * {
     box-sizing: border-box;
   }
@@ -213,26 +239,4 @@
   a:hover {
     color: var(--primaryColor);
   }
-}
-:root {
-  --primaryColor: #2b90dc;
-  --primaryColor2: #096dd9;
-  --primaryColor3: #daebf9;
-  --primaryColor4: #0161a9;
-  --successColor: #52c41a;
-  --successColor2: #b7eb8f;
-  --successColor3: #f6ffed;
-  --errorColor: #ff4d4f;
-  --warningColor: #fab97d;
-  --informationColor: #fffbe6;
-  --grayColor: #fff;
-  --grayColor2: #f8fafc;
-  --grayColor3: rgba(0, 0, 0, 0.4);
-  --grayColor4: rgba(0, 0, 0, 0.5);
-  --grayColor5: #2a3042;
-  --textColor: rgba(0, 0, 0, 0.85);
-  /*font size*/
-  --fontSize18: 1.125rem;
-  --fontSize20: 1.25rem;
-  --fontSize24: 1.5rem;
 }/*# sourceMappingURL=variable.css.map */

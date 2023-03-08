@@ -1,7 +1,7 @@
 # 忽略所有附檔名是 .sass 的檔案
 *.scss
 *.sass
-# 忽略所有附檔名是 .map 的檔案
-*.map
 sass/
 .sass-cache/
+# 忽略所有附檔名是 .map 的檔案
+*.map
