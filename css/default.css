@@ -1433,13 +1433,14 @@
     transform: translateY(-20%) rotate(45deg);
   }
   aside nav > ul > li.active ul {
+    padding: 1.125rem 0;
     display: block;
   }
   aside nav a {
     color: #fff;
     display: block;
     font-weight: 300;
-    padding: 3px 0 3px 55px;
+    padding: 4px 0 4px 56px;
   }
   @media screen and (max-width: 767px) {
     aside nav a {

@@ -201,6 +201,12 @@
   img {
     max-width: 100%;
   }
+  hr {
+    background-color: #cfcfcf;
+    height: 1px;
+    border: none;
+    margin: 50px 0;
+  }
   a {
     color: var(--textColor_15);
   }

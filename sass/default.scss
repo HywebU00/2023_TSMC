@@ -126,6 +126,7 @@
               }
             }
             ul {
+              padding: 1.125rem 0;
               display: block;
             }
           }
@@ -135,7 +136,7 @@
         color: #fff;
         display: block;
         font-weight: 300;
-        padding: 3px 0 3px 55px;
+        padding: 4px 0 4px 56px;
         @media screen and (max-width: 767px) {
           font-size: rem(18);
         }
