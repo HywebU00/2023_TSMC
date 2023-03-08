@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-06-03-03</title>
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">製程項目管理</a></li>
+              <li><a href="">補綴物屬性管理</a></li>
+              <li>福家牙技所</li>
+            </ul>
+
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 內容上方標題區塊 -->
+        <div class="pageTopInfo">
+          <div class="container">
+            <!-- 上一頁 -->
+            <a href="#" class="back">新增補綴物屬性</a>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="container">
+            <div class="kitForm">
+              <form action="">
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>屬性名稱：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="alert" />
+                    <div class="helpAlert">此為必填欄位</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">說明：</label>
+                  <div class="formContent">
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <div class="help">字數限500字元內</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 取消/確認按鈕 -->
+          <div class="bottomBtnBox">
+            <button class="kitBtn kitBtn_w" type="button">取消</button>
+            <button class="kitBtn" type="button">確認</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>
