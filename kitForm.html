@@ -38,11 +38,12 @@
                 <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
             </div>
         </div>
-        <div class="formGrp alert">
+        <div class="formGrp">
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>2）input 輸入欄位：</label>
             <div class="formContent">
-                <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="getThis">
+                <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="alert">
                 <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
+                <div class="helpAlert">說明文字 <a href="#">#角色與對應權限說明</a></div>
             </div>
         </div>
         <div class="formGrp">
@@ -69,12 +70,12 @@
                 <div class="help">說明文字</div>
             </div>
         </div>
-        <div class="formGrp alert">
+        <div class="formGrp">
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>兩欄4:8（formContent / col_48 ）：</label>
             <div class="formContent">
                 <div class="col_48">
                     <input type="text" id="" placeholder="郵遞區號" title="" value="">
-                    <input type="text" id="" placeholder="詳細地址" title="" value="" class="getThis">
+                    <input type="text" id="" placeholder="詳細地址" title="" value="" class="alert">
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -110,12 +111,12 @@
                 <div class="help">說明文字</div>
             </div>
         </div>
-        <div class="formGrp alert">
+        <div class="formGrp">
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>三欄均分（formContent / col_444 ）：</label>
             <div class="formContent">
                 <div class="col_444">
                     <input type="date" id="" placeholder="日期" title="" value="">
-                    <input type="text" id="" placeholder="input" title="" value="" class="getThis">
+                    <input type="text" id="" placeholder="input" title="" value="" class="alert">
                     <select name="" id="">
                         <option value="">請選擇項目</option>
                         <option value="">項目1</option>
@@ -155,6 +156,27 @@
                         <option value="">項目2</option>
                         <option value="">項目3</option>
                     </select>
+                    <div class="formGrp">
+                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>帳號：</label>
+                        <div class="formContent">
+                            <div class="input_i">
+                                <i class="i_man_dark"></i>
+                                <input type="text" id="username" value="" title="請輸入帳號">
+                            </div>
+                            <!-- <div class="help">說明文字</div> -->
+                        </div>
+                    </div>
+                    <div class="formGrp">
+                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（hide）：</label>
+                        <div class="formContent">
+                            <div class="input_i">
+                                <i class="i_lock_dark"></i>
+                                <input class="password alert" name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" value="123">
+                                <button type="button" class="passwordEye hide">顯示密碼</button>
+                            </div>
+                            <div class="help">說明文字</div>
+                        </div>
+                    </div>
                     <button class="btn">按鈕</button>
                 </div>
                 <div class="help">說明文字</div>
@@ -419,10 +441,10 @@
                 <!-- <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div> -->
             </div>
         </div>
-        <div class="formGrp alert">
+        <div class="formGrp">
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>select：</label>
             <div class="formContent">
-                <select name="" id="">
+                <select name="" id="" class="alert">
                     <option value="">台北市</option>
                     <option value="">新北市</option>
                     <option value="">桃園市</option>

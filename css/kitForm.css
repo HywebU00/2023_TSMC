@@ -76,31 +76,27 @@
     margin-top: -0.1em;
     margin-bottom: 0.1em;
   }
-  .kitForm .formGrp {
-    margin: 1.5rem 0;
-    border-bottom: solid 1px #ddd;
-  }
-  .kitForm .formGrp.alert .formContent .help {
-    color: #f46a6a;
-  }
-  .kitForm .formGrp.alert .formContent input.getThis,
-  .kitForm .formGrp.alert .formContent textarea.getThis,
-  .kitForm .formGrp.alert .formContent select.getThis {
-    box-shadow: 0 0 0 3px #f46a6a;
-    border: transparent;
-  }
   .kitForm .formGrp .formTitle {
     color: #222;
     font-weight: 500;
   }
   .kitForm .formGrp .formContent {
     width: 100%;
-    padding: 0.5rem 0 1.5rem;
+    padding: 0.5rem 0;
   }
-  .kitForm .formGrp .formContent .help {
+  .kitForm .formGrp .formContent input.alert,
+  .kitForm .formGrp .formContent textarea.alert,
+  .kitForm .formGrp .formContent select.alert {
+    box-shadow: 0 0 0 3px #f46a6a;
+    border: transparent;
+  }
+  .kitForm .formGrp .formContent .help, .kitForm .formGrp .formContent .helpAlert {
     color: #222;
     font-size: 80%;
     padding: 0.25rem 0;
+  }
+  .kitForm .formGrp .formContent .helpAlert {
+    color: #f46a6a;
   }
   .kitForm .formGrp .searchGrp {
     position: relative;
@@ -209,17 +205,42 @@
   .kitForm .radioGrp.setGrid .innerGrp .radioGrp label {
     flex: 0 1 auto;
   }
+  .kitForm .inlineGrp {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+  }
   .kitForm .inlineGrp input,
   .kitForm .inlineGrp button,
-  .kitForm .inlineGrp select {
+  .kitForm .inlineGrp select,
+  .kitForm .inlineGrp > div {
     width: auto;
-    height: 36px;
+    margin: 0 0.25rem;
+    min-height: 36px;
   }
   .kitForm .inlineGrp .checkGrp {
     display: inline-block;
   }
   .kitForm .inlineGrp .radioGrp {
     display: inline-flex;
+  }
+  .kitForm .inlineGrp .formGrp {
+    border-bottom: none;
+    display: flex;
+  }
+  .kitForm .inlineGrp .formGrp .formTitle {
+    flex: 1 0 auto;
+    padding-top: 0.5em;
+  }
+  .kitForm .inlineGrp .formGrp .formContent {
+    padding: 0;
+  }
+  .kitForm .inlineGrp .formGrp .formContent .input_i i {
+    top: 0.2rem;
+  }
+  .kitForm .inlineGrp .formGrp .formContent .input_i button {
+    min-height: auto;
   }
   .necessary {
     color: #f46a6a;
