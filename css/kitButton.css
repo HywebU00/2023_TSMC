@@ -31,10 +31,10 @@
     margin: -1px 5px 0 0;
   }
   .kitBtn.kitBtn_right {
-    padding: 4px 15px 3px;
+    padding: 4px 10px 3px;
   }
   .kitBtn.kitBtn_right i.kitIcon {
-    margin: 0 0 0 4px;
+    margin: -1px 0 0 4px;
     order: 3;
   }
   .kitBtn.kitBtn_arrow {
