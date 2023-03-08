@@ -22,109 +22,253 @@
         background: #f4f4f4;
         color: #a0a0a0;
         line-height: 2;
+        margin-bottom: 10px;
+      }
+      h4 {
+        color: rgb(36, 147, 251);
+        padding: 10px 0;
+        margin-bottom: 10px;
+        border-bottom: #ccc 1px solid;
+        position: relative;
+        padding: 5px;
+      }
+      h4::before {
+        content: 'class';
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        font-size: 12px;
+        color: #777;
+      }
+      .item > span {
+        position: absolute;
+        right: 20px;
+        top: 00px;
+        font-size: 14px;
+        color: #000;
+      }
+      .box {
+        display: flex;
+      }
+      .box .item {
+        flex-grow: 1;
+        position: relative;
+      }
+      .box .item + .item {
+        border-left: #ccc 1px solid;
       }
     </style>
   </head>
   <body>
     <h2>kit Button</h2>
+    <div class="notice">
+      可以使用以下各種class組合，藍色class點兩下可全選文字
+      <!---------------------------------------------------------------------------->
+      <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m kitBtn_arrow" type="button">
+        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+      </button>
+      <!---------------------------------------------------------------------------->
+    </div>
     <!-- 1 -->
     <h3>1：一般按鈕</h3>
+    <h4>預設</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn" type="button">搜尋</button>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn" type="button" disabled>搜尋</button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <!-- 1 -->
     <h3>2：Icon左+文字</h3>
+    <h4>預設</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn" type="button">
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
-
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn" type="button" disabled>
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <h3>3：Icon右+文字 kitBtn_right</h3>
+    <h3>3：Icon右+文字</h3>
+    <!---------------------------------------------------------------------------->
+    <h4>kitBtn_right</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_right" type="button">
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
-
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_right" type="button" disabled>
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <h3>4：Icon右+文字+箭頭 kitBtn_arrow</h3>
+    <h3>4：Icon右+文字+箭頭</h3>
+    <!---------------------------------------------------------------------------->
+    <h4>kitBtn_arrow</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_arrow" type="button">
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
-
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_arrow" type="button" disabled>
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <h3>5：Icon上+文字 kitBtn_top</h3>
+    <h3>5：Icon上+文字</h3>
+    <!---------------------------------------------------------------------------->
+    <h4>kitBtn_top</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_top" type="button">
       <i><img src="images/icon/icon_tooth.svg" alt="" /></i>新增產品
     </button>
-
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_top" type="button" disabled>
       <i><img src="images/icon/icon_tooth.svg" alt="" /></i>新增產品
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <h3>6：只有Icon kitBtn_icon</h3>
+    <h3>6：只有Icon</h3>
+    <!---------------------------------------------------------------------------->
+    <h4>kitBtn_icon</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_icon" type="button">
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
     </button>
-
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_icon" type="button" disabled>
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
-    <h3>7：白底 kitBtn_w</h3>
-    <button class="kitBtn kitBtn_w" type="button">取消</button>
-    <button class="kitBtn kitBtn_w" type="button" disabled>取消</button>
+    <h3>7：顏色</h3>
+    <div class="box">
+      <div class="item">
+        <h4>預設</h4>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn" type="button" disabled>取消</button>
+        <!---------------------------------------------------------------------------->
+      </div>
+      <div class="item">
+        <!---------------------------------------------------------------------------->
+        <h4>kitBtn_w</h4>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_w" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_w" type="button" disabled>取消</button>
+        <!---------------------------------------------------------------------------->
+      </div>
+      <div class="item">
+        <!---------------------------------------------------------------------------->
+        <h4>kitBtn_gray</h4>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_gray" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_gray" type="button" disabled>取消</button>
+        <!---------------------------------------------------------------------------->
+      </div>
+    </div>
     <br />
 
-    <h3>8：圓角 kitBtn_radius</h3>
+    <br />
+
+    <h3>8：圓角</h3>
+    <!---------------------------------------------------------------------------->
+    <h4>kitBtn_radius</h4>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_radius" type="button">取消</button>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_w kitBtn_radius" type="button">取消</button>
+    <!---------------------------------------------------------------------------->
     <button class="kitBtn kitBtn_radius kitBtn_arrow" type="button">
       <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
     </button>
+    <!---------------------------------------------------------------------------->
     <br />
 
     <h3>8：尺寸</h3>
-    kitBtn_m = height 32px
-    <button class="kitBtn kitBtn_m" type="button">取消</button>
-    <button class="kitBtn kitBtn_m" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_m kitBtn_arrow" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
-    </button>
-    kitBtn_s = height 20px
-    <button class="kitBtn kitBtn_s" type="button">取消</button>
-    <button class="kitBtn kitBtn_s" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_s kitBtn_right" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_s kitBtn_arrow" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
-    </button>
-    <button class="kitBtn kitBtn_s kitBtn_icon" type="button">
-      <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
-    </button>
+    <div class="box">
+      <div class="item">
+        <!---------------------------------------------------------------------------->
+        <h4>kitBtn_m</h4>
+        <span>height 32px</span>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_m" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_m" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_m kitBtn_right" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_m kitBtn_arrow" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
+        </button>
+        <!---------------------------------------------------------------------------->
+      </div>
+      <div class="item">
+        <!---------------------------------------------------------------------------->
+        <h4>kitBtn_s</h4>
+        <span>height 20px</span>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_s" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_s" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_s kitBtn_right" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_s kitBtn_arrow" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_s kitBtn_icon" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
+        </button>
+        <!---------------------------------------------------------------------------->
+      </div>
+      <div class="item">
+        <!---------------------------------------------------------------------------->
+        <h4>kitBtn_full</h4>
+        <span>width 100%</span>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_full" type="button">取消</button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_full" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_full kitBtn_right" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_full kitBtn_arrow" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>新增產品
+        </button>
+        <!---------------------------------------------------------------------------->
+        <button class="kitBtn kitBtn_full kitBtn_icon" type="button">
+          <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
+        </button>
+        <!---------------------------------------------------------------------------->
+      </div>
+    </div>
   </body>
 </html>
