@@ -183,9 +183,7 @@
   }
   .kitForm .checkGrp label,
   .kitForm .radioGrp label {
-    margin: 0.25rem 0.5rem;
-    margin-right: 1rem;
-    margin-left: 0;
+    margin: 0.25rem 1rem 0.25rem 0;
     display: flex;
     align-items: center;
   }
@@ -216,8 +214,12 @@
   .kitForm .inlineGrp select,
   .kitForm .inlineGrp > div {
     width: auto;
-    margin: 0 0.25rem;
+    margin: 0.1rem 0.25rem;
     min-height: 36px;
+  }
+  .kitForm .inlineGrp .checkGrp label,
+  .kitForm .inlineGrp .radioGrp label {
+    margin: 0 1rem 0 0;
   }
   .kitForm .inlineGrp .checkGrp {
     display: inline-block;
