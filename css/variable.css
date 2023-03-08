@@ -239,4 +239,38 @@
   a:hover {
     color: var(--primaryColor);
   }
+  .kitFlex {
+    display: flex;
+    flex-direction: row;
+  }
+  .kitFlex_left {
+    justify-content: flex-start;
+  }
+  .kitFlex_center {
+    justify-content: center;
+  }
+  .kitFlex_right {
+    justify-content: flex-end;
+  }
+  .kitFlex_vert_center {
+    align-items: center;
+  }
+  .kitFlex_vert_start {
+    align-items: center;
+  }
+  .kitFlex_vert_center {
+    align-items: center;
+  }
+  .kitFlex_vert_end {
+    align-items: center;
+  }
+  .kitalign_left {
+    text-align: left;
+  }
+  .kitalign_center {
+    text-align: center;
+  }
+  .kitalign_right {
+    text-align: right;
+  }
 }/*# sourceMappingURL=variable.css.map */
