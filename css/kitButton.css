@@ -175,7 +175,13 @@
     transform: translateY(-20%) rotate(45deg);
   }
   .kitBtn_radius {
-    padding: 4px 25px 3px;
+    padding: 4px 12px 3px;
     border-radius: 50px;
+  }
+  .kitBtn_radius.kitBtn_arrow {
+    padding: 4px 32px 3px 12px;
+  }
+  .kitBtn_radius.kitBtn_arrow::before {
+    right: 15px;
   }
 }/*# sourceMappingURL=kitButton.css.map */

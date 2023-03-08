@@ -45,14 +45,97 @@
             </div>
           </div>
           <div class="main demo">
+            <div class="container">
+              <!-- flex排版 無RWD-->
+              <div class="example">
+                <h4>kitFlex_right</h4>
+                <div class="kitFlex kitFlex_left">
+                  <div class="item">test</div>
+                  <div class="item">test</div>
+                  <div class="item">test</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_right</h4>
+                <div class="kitFlex kitFlex_center">
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_right</h4>
+                <div class="kitFlex kitFlex_right">
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_between</h4>
+                <div class="kitFlex kitFlex_between">
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_around</h4>
+                <div class="kitFlex kitFlex_around">
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                  <div class="item">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_vert_top</h4>
+                <div class="kitFlex kitFlex_vert_top">
+                  <div class="item" style="height: 50px">test<br />testtesttest</div>
+                  <div class="item" style="height: 100px">test<br />testtesttest</div>
+                  <div class="item" style="height: 70px">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_vert_center</h4>
+                <div class="kitFlex kitFlex_vert_center">
+                  <div class="item" style="height: 50px">test<br />testtesttest</div>
+                  <div class="item" style="height: 100px">test<br />testtesttest</div>
+                  <div class="item" style="height: 70px">test<br />testtesttest</div>
+                </div>
+              </div>
+              <div class="example">
+                <h4>kitFlex_vert_bottom</h4>
+                <div class="kitFlex kitFlex_vert_bottom">
+                  <div class="item" style="height: 50px">test<br />testtesttest</div>
+                  <div class="item" style="height: 100px">test<br />testtesttest</div>
+                  <div class="item" style="height: 70px">test<br />testtesttest</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <!-- 內容位置-->
+              <div class="example">
+                <h4>kitAlign_left</h4>
+                <div class="item kitAlign_left">test<br />testtesttest</div>
+              </div>
+              <div class="example">
+                <h4>kitAlign_center</h4>
+                <div class="item kitAlign_center">test<br />testtesttest</div>
+              </div>
+              <div class="example">
+                <h4>kitAlign_right</h4>
+                <div class="item kitAlign_right">test<br />testtesttest</div>
+              </div>
+            </div>
             <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
             <!-- //// class 都可以隨意命名 !!! ///// -->
-            <!-- flex start -->
+            <!-- flex start 有RWD -->
             <!-- type 1：自由分配 -->
             <!-- 多欄 = 12 -->
             <section class="flex_3_6_3">
               <div class="container">
-                <h2>flex_3_6_3</h2>
+                <h4>flex_3_6_3</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>次標題一</h3>
@@ -71,7 +154,7 @@
             </section>
             <section class="flex_4_8">
               <div class="container">
-                <h2>flex_4_8</h2>
+                <h4>flex_4_8</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>次標題一</h3>
@@ -86,7 +169,7 @@
             </section>
             <section class="flex_8_4">
               <div class="container">
-                <h2>flex_8_4</h2>
+                <h4>flex_8_4</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>次標題一</h3>
@@ -104,7 +187,7 @@
             <!-- 2、 -->
             <section class="flexEqual_2">
               <div class="container">
-                <h2>均分 2 欄</h2>
+                <h4>均分 2 欄</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>title 1</h3>
@@ -120,7 +203,7 @@
             <!-- 3、 -->
             <section class="flexEqual_3">
               <div class="container">
-                <h2>均分 3 欄</h2>
+                <h4>均分 3 欄</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>title 1</h3>
@@ -140,7 +223,7 @@
             <!-- 4、 -->
             <section class="flexEqual_4">
               <div class="container">
-                <h2>均分 4 欄</h2>
+                <h4>均分 4 欄</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>title 1</h3>
@@ -164,7 +247,7 @@
             <!-- 3 thumbnail、 -->
             <section class="flexEqual_3">
               <div class="container">
-                <h2>主標題 thumbnail</h2>
+                <h4>主標題 thumbnail</h4>
                 <div class="flexSet">
                   <div class="thumbnail">
                     <a href="#">
@@ -202,7 +285,7 @@
             <!-- mix -->
             <section class="mixEqual_2">
               <div class="container">
-                <h2>均分 併 自由分配</h2>
+                <h4>均分 併 自由分配</h4>
                 <div class="flexSet">
                   <div class="col">
                     <h3>次標題一</h3>

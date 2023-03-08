@@ -252,25 +252,34 @@
   .kitFlex_right {
     justify-content: flex-end;
   }
+  .kitFlex_between {
+    justify-content: space-between;
+  }
+  .kitFlex_around {
+    justify-content: space-around;
+  }
+  .kitFlex_vert_top {
+    align-items: flex-start;
+  }
   .kitFlex_vert_center {
     align-items: center;
   }
-  .kitFlex_vert_start {
-    align-items: center;
+  .kitFlex_vert_bottom {
+    align-items: flex-end;
   }
-  .kitFlex_vert_center {
-    align-items: center;
+  .kitFlex_vert_between {
+    align-items: space-between;
   }
-  .kitFlex_vert_end {
-    align-items: center;
+  .kitFlex_vert_around {
+    align-items: space-around;
   }
-  .kitalign_left {
+  .kitAlign_left {
     text-align: left;
   }
-  .kitalign_center {
+  .kitAlign_center {
     text-align: center;
   }
-  .kitalign_right {
+  .kitAlign_right {
     text-align: right;
   }
 }/*# sourceMappingURL=variable.css.map */

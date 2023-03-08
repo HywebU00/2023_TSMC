@@ -1765,17 +1765,6 @@
     display: flex;
     justify-content: center;
   }
-  .demo .flexSet .col {
-    background: #485b8a;
-    color: #fff;
-  }
-  .demo .flexEqual_3 .flexSet .col,
-  .demo .flexEqual-5 .flexSet .col,
-  .demo .flexEqual_7 .flexSet .col,
-  .demo .flexEqual_9 .flexSet .col,
-  .demo .flexEqual_11 .flexSet .col {
-    background: #00b0c6;
-  }
   @media screen and (min-width: 1000px) {
     aside {
       width: 280px;
@@ -1854,5 +1843,36 @@
   .sideMenuClose aside .mainMenuBtn {
     right: 12px;
     transform: translateY(-50%) rotate(180deg);
+  }
+  .demo .example {
+    margin-bottom: 40px;
+  }
+  .demo .example .item {
+    background: #ddd;
+    padding: 20px;
+  }
+  .demo .kitFlex {
+    background: #ddd;
+  }
+  .demo .kitFlex .item {
+    color: #fff;
+    background: #333;
+    border: 1px solid #555;
+    width: 20%;
+    display: flex;
+    height: 50px;
+    padding: 0 20px;
+    align-items: center;
+  }
+  .demo .flexSet .col {
+    background: #485b8a;
+    color: #fff;
+  }
+  .demo .flexEqual_3 .flexSet .col,
+  .demo .flexEqual-5 .flexSet .col,
+  .demo .flexEqual_7 .flexSet .col,
+  .demo .flexEqual_9 .flexSet .col,
+  .demo .flexEqual_11 .flexSet .col {
+    background: #00b0c6;
   }
 }/*# sourceMappingURL=default.css.map */

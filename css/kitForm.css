@@ -1,3 +1,14 @@
+input[type=radio],
+input[type=checkbox] {
+  margin: 0 0.35rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+input[type=radio]:first-child,
+input[type=checkbox]:first-child {
+  margin-left: 0;
+}
+
 @layer kitForm {
   [class^=i_]:before {
     content: "";
@@ -75,16 +86,6 @@
     background-size: contain;
     margin-top: -0.1em;
     margin-bottom: 0.1em;
-  }
-  input[type=radio],
-  input[type=checkbox] {
-    margin: 0 0.35rem;
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-  input[type=radio]:first-child,
-  input[type=checkbox]:first-child {
-    margin-left: 0;
   }
   .kitForm .formGrp .formTitle {
     color: #222;
@@ -205,7 +206,7 @@
   .kitForm .checkGrp.setGrid .innerGrp,
   .kitForm .radioGrp.setGrid .innerGrp {
     flex: 1 1 100%;
-    padding: 0.5rem 0 0 1.75rem;
+    padding: 0.5rem 0 0 3rem;
     background: #f5f5f5;
   }
   .kitForm .checkGrp.setGrid .innerGrp .checkGrp label,
@@ -213,50 +214,6 @@
   .kitForm .radioGrp.setGrid .innerGrp .checkGrp label,
   .kitForm .radioGrp.setGrid .innerGrp .radioGrp label {
     flex: 0 1 auto;
-  }
-  .kitForm .inlineGrp {
-    display: inline-flex;
-    align-items: flex-start;
-    padding: 0.5rem 0;
-    flex-wrap: wrap;
-  }
-  .kitForm .inlineGrp input,
-  .kitForm .inlineGrp button,
-  .kitForm .inlineGrp select,
-  .kitForm .inlineGrp > div {
-    width: auto;
-    margin: 0.1rem 0.25rem;
-    height: 42px;
-  }
-  .kitForm .inlineGrp .checkGrp label,
-  .kitForm .inlineGrp .radioGrp label {
-    margin: 0 1rem 0 0;
-  }
-  .kitForm .inlineGrp .checkGrp,
-  .kitForm .inlineGrp .radioGrp,
-  .kitForm .inlineGrp .inlineTitle {
-    display: inline-flex;
-  }
-  .kitForm .inlineGrp .inlineTitle {
-    display: inline-flex;
-    align-items: center;
-    height: 42px;
-    font-weight: 500;
-    margin-right: 1rem;
-  }
-  .kitForm .inlineGrp .formGrp {
-    border-bottom: none;
-    display: flex;
-  }
-  .kitForm .inlineGrp .formGrp .formTitle {
-    flex: 1 0 auto;
-    line-height: 42px;
-  }
-  .kitForm .inlineGrp .formGrp .formContent {
-    padding: 0;
-  }
-  .kitForm .inlineGrp .formGrp .formContent .input_i button {
-    min-height: auto;
   }
   .necessary {
     color: #f46a6a;
@@ -311,19 +268,118 @@
     background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
     background-size: 1.25rem;
   }
+  .inlineGrp,
+  .checkedList {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+  .inlineGrp input,
+  .inlineGrp button,
+  .inlineGrp select,
+  .inlineGrp > div,
+  .checkedList input,
+  .checkedList button,
+  .checkedList select,
+  .checkedList > div {
+    width: auto;
+    margin: 0.1rem 0.25rem;
+    height: 42px;
+  }
+  .inlineGrp input.kitBtn_m,
+  .inlineGrp button.kitBtn_m,
+  .inlineGrp select.kitBtn_m,
+  .inlineGrp > div.kitBtn_m,
+  .checkedList input.kitBtn_m,
+  .checkedList button.kitBtn_m,
+  .checkedList select.kitBtn_m,
+  .checkedList > div.kitBtn_m {
+    height: 32px;
+  }
+  .inlineGrp input[type=text], .inlineGrp input[type=password], .inlineGrp select, .inlineGrp textarea,
+  .checkedList input[type=text],
+  .checkedList input[type=password],
+  .checkedList select,
+  .checkedList textarea {
+    width: auto !important;
+  }
+  .inlineGrp p,
+  .checkedList p {
+    margin: 0;
+  }
+  .inlineGrp .checkGrp label,
+  .inlineGrp .radioGrp label,
+  .checkedList .checkGrp label,
+  .checkedList .radioGrp label {
+    margin: 0 1rem 0 0;
+  }
+  .inlineGrp .checkGrp,
+  .inlineGrp .radioGrp,
+  .inlineGrp .inlineTitle,
+  .checkedList .checkGrp,
+  .checkedList .radioGrp,
+  .checkedList .inlineTitle {
+    display: inline-flex;
+  }
+  .inlineGrp .inlineTitle,
+  .checkedList .inlineTitle {
+    display: inline-flex;
+    align-items: center;
+    height: 42px;
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+  .inlineGrp .formGrp,
+  .checkedList .formGrp {
+    border-bottom: none;
+    display: flex;
+  }
+  .inlineGrp .formGrp .formTitle,
+  .checkedList .formGrp .formTitle {
+    flex: 1 0 auto;
+    line-height: 42px;
+  }
+  .inlineGrp .formGrp .formContent,
+  .checkedList .formGrp .formContent {
+    padding: 0;
+  }
+  .inlineGrp .formGrp .formContent .input_i button,
+  .checkedList .formGrp .formContent .input_i button {
+    min-height: auto;
+    width: 20px;
+    font-size: 0;
+  }
+  .inlineGrp .formGrp .formContent input,
+  .inlineGrp .formGrp .formContent select,
+  .checkedList .formGrp .formContent input,
+  .checkedList .formGrp .formContent select {
+    margin: 0;
+  }
+  .inlineGrp ul,
   .checkedList ul {
     padding: 0;
     margin: 0;
     list-style: none;
   }
+  .inlineGrp ul li,
   .checkedList ul li {
     display: inline-flex;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
     background: #f5f5f5;
   }
+  .inlineGrp ul li button,
   .checkedList ul li button {
     margin: 0 0.25rem;
+  }
+  .inlineBox {
+    display: inline-flex;
+    align-self: center;
+    margin: 0 0.75rem;
+  }
+  .inlineBox input, .inlineBox select, .inlineBox button {
+    margin: 0 0.5rem;
   }
   input,
   textarea,

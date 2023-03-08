@@ -149,22 +149,40 @@
             <div class="formContent">
                 <div class="inlineGrp">
                     <input type="date" id="" title="">
+                    <span>~</span>
                     <input type="date" id="" title="">
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>各式並排表單 + 按鈕（formContent / inlineGrp ）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>5-1）各式並排表單 + 按鈕（formContent / inlineGrp ）：</label>
             <div class="formContent">
                 <div class="inlineGrp">
-                    <span class="inlineTitle">這是一個尷尬的標題：</span>
                     <div class="checkGrp">
                         <label><input type="checkbox" name="" value="" checked="">需要試戴</label>
                     </div>
                     <div class="radioGrp">
                         <label><input type="radio" name="sampleRadio-3" value="" checked="">啟用</label>
                         <label><input type="radio" name="sampleRadio-3" value="">停用</label>
+                    </div>
+                    <div class="formGrp">
+                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>input 標題：</label>
+                        <div class="formContent">
+                            <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                        </div>
+                    </div>
+                    <div class="formGrp">
+                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>select 標題：</label>
+                        <div class="formContent">
+                            <select name="" id="">
+                                <option value="">台北市</option>
+                                <option value="">新北市</option>
+                                <option value="">桃園市</option>
+                                <option value="">新竹市</option>
+                                <option value="">...</option>
+                            </select>
+                        </div>
                     </div>
                     <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
                     <input type="date" id="" title="">
@@ -174,28 +192,37 @@
                         <option value="">項目2</option>
                         <option value="">項目3</option>
                     </select>
-                    <div class="formGrp">
-                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>帳號：</label>
-                        <div class="formContent">
-                            <div class="input_i">
-                                <i class="i_man_dark"></i>
-                                <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
-                            </div>
-                            <!-- <div class="help">說明文字</div> -->
-                        </div>
-                    </div>
-                    <div class="formGrp">
-                        <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（hide）：</label>
-                        <div class="formContent">
-                            <div class="input_i">
-                                <i class="i_lock_dark"></i>
-                                <input class="password alert" name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" value="123">
-                                <button type="button" class="passwordEye hide">顯示密碼</button>
-                            </div>
-                            <div class="helpAlert">說明文字</div>
-                        </div>
-                    </div>
                     <button class="kitBtn" type="button">按鈕</button>
+                </div>
+                <div class="help">說明文字</div>
+                <div class="helpAlert">說明文字</div>
+            </div>
+        </div>
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>5-2）input 下拉輸入框（需工程師協助） formContent / inlineGrp ：</label>
+            <div class="formContent">
+                <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
+                <div class="inlineGrp">
+                    <span class="inlineTitle">目前已選取：</span>
+                    <ul>
+                        <li>福家牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            達爾文牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            卡麗喵牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -232,37 +259,10 @@
                 <div class="help">說明文字</div>
             </div>
         </div>
-        <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>8）input 下拉輸入框（需工程師協助）：</label>
-            <div class="formContent">
-                <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
-                <div class="checkedList">
-                    <ul>
-                        <li>福家牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                            達爾文牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                            卡麗喵牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="help">說明文字</div>
-            </div>
-        </div>
+        
         <!-- select -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>9）select 下拉選單：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>8）select 下拉選單：</label>
             <div class="formContent">
                 <select name="" id="">
                     <option value="">台北市</option>
@@ -276,7 +276,7 @@
         </div>
         <!-- radio -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>10）radio 選項按鈕：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>9）radio 選項按鈕：</label>
             <div class="formContent">
                 <div class="radioGrp">
                     <label><input type="radio" name="sampleRadio" value="" checked="">新北市</label>
@@ -307,9 +307,25 @@
                 <div class="help">8-20碼，需含英數字。</div>
             </div>
         </div>
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>radio 選項按鈕（項目垂直） label / inlineBox：</label>
+            <div class="formContent">
+                <div class="radioGrp setGrid">
+                    <label><input type="radio" name="sampleRadio-12" value="" checked="">免收費</label>
+                    <label>
+                        <input type="radio" name="sampleRadio-12" value="">收費
+                        <span class="inlineBox">
+                            <label>TWD<input type="text" name="" value="" disabled></label>
+                            <label><input type="checkbox" name="" value="" checked="" disabled>開放折讓</label>
+                        </span>
+                    </label>
+                </div>
+                <div class="help">8-20碼，需含英數字。</div>
+            </div>
+        </div>
         <!-- checkbox -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>11）checkbox 核取方塊：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>10）checkbox 核取方塊：</label>
             <div class="formContent">
                 <div class="checkGrp">
                     <label><input type="checkbox" name="" value="" checked="">全部</label>
@@ -335,14 +351,15 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>checkbox 核取方塊（項目垂直）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>checkbox 核取方塊（項目垂直） label / inlineBox：</label>
             <div class="formContent">
                 <div class="checkGrp setGrid">
                     <label><input type="checkbox" name="" value="" checked="">免收費</label>
                     <label>
                         <input type="checkbox" name="" value="">收費
-                        <span>
-                            TWD<input type="text" name="" value="">
+                        <span class="inlineBox">
+                            <label>TWD<input type="text" name="" value="" disabled></label>
+                            <label><input type="checkbox" name="" value="" checked="" disabled>開放折讓</label>
                         </span>
                     </label>
                 </div>
@@ -354,10 +371,10 @@
             <div class="formContent">
                 <div class="checkGrp setGrid">
                     <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
                         <input type="checkbox" name="" value="" checked="">第一層、項目1
-                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
-                        </button>
                     </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
@@ -377,10 +394,10 @@
                         </div>
                     </div>
                     <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
                         <input type="checkbox" name="" value="" checked="">第一層、項目2
-                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
-                        </button>
                     </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
@@ -400,10 +417,10 @@
                         </div>
                     </div>
                     <label>
-                        <input type="checkbox" name="" value="" checked="">第一層、項目3
                         <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
                             <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
                         </button>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目3
                     </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
@@ -428,7 +445,7 @@
         </div>
         <!-- textarea -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>12）textarea 文本區塊：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>11）textarea 文本區塊：</label>
             <div class="formContent">
                 <textarea name="" id="" cols="30" rows="5"></textarea>
                 <div class="help">說明文字</div>
@@ -436,7 +453,7 @@
         </div>
         <!-- 搜尋 -->
         <div class="formGrp">
-            <label for="" class="formTitle">13）搜尋（文字 submit）：</label>
+            <label for="" class="formTitle">12）搜尋（文字 submit）：</label>
             <div class="formContent">
                 <div class="searchGrp">
                     <input name="" type="text" id="" placeholder="請輸入文字" title="">
@@ -456,6 +473,124 @@
                     <!-- <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search"> -->
                 </div>
                 <div class="help">說明文字</div>
+            </div>
+        </div>
+        <!-- 綜合 -->
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>13）工序設定（formContent / inlineGrp ）：</label>
+            <div class="formContent">
+                <button class="kitBtn kitBtn_m" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>加入工序模板
+                </button>
+                <div class="inlineGrp">
+                    <span class="inlineTitle">目前已選取：</span>
+                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
+                        按鈕1
+                    </button>
+                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
+                        按鈕2
+                    </button>
+                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
+                        按鈕3
+                    </button>
+                </div>
+                <!-- <div class="help">說明文字</div> -->
+            </div>
+        </div>
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>費用（formContent / inlineGrp ）：</label>
+            <div class="formContent">
+                <button class="kitBtn kitBtn_m" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>設定費用
+                </button>
+                <div class="inlineGrp">
+                    <!-- <span class="inlineTitle">目前已選取：</span> -->
+                    <p>2022/10/30起&nbsp;&nbsp;收費/TWD 1,000&nbsp;&nbsp;開始折讓</p>
+                </div>
+                <!-- <div class="help">說明文字</div> -->
+            </div>
+        </div>
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>權限（formContent / inlineGrp ）：</label>
+            <div class="formContent">
+                <button class="kitBtn kitBtn_m" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>新增權限
+                </button>
+                <div class="checkGrp setGrid">
+                    <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目1
+                    </label>
+                    <div class="innerGrp">
+                        <div class="checkGrp">
+                            <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
+                            <div class="innerGrp">
+                                <div class="checkGrp">
+                                    <label><input type="checkbox" name="" value="" checked="">第三層、項目1</label>
+                                    <div class="innerGrp">
+                                        <div class="checkGrp">
+                                            <label><input type="checkbox" name="" value="" checked="">第四層、項目1</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目2</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目2
+                    </label>
+                    <div class="innerGrp">
+                        <div class="checkGrp">
+                            <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
+                            <div class="innerGrp">
+                                <div class="checkGrp">
+                                    <label><input type="checkbox" name="" value="" checked="">第三層、項目1</label>
+                                    <div class="innerGrp">
+                                        <div class="checkGrp">
+                                            <label><input type="checkbox" name="" value="" checked="">第四層、項目1</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目2</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目3
+                    </label>
+                    <div class="innerGrp">
+                        <div class="checkGrp">
+                            <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
+                            <div class="innerGrp">
+                                <div class="checkGrp">
+                                    <label><input type="checkbox" name="" value="" checked="">第三層、項目1</label>
+                                    <div class="innerGrp">
+                                        <div class="checkGrp">
+                                            <label><input type="checkbox" name="" value="" checked="">第四層、項目1</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目2</label>
+                                            <label><input type="checkbox" name="" value="">第四層、項目3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="help">說明文字</div> -->
             </div>
         </div>
         <!-- 按鈕 -->
