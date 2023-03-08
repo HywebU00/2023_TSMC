@@ -110,15 +110,18 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     width: 90px;
-    height: 36px;
+    height: 42px;
     position: absolute;
+    top: 0;
     right: 0;
     z-index: 1;
   }
   .kitForm .formGrp .searchGrp.withIcon input[type=submit],
   .kitForm .formGrp .searchGrp.withIcon button {
     color: transparent;
-    background: deepskyblue;
+  }
+  .kitForm .formGrp .searchGrp.withIcon button {
+    margin: 0.3rem 0 0 0;
   }
   .kitForm.setInline {
     display: flex;
@@ -129,7 +132,6 @@
   .kitForm.setInline button,
   .kitForm.setInline select {
     width: auto;
-    height: 36px;
   }
   .kitForm.setInline .formGrp,
   .kitForm.setInline .btnGrp,
@@ -215,7 +217,6 @@
   .kitForm .inlineGrp > div {
     width: auto;
     margin: 0.1rem 0.25rem;
-    min-height: 36px;
   }
   .kitForm .inlineGrp .checkGrp label,
   .kitForm .inlineGrp .radioGrp label {
@@ -237,9 +238,6 @@
   }
   .kitForm .inlineGrp .formGrp .formContent {
     padding: 0;
-  }
-  .kitForm .inlineGrp .formGrp .formContent .input_i i {
-    top: 0.2rem;
   }
   .kitForm .inlineGrp .formGrp .formContent .input_i button {
     min-height: auto;
@@ -303,23 +301,29 @@
     list-style: none;
   }
   .checkedList ul li {
-    display: inline-block;
-    padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem;
     background: #f5f5f5;
+  }
+  .checkedList ul li button {
+    margin: 0 0.25rem;
   }
   input,
   textarea,
   select {
-    color: #222;
     font-size: 1em;
     border: 1px solid #ccc;
     padding: 0.5em;
     margin: 0.3em 0;
-    background: #fff;
     vertical-align: middle;
     box-sizing: border-box;
     border-radius: 4px;
     transition: all 0.3s ease-out;
+  }
+  input,
+  select {
+    height: 42px;
   }
   input[type=text],
   input[type=password],
@@ -330,6 +334,8 @@
     -moz-appearance: none;
     appearance: none;
     box-shadow: 0 0 0 3px transparent;
+    background: #fff;
+    color: #222;
   }
   input[type=text]:hover,
   input[type=password]:hover,

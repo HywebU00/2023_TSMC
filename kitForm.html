@@ -9,6 +9,9 @@
     <title>kit Form</title>
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
     <link rel="stylesheet" href="css/kitForm.css">
     <style>
         h2{
@@ -39,7 +42,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>2）input 輸入欄位：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>input 輸入欄位：</label>
             <div class="formContent">
                 <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="alert">
                 <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
@@ -47,21 +50,21 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>3）無資料 disabled：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>2）無資料 disabled：</label>
             <div class="formContent">
                 <input type="text" id="" placeholder="disabled" title="" disabled>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>4）有資料 readonly：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>3）有資料 readonly：</label>
             <div class="formContent">
                 <input type="text" id="" placeholder="" title="" value="readonly" readonly>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>5）電話/傳真：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>4）電話/傳真：（formContent / col_48 ）</label>
             <div class="formContent">
                 <div class="col_48">
                     <input type="text" id="" placeholder="區號" title="" value="">
@@ -128,7 +131,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>6）日期（formContent / inlineGrp ）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>5）日期（formContent / inlineGrp ）：</label>
             <div class="formContent">
                 <div class="inlineGrp">
                     <input type="date" id="" title="">
@@ -138,7 +141,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>7）各式並排表單 + 按鈕（formContent / inlineGrp ）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>各式並排表單 + 按鈕（formContent / inlineGrp ）：</label>
             <div class="formContent">
                 <div class="inlineGrp">
                     <div class="checkGrp">
@@ -161,7 +164,7 @@
                         <div class="formContent">
                             <div class="input_i">
                                 <i class="i_man_dark"></i>
-                                <input type="text" id="username" value="" title="請輸入帳號">
+                                <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
                             </div>
                             <!-- <div class="help">說明文字</div> -->
                         </div>
@@ -177,23 +180,23 @@
                             <div class="helpAlert">說明文字</div>
                         </div>
                     </div>
-                    <button class="btn">按鈕</button>
+                    <button class="kitBtn" type="button">按鈕</button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>8）帳號：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>6）帳號：</label>
             <div class="formContent">
                 <div class="input_i">
                     <i class="i_man_dark"></i>
-                    <input type="text" id="username" value="" title="請輸入帳號">
+                    <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>9）密碼（hide）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>7）密碼（hide）：</label>
             <div class="formContent">
                 <div class="input_i">
                     <i class="i_lock_dark"></i>
@@ -204,7 +207,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>10）密碼（show）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（show）：</label>
             <div class="formContent">
                 <div class="input_i">
                     <i class="i_lock_dark"></i>
@@ -215,14 +218,28 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>11）input 下拉輸入框（需工程師協助）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>8）input 下拉輸入框（需工程師協助）：</label>
             <div class="formContent">
                 <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
                 <div class="checkedList">
                     <ul>
-                        <li>福家牙技所<button class="btn btnDelete">刪除</button></li>
-                        <li>達爾文牙技所<button class="btn btnDelete">刪除</button></li>
-                        <li>卡麗喵牙技所<button class="btn btnDelete">刪除</button></li>
+                        <li>福家牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            達爾文牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            卡麗喵牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
                     </ul>
                 </div>
                 <div class="help">說明文字</div>
@@ -230,7 +247,7 @@
         </div>
         <!-- select -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>12）select 下拉選單：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>9）select 下拉選單：</label>
             <div class="formContent">
                 <select name="" id="">
                     <option value="">台北市</option>
@@ -244,7 +261,7 @@
         </div>
         <!-- radio -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>13）radio 選項按鈕：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>10）radio 選項按鈕：</label>
             <div class="formContent">
                 <div class="radioGrp">
                     <label><input type="radio" name="sampleRadio" value="" checked="">新北市</label>
@@ -260,7 +277,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>14）radio 選項按鈕（項目垂直）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>radio 選項按鈕（項目垂直）：</label>
             <div class="formContent">
                 <div class="radioGrp setGrid">
                     <label><input type="radio" name="sampleRadio-1" value="" checked="">新北市</label>
@@ -277,7 +294,7 @@
         </div>
         <!-- checkbox -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>15）checkbox 核取方塊：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>11）checkbox 核取方塊：</label>
             <div class="formContent">
                 <div class="checkGrp">
                     <label><input type="checkbox" name="" value="" checked="">全部</label>
@@ -290,7 +307,7 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>16）checkbox 核取方塊（項目垂直）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>checkbox 核取方塊（項目垂直）：</label>
             <div class="formContent">
                 <div class="checkGrp setGrid">
                     <label><input type="checkbox" name="" value="" checked="">全部</label>
@@ -303,10 +320,15 @@
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>17）checkbox 核取方塊（嵌套）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>checkbox 核取方塊（嵌套）：</label>
             <div class="formContent">
                 <div class="checkGrp setGrid">
-                    <label><input type="checkbox" name="" value="" checked="">第一層、項目1<button class="btn btnOpen">展開按鈕</button></label>
+                    <label>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目1
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                    </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
                             <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
@@ -324,7 +346,12 @@
                             </div>
                         </div>
                     </div>
-                    <label><input type="checkbox" name="" value="" checked="">第一層、項目2<button class="btn btnClose">收合按鈕</button></label>
+                    <label>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目2
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                    </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
                             <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
@@ -342,7 +369,12 @@
                             </div>
                         </div>
                     </div>
-                    <label><input type="checkbox" name="" value="" checked="">第一層、項目3<button class="btn btnClose">收合按鈕</button></label>
+                    <label>
+                        <input type="checkbox" name="" value="" checked="">第一層、項目3
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕" /></i>
+                        </button>
+                    </label>
                     <div class="innerGrp">
                         <div class="checkGrp">
                             <label><input type="checkbox" name="" value="" checked="">第二層、項目1</label>
@@ -366,7 +398,7 @@
         </div>
         <!-- textarea -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>18）textarea 文本區塊：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>12）textarea 文本區塊：</label>
             <div class="formContent">
                 <textarea name="" id="" cols="30" rows="5"></textarea>
                 <div class="help">說明文字</div>
@@ -374,29 +406,32 @@
         </div>
         <!-- 搜尋 -->
         <div class="formGrp">
-            <label for="" class="formTitle">19）搜尋（文字 submit）：</label>
+            <label for="" class="formTitle">13）搜尋（文字 submit）：</label>
             <div class="formContent">
                 <div class="searchGrp">
                     <input name="" type="text" id="" placeholder="請輸入文字" title="">
-                    <input name="" type="submit" id="" value="查詢" class="btn btn-search">
+                    <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search">
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle">20）搜尋（icon submit）：</label>
+            <label for="" class="formTitle">搜尋（icon submit）：</label>
             <div class="formContent">
                 <div class="searchGrp withIcon">
                     <input name="" type="text" id="" placeholder="請輸入文字" title="">
-                    <input name="" type="submit" id="" value="查詢" class="btn btn-search">
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
+                    </button>
+                    <!-- <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search"> -->
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <!-- 按鈕 -->
         <div class="btnGrp">
-            <button type="button" class="btn btnReset">清除</button>
-            <button type="button" class="btn btnSubmit">送出</button>
+            <button class="kitBtn kitBtn_w" type="button">清除</button>
+            <button class="kitBtn" type="button">送出</button>
         </div>
     </div>
     <!-- 2 -->
@@ -407,7 +442,7 @@
             <div class="formContent">
                 <div class="input_i">
                     <i class="i_man_dark"></i>
-                    <input type="text" id="username" value="" title="請輸入帳號">
+                    <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -459,14 +494,10 @@
         </div>
         <!-- 按鈕 -->
         <div class="btnGrp">
-            <button type="button" class="btn btnReset">清除</button>
-            <button type="button" class="btn btnSubmit">送出</button>
+            <button class="kitBtn kitBtn_w" type="button">清除</button>
+            <button class="kitBtn" type="button">送出</button>
         </div>
     </div>
-    <!-- 3 -->
-    <h3>3：垂直滿版</h3>
-    <div class="kitForm setGrid"></div>
-    
 </form>
 </body>
 </html>
