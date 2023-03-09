@@ -17,6 +17,7 @@ input[type=checkbox]:first-child {
   min-height: 80px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .kitMessage p,
 .kitMessage_success p {
@@ -25,9 +26,27 @@ input[type=checkbox]:first-child {
 .kitMessage a,
 .kitMessage_success a {
   display: inline-block;
-  color: rgb(43, 144, 220);
-  text-decoration: underline;
   padding: 0 4px;
+  text-decoration: underline;
+  color: var(--primaryColor);
+}
+.kitMessage a:hover, .kitMessage a:focus,
+.kitMessage_success a:hover,
+.kitMessage_success a:focus {
+  text-decoration: none;
+  color: var(--primaryColor2);
+}
+.kitMessage i.kitIcon,
+.kitMessage_success i.kitIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 45px;
+  top: calc(50% - 12px);
+}
+.kitMessage i.kitIcon img,
+.kitMessage_success i.kitIcon img {
+  filter: drop-shadow(26px 0 #2b90dc);
 }
 
 .kitMessage {
@@ -245,6 +264,14 @@ input[type=checkbox]:first-child {
   .kitForm .radioGrp.setGrid .innerGrp .checkGrp label,
   .kitForm .radioGrp.setGrid .innerGrp .radioGrp label {
     flex: 0 1 auto;
+  }
+  a {
+    text-decoration: underline;
+    color: var(--primaryColor);
+  }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: var(--primaryColor2);
   }
   .necessary {
     color: #f46a6a;
