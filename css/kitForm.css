@@ -44,19 +44,21 @@ input[type=checkbox]:first-child {
   left: 45px;
   top: calc(50% - 12px);
 }
-.kitMessage i.kitIcon img,
-.kitMessage_success i.kitIcon img {
-  filter: drop-shadow(26px 0 #2b90dc);
-}
 
 .kitMessage {
   background: rgb(255, 251, 230);
   border: 1px solid rgb(255, 197, 61);
 }
+.kitMessage i.kitIcon img {
+  filter: drop-shadow(26px 0 #FFC53D);
+}
 
 .kitMessage_success {
   background: rgb(246, 255, 237);
   border: 1px solid rgb(183, 235, 143);
+}
+.kitMessage_success i.kitIcon img {
+  filter: drop-shadow(26px 0 #52C41A);
 }
 
 @layer kitForm {
