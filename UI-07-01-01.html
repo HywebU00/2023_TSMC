@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-07-01-01</title>
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">系統管理</a></li>
+              <li>選單設定</li>
+            </ul>
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 內容上方標題區塊 -->
+        <div class="pageTopInfo">
+          <div class="container">
+            <!-- 上一頁 -->
+            <a href="#" class="back">新增功能選單</a>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="container">
+            <div class="kitFlex kitFlex_right">
+              <button class="kitBtn" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_trash.svg" alt=""></i>刪除功能選單
+                  </button>
+            </div>
+            <div class="kitForm">
+              <form action="">
+                <div class="formGrp">
+                  <div class="formContent">
+                    ID：2
+                  </div>
+                </div>
+                <hr>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>父級選單：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
+                    <div class="inlineGrp">
+                      <span class="inlineTitle">目前已選取：</span>
+                      <ul>
+                        <li>福家牙技所
+                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                          達爾文牙技所
+                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                          卡麗喵牙技所
+                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="help">說明文字</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>標題：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>路徑：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">角色：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">角色：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 取消/確認按鈕 -->
+          <div class="bottomBtnBox">
+            <button class="kitBtn kitBtn_w" type="button">取消</button>
+            <button class="kitBtn" type="button">確認</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>
