@@ -9,6 +9,37 @@ input[type=checkbox]:first-child {
   margin-left: 0;
 }
 
+.kitMessage,
+.kitMessage_success {
+  padding: 10px 45px 10px 115px;
+  border-radius: 4px;
+  margin: 10px 0;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+.kitMessage p,
+.kitMessage_success p {
+  margin: 0;
+}
+.kitMessage a,
+.kitMessage_success a {
+  display: inline-block;
+  color: rgb(43, 144, 220);
+  text-decoration: underline;
+  padding: 0 4px;
+}
+
+.kitMessage {
+  background: rgb(255, 251, 230);
+  border: 1px solid rgb(255, 197, 61);
+}
+
+.kitMessage_success {
+  background: rgb(246, 255, 237);
+  border: 1px solid rgb(183, 235, 143);
+}
+
 @layer kitForm {
   [class^=i_]:before {
     content: "";
