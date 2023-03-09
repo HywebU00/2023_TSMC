@@ -44,4 +44,21 @@
     width: 250px;
     height: 250px;
   }
+}
+.formContent .spec {
+  background: #efefef;
+  padding: 1rem;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+.formContent .spec ul li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+.formContent .spec ul li:last-child {
+  margin-bottom: 0;
+}
+.formContent .spec ul li span {
+  margin-right: 1rem;
+  font-weight: bold;
 }/*# sourceMappingURL=UI-03-01-04.css.map */

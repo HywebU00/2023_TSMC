@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UI-05-02-05</title>
+  <title>UI-18-01-02</title>
   <link rel="stylesheet" href="css/variable.css" />
   <link rel="stylesheet" href="css/kitIcon.css" />
   <link rel="stylesheet" href="css/kitForm.css" />
@@ -27,10 +27,7 @@
           <div class="headInfo">
             <!-- 麵包屑 -->
             <ul class="breadcrumb">
-              <li><a href="#">材料管理</a></li>
-              <li><a href="#">供應商管理</a></li>
-              <li><a href="#">福家牙技所</a></li>
-              <li>崴仕專業牙材供應商</li>
+              <li>供應商產品管理</li>
             </ul>
 
             <!-- 右上角選單 -->
@@ -54,69 +51,47 @@
                 <div class="formGrp">
                   <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>產品名稱：</label>
                   <div class="formContent">
-                    <select name="" id="">
-                        <option value="">請選擇項目</option>
-                        <option value="">項目1</option>
-                        <option value="">項目2</option>
-                        <option value="">項目3</option>
-                    </select>
-                    <div class="spec">
-                      <ul>
-                        <li><span>廠牌</span>VOCO</li>
-                        <li><span>型號</span>VOCOVOCOVOCOVOCO</li>
-                        <li><span>重量</span>1 公斤</li>
-                        <li><span>單位</span>1 包</li>
-                      </ul>
-                    </div>
+                    <input type="text" id="" placeholder="Julia" title="請輸入文字" class="alert" />
+                    <div class="helpAlert">此為必填欄位</div>
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>選擇材料：</label>
+                  <label for="" class="formTitle">廠牌：</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
+                    <input type="text" id="" placeholder="Julia" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">型號：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="Julia" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>重量：</label>
+                  <div class="formContent">
                     <div class="inlineGrp">
-                      <span class="inlineTitle">目前已選取：</span>
-                      <ul>
-                        <li>福家牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          達爾文牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          卡麗喵牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                      </ul>
+                      <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                      <select name="" id="">
+                          <option value="">請選擇項目</option>
+                          <option value="">台斤</option>
+                          <option value="">公斤</option>
+                          <option value="">克</option>
+                      </select>
                     </div>
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle">預估製程數量：</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>單位：</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
-                    <div class="help">請以重量和單位預估可以製作幾顆牙? </div>
-                  </div>
-                </div>
-                <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>價格：</label>
-                  <div class="formContent">
-                    <div class="col_48">
+                    <div class="inlineGrp">
+                      <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
                       <select name="" id="">
-                        <option value="">請選擇項目</option>
-                        <option value="">項目1</option>
-                        <option value="">項目2</option>
-                        <option value="">項目3</option>
-                        <option value="">項目4 Lorem ipsum dolor sit amet consectetur adipisicing elit.</option>
-                    </select>
-                      <input type="text" id="" placeholder="輸入文字" title="" value="">
+                          <option value="">請選擇項目</option>
+                          <option value="">包</option>
+                          <option value="">條</option>
+                          <option value="">袋</option>
+                      </select>
                     </div>
                   </div>
                 </div>
