@@ -1456,6 +1456,7 @@
     position: relative;
   }
   .mainContent main .main {
+    margin-top: 20px;
     position: relative;
   }
   .mainContent main .main .container {
@@ -1633,7 +1634,7 @@
     transform: translateX(0);
   }
   .pageTopInfo {
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
   .pageTopInfo .container {
     display: flex;
