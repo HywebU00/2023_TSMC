@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-01-02-01</title>
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">系統管理</a></li>
+              <li>角色設定</li>
+            </ul>
+
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 內容上方標題區塊 -->
+        <div class="pageTopInfo">
+          <div class="container">
+            <!-- 上一頁 -->
+            <a href="#" class="back">新增角色</a>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="container">
+            <div class="kitFlex kitFlex_right">
+              <button class="kitBtn" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_trash.svg" alt=""></i>刪除角色
+                  </button>
+            </div>
+            <div class="kitForm">
+              <form action="">
+                <div class="formGrp">
+                  <label for="" class="formTitle">ID：123456</label>
+                </div>
+                <hr>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>角色代碼：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="Admin" title="請輸入文字" class="alert" />
+                    <div class="helpAlert">此為必填欄位</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>角色名稱：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="Admin" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>角色群組：</label>
+                  <div class="formContent">
+                    <select name="" id="">
+                        <option value="">請選擇項目</option>
+                        <option value="">項目1</option>
+                        <option value="">項目2</option>
+                        <option value="">項目3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">角色說明：</label>
+                  <div class="formContent">
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <div class="help">字數限500字元內</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>啟用與否：</label>
+                  <div class="formContent">
+                    <div class="radioGrp">
+                      <label><input type="radio" name="sampleRadio" value="" checked="">啟用</label>
+                      <label><input type="radio" name="sampleRadio" value="">不啟用</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">權限：</label>
+                  <div class="formContent">
+                    <button class="kitBtn" type="button">
+                      <i class="kitIcon"><img src="images/icon/icon_add.svg" alt=""></i>新增權限
+                  </button>
+                    <div class="checkGrp setGrid">
+                      <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_minus.svg" alt="展開按鈕"></i>
+                        </button>
+                        <input type="checkbox" name="" value="" checked="">系統管理
+                      </label>
+                      <div class="innerGrp">
+                        <div class="checkGrp">
+                          <label><input type="checkbox" name="" value="" checked="">Menu選單設定</label>
+                          <div class="innerGrp">
+                            <div class="checkGrp">
+                              <label><input type="checkbox" name="" value="" checked="">新增</label>
+                              <label><input type="checkbox" name="" value="">刪除</label>
+                              <label><input type="checkbox" name="" value="">修改</label>
+                              <label><input type="checkbox" name="" value="">編輯</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="checkGrp">
+                          <label><input type="checkbox" name="" value="" checked="">角色設定</label>
+                          <div class="innerGrp">
+                            <div class="checkGrp">
+                              <label><input type="checkbox" name="" value="" checked="">新增</label>
+                              <label><input type="checkbox" name="" value="">刪除</label>
+                              <label><input type="checkbox" name="" value="">修改</label>
+                              <label><input type="checkbox" name="" value="">編輯</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <label>
+                        <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="展開按鈕"></i>
+                        </button>
+                        <input type="checkbox" name="" value="" checked="">帳號管理
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 取消/確認按鈕 -->
+          <div class="bottomBtnBox">
+            <button class="kitBtn kitBtn_w" type="button">取消</button>
+            <button class="kitBtn" type="button">確認</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>
