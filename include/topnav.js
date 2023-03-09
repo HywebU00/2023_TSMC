@@ -3,7 +3,7 @@
               <nav class="topNav">
                 <div class="language active">
                   <button type="button" title="語系">
-                    <i class="kitIcon"><img src="images/icon/icon_world.svg" /></i>
+                    <i class="kitIcon"><img src="images/icon/icon_language.svg" /></i>
                   </button>
                   <ul>
                     <li><a href="#">中文</a></li>

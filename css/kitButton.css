@@ -22,7 +22,7 @@
       font-size: 1rem;
     }
   }
-  .kitBtn:disabled:active, .kitBtn:disabled {
+  .kitBtn:disabled:hover, .kitBtn:disabled:active, .kitBtn:disabled {
     color: #fff;
     cursor: not-allowed;
     border: 1px solid #b4b4b4;
@@ -69,7 +69,7 @@
   .kitBtn.kitBtn_icon i {
     margin: 0 !important;
   }
-  .kitBtn:active {
+  .kitBtn:hover, .kitBtn:active {
     border-color: var(--primaryColor2);
     background: var(--primaryColor2);
   }
@@ -82,12 +82,12 @@
     background: #fff;
     border-color: #999;
   }
-  .kitBtn_w:active {
+  .kitBtn_w:hover, .kitBtn_w:active {
     color: var(--primaryColor2);
     border-color: var(--primaryColor2);
     background: #fff;
   }
-  .kitBtn_w:active .kitIcon img {
+  .kitBtn_w:hover .kitIcon img, .kitBtn_w:active .kitIcon img {
     filter: drop-shadow(26px 0 var(--primaryColor2));
   }
   .kitBtn_w i.kitIcon img {
@@ -102,12 +102,12 @@
     background: #959595;
     border-color: #959595;
   }
-  .kitBtn_gray:active {
+  .kitBtn_gray:hover, .kitBtn_gray:active {
     color: #959595;
     border-color: #959595;
     background: #fff;
   }
-  .kitBtn_gray:active .kitIcon img {
+  .kitBtn_gray:hover .kitIcon img, .kitBtn_gray:active .kitIcon img {
     filter: drop-shadow(26px 0 #959595);
   }
   .kitBtn_gray i.kitIcon img {
@@ -118,7 +118,7 @@
   }
   .kitBtn_m {
     min-height: 32px;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
   .kitBtn_m i.kitIcon {
     width: 16px;
