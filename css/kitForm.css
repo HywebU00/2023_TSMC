@@ -18,7 +18,7 @@ select {
 input.alert,
 textarea.alert,
 select.alert {
-  box-shadow: 0 0 0 3px #f46a6a;
+  box-shadow: 0 0 0 3px var(--errorColor);
   border: transparent;
 }
 
@@ -81,16 +81,6 @@ input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-.help, .helpAlert {
-  color: #222;
-  font-size: 80%;
-  padding: 0.25rem 0;
-}
-
-.helpAlert {
-  color: #f46a6a;
-}
-
 select {
   padding-right: 2rem;
   background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
@@ -103,6 +93,42 @@ select option {
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
+}
+
+.help, .helpAlert {
+  color: #222;
+  font-size: var(--fz14);
+  padding: 0.25rem 0;
+}
+
+.helpAlert {
+  color: var(--errorColor);
+}
+
+.searchGrp {
+  position: relative;
+}
+.searchGrp input[type=text] {
+  width: 100%;
+  padding-right: 120px;
+}
+.searchGrp input[type=submit],
+.searchGrp button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 90px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.searchGrp.withIcon input[type=submit],
+.searchGrp.withIcon button {
+  color: transparent;
+}
+.searchGrp.withIcon button {
+  margin: 5px 0;
 }
 
 .kitMessage,
@@ -243,31 +269,6 @@ select:-moz-focusring {
     width: 100%;
     padding: 0.5rem 0;
   }
-  .kitForm .formGrp .searchGrp {
-    position: relative;
-  }
-  .kitForm .formGrp .searchGrp input[type=text] {
-    width: 100%;
-    padding-right: 120px;
-  }
-  .kitForm .formGrp .searchGrp input[type=submit],
-  .kitForm .formGrp .searchGrp button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    width: 90px;
-    height: 42px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
-  .kitForm .formGrp .searchGrp.withIcon input[type=submit],
-  .kitForm .formGrp .searchGrp.withIcon button {
-    color: transparent;
-  }
-  .kitForm .formGrp .searchGrp.withIcon button {
-    margin: 0.3rem 0 0 0;
-  }
   .kitForm.setInline {
     display: flex;
     flex-wrap: wrap;
@@ -364,7 +365,7 @@ select:-moz-focusring {
     color: var(--primaryColor2);
   }
   .necessary {
-    color: #f46a6a;
+    color: var(--errorColor);
     text-decoration: none;
     padding: 0.45rem;
     padding-left: 0;
@@ -532,7 +533,7 @@ select:-moz-focusring {
   input,
   textarea,
   select {
-    font-size: 1em;
+    font-size: var(--fz18);
     border: 1px solid #ccc;
     padding: 0.5em;
     margin: 0.3em 0;

@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/kitForm.css">
     <link rel="stylesheet" href="css/default.css" />
     <style>
+        body{
+            background: #fff;
+        }
         h2{
             color: rgb(156, 0, 0);
             margin: 1rem 2rem;
@@ -40,11 +43,10 @@
 <body>
 <h2>kit Form</h2>
 <div class="sample">
-    <h3>表單外共用物件</h3>
+    <h3>共用物件（不需外包 .kitForm）</h3>
     <h4>radio</h4>
     <label><input type="radio" name="sampleRadio-test" value="" checked="">啟用</label>
     <label><input type="radio" name="sampleRadio-test" value="">停用</label>
-    <br>
     <h4>checkbox</h4>
     <label><input type="checkbox" name="" value="" checked="">checkbox 項目1</label>
     <h4>input</h4>
@@ -71,6 +73,17 @@
     </select>
     <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
     <div class="helpAlert">說明文字 <a href="#">#角色與對應權限說明</a></div>
+    <h4>search</h4>
+    <div class="searchGrp">
+        <input name="" type="text" id="" placeholder="請輸入文字" title="">
+        <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search">
+    </div>
+    <div class="searchGrp withIcon">
+        <input name="" type="text" id="" placeholder="請輸入文字" title="">
+        <button class="kitBtn kitBtn_icon" type="button">
+            <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+        </button>
+    </div>
     <h4>message bar</h4>
     <div class="kitMessage">
         <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt=""></i>
@@ -510,7 +523,7 @@
                 <div class="searchGrp withIcon">
                     <input name="" type="text" id="" placeholder="請輸入文字" title="">
                     <button class="kitBtn kitBtn_icon" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>
+                        <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
                     </button>
                     <!-- <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search"> -->
                 </div>
