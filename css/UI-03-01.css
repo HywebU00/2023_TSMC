@@ -1,0 +1,46 @@
+.searchSupplier .formContent {
+  display: flex;
+}
+.searchSupplier .formContent .searchGrp {
+  flex: 1 1 auto;
+  position: relative;
+  height: auto;
+}
+.searchSupplier .formContent .searchGrp.withIcon input[type=text] {
+  padding-right: 60px;
+}
+.searchSupplier .formContent .searchGrp.withIcon button {
+  width: 42px;
+}
+.searchSupplier .formContent .searchGrp input[type=text],
+.searchSupplier .formContent .searchGrp button {
+  margin: 0.3rem 0;
+}
+.searchSupplier .formContent .kitBtn {
+  margin: 0.3rem 0.25rem;
+}
+.searchSupplier .selectCheckbox {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.searchSupplier .selectCheckbox .checkGrp {
+  flex-direction: column;
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+.notFound img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=UI-03-01.css.map */
