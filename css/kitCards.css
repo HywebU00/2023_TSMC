@@ -267,7 +267,7 @@
   color: #fff;
 }
 .kitCard_tabblock .kitCard_content {
-  background-color: #fff;
+  background-color: var(--grayColor2);
   position: relative;
   padding: 2em 2em 0;
   margin: 0 0 0.5em;
@@ -420,7 +420,7 @@
 }
 
 .kitCard_figureinformation {
-  background-color: #fff;
+  background-color: var(--grayColor2);
   padding: 2em 0;
   position: relative;
 }
