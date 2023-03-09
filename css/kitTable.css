@@ -7,7 +7,7 @@
     min-width: 1000px;
   }
   .kitTable thead {
-    font-size: var(--fs18);
+    font-size: var(--fz18);
     background: rgba(43, 144, 220, 0.15);
     white-space: nowrap;
   }
@@ -64,7 +64,7 @@
   }
   .kitTable_typeC .kitTable_title {
     font-weight: 500;
-    font-size: var(--fs24);
+    font-size: var(--fz24);
     padding: 15px 0;
   }
   .kitTable_typeC .kitTable_tableOut {

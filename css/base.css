@@ -287,6 +287,7 @@
   }
   a {
     color: var(--textColor);
+    text-decoration: underline;
   }
   a:hover {
     color: var(--primaryColor);
@@ -359,18 +360,18 @@
     text-align: right;
   }
   .kitFs12 {
-    font-style: var(--fs12);
+    font-style: var(--fz12);
   }
   .kitFs14 {
-    font-style: var(--fs14);
+    font-style: var(--fz14);
   }
   .kitFs18 {
-    font-style: var(--fs18);
+    font-style: var(--fz18);
   }
   .kitFs20 {
-    font-style: var(--fs20);
+    font-style: var(--fz20);
   }
   .kitFs24 {
-    font-style: var(--fs24);
+    font-style: var(--fz24);
   }
 }/*# sourceMappingURL=base.css.map */

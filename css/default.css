@@ -1378,11 +1378,11 @@
   aside nav > ul {
     position: absolute;
     inset: 0;
-    font-size: var(--fs20);
+    font-size: var(--fz20);
   }
   @media screen and (max-width: 767px) {
     aside nav > ul {
-      font-size: var(--fs18);
+      font-size: var(--fz18);
     }
   }
   aside nav > ul button {
@@ -1428,10 +1428,11 @@
     display: block;
     font-weight: 300;
     padding: 4px 0 4px 56px;
+    text-decoration: none;
   }
   @media screen and (max-width: 767px) {
     aside nav a {
-      font-size: var(--fs18);
+      font-size: var(--fz18);
     }
   }
   aside nav a:hover {
@@ -1488,7 +1489,7 @@
   }
   header .breadcrumb li {
     display: inline;
-    font-size: var(--fs20);
+    font-size: var(--fz20);
     color: var(--grayColor3);
   }
   @media screen and (max-width: 1000px) {
@@ -1538,7 +1539,7 @@
   }
   header .topNav .notice {
     position: absolute;
-    font-size: var(--fs12);
+    font-size: var(--fz12);
     background: #f46a6a;
     border-radius: 20px;
     color: #fff;
@@ -1571,6 +1572,7 @@
     margin: 0;
     display: block;
     white-space: nowrap;
+    text-decoration: none;
   }
   header .account ul a:hover,
   header .language ul a:hover {
@@ -1636,7 +1638,7 @@
   .pageTopInfo .container {
     display: flex;
     align-items: center;
-    font-size: var(--fs20);
+    font-size: var(--fz20);
     position: relative;
     z-index: 7;
     padding: 20px;
@@ -1644,7 +1646,7 @@
   }
   @media screen and (max-width: 1000px) {
     .pageTopInfo .container {
-      font-size: var(--fs18);
+      font-size: var(--fz18);
     }
   }
   .pageTopInfo .kitIcon {
@@ -1661,6 +1663,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
   .pageTopInfo .back::before {
     content: "";
@@ -1728,6 +1731,7 @@
     background: #fff;
     border: 1px solid #d9d9d9;
     overflow: hidden;
+    text-decoration: none;
   }
   .pagination .page li + li {
     border-left: none;
@@ -1758,9 +1762,10 @@
     padding: 4px;
     width: 35px;
     aspect-ratio: 1/1;
-    font-size: var(--fs18);
+    font-size: var(--fz18);
     text-align: center;
     font-weight: 300;
+    text-decoration: none;
   }
   @media screen and (max-width: 1000px) {
     .pagination .page a {

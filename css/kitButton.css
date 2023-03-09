@@ -4,7 +4,7 @@
     border-color: var(--primaryColor);
     color: #fff;
     margin: 5px;
-    font-size: var(--fs18);
+    font-size: var(--fz18);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,7 @@
   }
   .kitBtn.kitBtn_s {
     min-height: 20px;
-    font-size: var(--fs12);
+    font-size: var(--fz12);
   }
   .kitBtn.kitBtn_s.kitBtn_right i.kitIcon {
     margin: 0 0 0 3px;
