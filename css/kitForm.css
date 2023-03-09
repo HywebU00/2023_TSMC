@@ -9,6 +9,101 @@ input[type=checkbox]:first-child {
   margin-left: 0;
 }
 
+input,
+select {
+  height: 42px;
+}
+
+input.alert,
+textarea.alert,
+select.alert {
+  box-shadow: 0 0 0 3px #f46a6a;
+  border: transparent;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+  background: #eee;
+}
+
+html input[readonly] {
+  cursor: not-allowed;
+  background: #eee;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.help, .helpAlert {
+  color: #222;
+  font-size: 80%;
+  padding: 0.25rem 0;
+}
+
+.helpAlert {
+  color: #f46a6a;
+}
+
+select {
+  padding-right: 2rem;
+  background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
+  background-size: 1.25rem;
+}
+select option {
+  outline: none;
+  border: none;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 .kitMessage,
 .kitMessage_success {
   padding: 10px 45px 10px 115px;
@@ -147,20 +242,6 @@ input[type=checkbox]:first-child {
     width: 100%;
     padding: 0.5rem 0;
   }
-  .kitForm .formGrp .formContent input.alert,
-  .kitForm .formGrp .formContent textarea.alert,
-  .kitForm .formGrp .formContent select.alert {
-    box-shadow: 0 0 0 3px #f46a6a;
-    border: transparent;
-  }
-  .kitForm .formGrp .formContent .help, .kitForm .formGrp .formContent .helpAlert {
-    color: #222;
-    font-size: 80%;
-    padding: 0.25rem 0;
-  }
-  .kitForm .formGrp .formContent .helpAlert {
-    color: #f46a6a;
-  }
   .kitForm .formGrp .searchGrp {
     position: relative;
   }
@@ -267,11 +348,17 @@ input[type=checkbox]:first-child {
   .kitForm .radioGrp.setGrid .innerGrp .radioGrp label {
     flex: 0 1 auto;
   }
-  a {
+  .kitForm input[type=text],
+  .kitForm input[type=password],
+  .kitForm select,
+  .kitForm textarea {
+    width: 100%;
+  }
+  .kitForm a {
     text-decoration: underline;
     color: var(--primaryColor);
   }
-  a:hover, a:focus {
+  .kitForm a:hover, .kitForm a:focus {
     text-decoration: none;
     color: var(--primaryColor2);
   }
@@ -461,7 +548,6 @@ input[type=checkbox]:first-child {
   input[type=password],
   select,
   textarea {
-    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -483,66 +569,5 @@ input[type=checkbox]:first-child {
     outline: none;
     box-shadow: 0px 0px 0px 3px rgb(9, 109, 217);
     border-color: transparent;
-  }
-  button {
-    overflow: visible;
-  }
-  button,
-  select {
-    text-transform: none;
-  }
-  button,
-  html input[type=button],
-  input[type=reset],
-  input[type=submit] {
-    -webkit-appearance: button;
-    cursor: pointer;
-  }
-  button[disabled],
-  html input[disabled] {
-    cursor: not-allowed;
-    background: #eee;
-  }
-  html input[readonly] {
-    cursor: not-allowed;
-    background: #eee;
-  }
-  button::-moz-focus-inner,
-  input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
-  input {
-    line-height: normal;
-  }
-  input[type=checkbox],
-  input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-  }
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  input[type=search] {
-    -webkit-appearance: textfield;
-    box-sizing: content-box;
-  }
-  input[type=search]::-webkit-search-cancel-button,
-  input[type=search]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  select {
-    padding-right: 2rem;
-    background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 4px center;
-    background-size: 1.25rem;
-  }
-  select option {
-    outline: none;
-    border: none;
-  }
-  select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
   }
 }/*# sourceMappingURL=kitForm.css.map */
