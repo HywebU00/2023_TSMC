@@ -83,8 +83,12 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.kitCard_store .kitCard_content .kitCard_centerblock button {
+  flex: 0 0 auto;
+}
 .kitCard_store .kitCard_content .kitCard_centerblock textarea {
   margin: 1em 0;
+  width: 100%;
 }
 
 .kitCard_supplier {
@@ -516,4 +520,4 @@
 }
 .kitCard_figureinformation .kitCard_information .kitCard_functionbtn .kitBtn {
   margin: 0;
-}/*# sourceMappingURL=KitCards.css.map */
+}/*# sourceMappingURL=kitCards.css.map */
