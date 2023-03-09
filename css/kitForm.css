@@ -570,4 +570,31 @@ select:-moz-focusring {
     box-shadow: 0px 0px 0px 3px rgb(9, 109, 217);
     border-color: transparent;
   }
+}
+@layer kitPopup {
+  .kitPopup {
+    position: relative;
+  }
+  .kitPopup .kitPopup_head {
+    border-bottom: 1px solid var(--grayColor4);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+  }
+  .kitPopup .kitPopup_head .title {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+  }
+  .kitPopup .kitPopup_content {
+    padding: 1rem 0;
+  }
+  .kitPopup .kitPopup_footer {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--grayColor4);
+  }
+  .kitPopup .kitPopup_footer .bottomBtnBox {
+    justify-content: flex-end !important;
+  }
 }/*# sourceMappingURL=kitForm.css.map */
