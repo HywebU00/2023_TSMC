@@ -3,6 +3,7 @@ input[type=checkbox] {
   margin: 0 0.35rem;
   width: 1.25rem;
   height: 1.25rem;
+  accent-color: var(--primaryColor);
 }
 input[type=radio]:first-child,
 input[type=checkbox]:first-child {
