@@ -130,11 +130,20 @@ select:-moz-focusring {
 .searchGrp.withIcon button {
   margin: 5px 0;
 }
-.searchGrp.withFilter button {
-  width: 42px;
+
+.L_filterSetting {
+  margin: 0 0.25rem;
+  padding: 1rem 2rem;
+  background: var(--grayColor2);
+  font-size: var(--fz18);
 }
-.searchGrp.withFilter .filterSetting {
-  background: var(--grayColor3);
+.L_filterSetting .formContent {
+  display: block;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.pageTopDate {
+  text-align: center;
 }
 
 .kitMessage,
@@ -273,6 +282,7 @@ select:-moz-focusring {
   .kitForm .formGrp .formTitle {
     color: #222;
     font-weight: 500;
+    font-size: var(--fz18);
   }
   .kitForm .formGrp .formContent {
     width: 100%;
@@ -458,6 +468,16 @@ select:-moz-focusring {
   .checkedList > div.kitBtn_m {
     height: 32px;
   }
+  .inlineGrp input.kitBtn_s,
+  .inlineGrp button.kitBtn_s,
+  .inlineGrp select.kitBtn_s,
+  .inlineGrp > div.kitBtn_s,
+  .checkedList input.kitBtn_s,
+  .checkedList button.kitBtn_s,
+  .checkedList select.kitBtn_s,
+  .checkedList > div.kitBtn_s {
+    height: 24px;
+  }
   .inlineGrp input[type=text], .inlineGrp input[type=password], .inlineGrp select, .inlineGrp textarea,
   .checkedList input[type=text],
   .checkedList input[type=password],
@@ -560,6 +580,7 @@ select:-moz-focusring {
   }
   input[type=text],
   input[type=password],
+  input[type=date],
   select,
   textarea {
     -webkit-appearance: none;
@@ -571,6 +592,7 @@ select:-moz-focusring {
   }
   input[type=text]:hover,
   input[type=password]:hover,
+  input[type=date]:hover,
   select:hover,
   textarea:hover {
     box-shadow: 0 0 0 3px rgba(43, 144, 220, 0.5);
@@ -578,6 +600,7 @@ select:-moz-focusring {
   }
   input[type=text]:focus-visible,
   input[type=password]:focus-visible,
+  input[type=date]:focus-visible,
   select:focus-visible,
   textarea:focus-visible {
     outline: none;
