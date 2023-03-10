@@ -106,29 +106,28 @@ select:-moz-focusring {
 }
 
 .searchGrp {
-  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .searchGrp input[type=text] {
   width: 100%;
-  padding-right: 120px;
 }
 .searchGrp input[type=submit],
 .searchGrp button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  width: 90px;
-  height: 42px;
+  margin: 0.3rem;
+}
+.searchGrp > .inlineGrp {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+.searchGrp > .inlineGrp input {
+  flex: 1 1 100%;
+  padding-right: 3rem;
+}
+.searchGrp > .inlineGrp button {
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-.searchGrp.withIcon input[type=submit],
-.searchGrp.withIcon button {
-  color: transparent;
-}
-.searchGrp.withIcon button {
-  margin: 5px 0;
+  right: 10px;
 }
 
 .L_filterSetting {
