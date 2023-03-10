@@ -84,6 +84,55 @@
             <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
         </button>
     </div>
+    <div class="searchGrp withIconr withFilter">
+        <section>
+            <input name="" type="text" id="" placeholder="請輸入文字" title="">
+            <button class="kitBtn kitBtn_icon" type="button">
+                <i class="kitIcon"><img src="images/icon/icon_close.svg.svg" alt="清除" /></i>
+            </button>
+            <button class="kitBtn kitBtn_icon" type="button">
+                <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="搜尋" /></i>
+            </button>
+            <button class="kitBtn kitBtn_icon" type="button">
+                <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="篩選" /></i>
+            </button>
+        </section>
+        <div class="filterSetting">
+            表單
+        </div>
+    </div>
+    <h4>日期區間</h4>
+    <div class="kitForm setInline">
+        <div class="formGrp">
+            <label for="" class="formTitle">日期（formContent / inlineGrp ）：</label>
+            <div class="formContent">
+                <div class="inlineGrp">
+                    <input type="date" id="" title="">
+                    <span>~</span>
+                    <input type="date" id="" title="" class="alert">
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+                    </button>
+                </div>
+                <div class="helpAlert">說明文字</div>
+            </div>
+        </div>
+    </div>
+    <div class="kitForm setInline setInline_center">
+        <div class="formGrp">
+            <label for="" class="formTitle">日期（formContent / inlineGrp ）：</label>
+            <div class="formContent">
+                <div class="inlineGrp">
+                    <input type="date" id="" title="">
+                    <span>~</span>
+                    <input type="date" id="" title="">
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <h4>message bar</h4>
     <div class="kitMessage">
         <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt=""></i>
@@ -262,19 +311,19 @@
                     <ul>
                         <li>福家牙技所
                             <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
                             </button>
                         </li>
                         <li>
                             達爾文牙技所
                             <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
                             </button>
                         </li>
                         <li>
                             卡麗喵牙技所
                             <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
                             </button>
                         </li>
                     </ul>
@@ -286,7 +335,8 @@
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>6）帳號：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_man_dark"></i>
+                    <!-- <i class="i_man_dark"></i> -->
+                    <i class="kitIcon"><img src="images/icon/icon_person.svg" alt=""></i>
                     <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
                 </div>
                 <div class="help">說明文字</div>
@@ -296,9 +346,11 @@
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>7）密碼（hide）：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_lock_dark"></i>
+                    <i class="kitIcon"><img src="images/icon/icon_lock_dark.svg" alt=""></i>
                     <input class="password" name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" value="123">
-                    <button type="button" class="passwordEye hide">顯示密碼</button>
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_eye_dark.svg" alt=""></i>
+                    </button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -307,9 +359,11 @@
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（show）：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_lock_dark"></i>
+                    <i class="kitIcon"><img src="images/icon/icon_lock_dark.svg" alt=""></i>
                     <input class="password" name="password" type="text" placeholder="請輸入密碼" title="請輸入密碼" value="123">
-                    <button type="button" class="passwordEye show">隱藏密碼</button>
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_eye_c_dark.svg" alt=""></i>
+                    </button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -658,22 +712,25 @@
     <h3>2：水平 inline（kitForm & setInline）</h3>
     <div class="kitForm setInline">
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>帳號：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>6）帳號：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_man_dark"></i>
+                    <!-- <i class="i_man_dark"></i> -->
+                    <i class="kitIcon"><img src="images/icon/icon_person.svg" alt=""></i>
                     <input type="text" id="username" value="" title="" placeholder="請輸入帳號">
                 </div>
                 <div class="help">說明文字</div>
             </div>
         </div>
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（hide）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>7）密碼（hide）：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_lock_dark"></i>
+                    <i class="kitIcon"><img src="images/icon/icon_lock_dark.svg" alt=""></i>
                     <input class="password" name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" value="123">
-                    <button type="button" class="passwordEye hide">顯示密碼</button>
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_eye_dark.svg" alt=""></i>
+                    </button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -682,9 +739,11 @@
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼（show）：</label>
             <div class="formContent">
                 <div class="input_i">
-                    <i class="i_lock_dark"></i>
+                    <i class="kitIcon"><img src="images/icon/icon_lock_dark.svg" alt=""></i>
                     <input class="password" name="password" type="text" placeholder="請輸入密碼" title="請輸入密碼" value="123">
-                    <button type="button" class="passwordEye show">隱藏密碼</button>
+                    <button class="kitBtn kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_eye_c_dark.svg" alt=""></i>
+                    </button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
