@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Laboratory Login</title>
+
+    <link rel="stylesheet" href="css/login_lab.css" />
+  </head>
+  <body>
+    <section class="loginHere">
+      <header>
+        <h1>Laboratory Logo</h1>
+      </header>
+      <form action="">
+        <div class="formRow id">
+          <label>Username or email</label>
+          <input type="text" placeholder="Account" />
+        </div>
+        <div class="formRow pw">
+          <input type="password" placeholder="Password" />
+          <button type="button" class="icon_eye hide"></button>
+          <!-- <button type="button" class="icon_eye"></button> 顯示密碼時更改 class 為 "icon_eye" -->
+          <p><a href="#">Forgot password ?</a></p>
+        </div>
+        <div class="formRow rememberMe">
+          <label><input type="checkbox" />Remember me</label>
+        </div>
+        <div class="formRow captcha">
+          <input type="text" />
+          <div class="captchaCode">
+            <img src="images/login/captchaImage.png" />
+            <button type="button" class="icon_regen"></button>
+          </div>
+        </div>
+        <div class="btnDv">
+          <input type="button" value="Login" />
+        </div>
+      </form>
+
+      <p class="newAccount">
+        Don't have an account ?
+        <a href="#">Sign up</a>
+      </p>
+
+      <div class="bottomLinks">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

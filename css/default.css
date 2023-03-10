@@ -1679,6 +1679,39 @@
   .pageTopInfo .back:hover::before {
     border-color: var(--primaryColor);
   }
+  .pageTopSearch {
+    padding: 20px 0 0;
+  }
+  .pageTopSearch .container {
+    font-size: var(--fz20);
+    position: relative;
+    z-index: 7;
+    padding: 20px;
+    background: #fff;
+  }
+  @media screen and (max-width: 1000px) {
+    .pageTopSearch .container {
+      font-size: var(--fz18);
+    }
+  }
+  .pageTopSearch .container .kitBtn_icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin: 0;
+    transform: translateY(-46%);
+  }
+  .pageTopSearch .container .formContent {
+    position: relative;
+    display: flex;
+  }
+  .pageTopSearch .container .inlineGrp {
+    width: 100%;
+  }
+  .pageTopSearch .container .inlineGrp .formContent,
+  .pageTopSearch .container .inlineGrp input {
+    flex-grow: 1;
+  }
   footer .container {
     padding: 40px 0 60px;
   }
