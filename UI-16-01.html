@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-03-01</title>
+    <title>UI-16-01</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
@@ -26,8 +26,9 @@
             <div class="headInfo">
               <!-- 麵包屑 -->
               <ul class="breadcrumb">
-                <li><a href="#">會員帳號管理</a></li>
-                <li>平台商帳號</li>
+                <li><a href="#">帳務管理</a></li>
+                <li><a href="#">月結單管理</a></li>
+                <li>福家牙技所</li>
               </ul>
               <!-- 右上角選單 -->
               <script src="include/topnav.js"></script>
@@ -35,15 +36,27 @@
           </div>
         </header>
         <main>
+          <!-- 內容上方標題區塊 -->
+          <div class="pageTopInfo">
+            <div class="container">
+              <!-- 上一頁 -->
+              <a href="#" class="back">月結單管理</a>
+            </div>
+          </div>
           <div class="pageTopSearch">
             <div class="container">
-              <div class="inlineGrp">
-                <div class="formContent">
-                  <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+              <div class="kitMessage">
+                <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
+                <p>系統將以『欲產製日期前』尚未出帳的所有合作診所的完成訂單做搜尋 每產製一筆月結紀錄後，若有針對該出貨單做調整，建議需將頁面進行重整，以確保資料的正確性</p>
+              </div>
+              <div class="formGrp">
+                <label for="" class="formTitle">請輸入欲產製月結單日期</label>
+                <div class="inlineGrp">
+                  <div class="formContent">
+                    <input type="date" id="" title="" />
+                  </div>
+                  <button class="kitBtn" type="button">產製月結單</button>
                 </div>
-                <button class="kitBtn kitBtn_icon" type="button">
-                  <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
-                </button>
               </div>
             </div>
           </div>
