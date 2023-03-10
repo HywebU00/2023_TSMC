@@ -7,10 +7,11 @@
     <title>UI-01-03</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
-    <link rel="stylesheet" href="css/kitButton.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
     <link rel="stylesheet" href="css/kitTable.css" />
     <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/UI-01-02.css" />
   </head>
   <body>
     <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
@@ -35,23 +36,8 @@
           </div>
         </header>
         <main>
-          <!-- 內容上方標題區塊 -->
-          <div class="pageTopSearch">
-            <div class="container">
-              <div class="formContent">
-                <div class="inlineGrp">
-                  <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
-                  <select name="" id="">
-                    <option value="">請選擇項目</option>
-                    <option value="">項目1</option>
-                    <option value="">項目2</option>
-                    <option value="">項目3</option>
-                  </select>
-                  <button class="kitBtn" type="button">按鈕</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- 上方搜尋區塊 -->
+          <script src="include/topSearch.js"></script>
 
           <div class="main">
             <div class="container">
@@ -60,19 +46,19 @@
               </div>
               <div class="kitTable kitTable_typeB">
                 <div class="kitTable_out">
-                  <table>
+                  <table class="c_tablet">
                     <thead>
                       <th></th>
                       <th>ID</th>
                       <th>角色群組名稱</th>
                     </thead>
                     <tbody>
-                      <tr class="nextLv active">
+                      <tr>
                         <td><input type="checkbox" /></td>
                         <td>1234</td>
                         <td>牙醫診所</td>
                       </tr>
-                      <tr class="nextLv active">
+                      <tr>
                         <td><input type="checkbox" /></td>
                         <td>2</td>
                         <td>牙技所</td>

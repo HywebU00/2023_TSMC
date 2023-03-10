@@ -1459,10 +1459,15 @@
     padding-top: 20px;
     position: relative;
   }
-  .mainContent main .main .container {
+  .mainContent main .main > .container {
     position: relative;
     padding: 20px 20px 50px;
     background: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    .mainContent main .main > .container {
+      margin: 0;
+    }
   }
   header {
     background: #fff;
@@ -1650,6 +1655,11 @@
       font-size: var(--fz18);
     }
   }
+  @media screen and (max-width: 767px) {
+    .pageTopInfo .container {
+      margin: 0;
+    }
+  }
   .pageTopInfo .kitIcon {
     margin: 0 8px -2px 0;
   }
@@ -1694,23 +1704,36 @@
       font-size: var(--fz18);
     }
   }
-  .pageTopSearch .container .kitBtn_icon {
+  @media screen and (max-width: 767px) {
+    .pageTopSearch .container {
+      margin: 0;
+    }
+  }
+  .pageTopSearch .formContent {
+    position: relative;
+    display: flex;
+  }
+  .pageTopSearch .formContent .kitBtn_icon {
     position: absolute;
     right: 15px;
     top: 50%;
     margin: 0;
     transform: translateY(-46%);
   }
-  .pageTopSearch .container .formContent {
-    position: relative;
-    display: flex;
+  .pageTopSearch .formContent input {
+    margin: 0;
   }
-  .pageTopSearch .container .inlineGrp {
+  .pageTopSearch .inlineGrp {
     width: 100%;
   }
-  .pageTopSearch .container .inlineGrp .formContent,
-  .pageTopSearch .container .inlineGrp input {
+  .pageTopSearch .inlineGrp .formContent,
+  .pageTopSearch .inlineGrp input {
     flex-grow: 1;
+  }
+  @media screen and (max-width: 400px) {
+    .pageTopSearch .inlineGrp select {
+      flex-grow: 1;
+    }
   }
   footer .container {
     padding: 40px 0 60px;
