@@ -16,6 +16,21 @@
   .demo .flexEqual_11 .flexSet .col {
     background: #00b0c6;
   }
+  .flexEqual_3 .container,
+  .flexEqual-5 .container,
+  .flexEqual_7 .container,
+  .flexEqual_9 .container,
+  .flexEqual_11 .container,
+  .flex_3_6_3 .container,
+  .flex_8_4 .container,
+  .flex_4_8 .container,
+  .mixEqual_2 .container,
+  .flexEqual_2 .container,
+  .flexEqual_3 .container,
+  .flexEqual_4 .container,
+  .flexEqual_5 .container {
+    margin: 0;
+  }
   .flexSet .col {
     margin: 4px 0;
   }
@@ -1691,6 +1706,7 @@
   }
   .pageTopSearch {
     padding: 20px 0 0;
+    max-width: 500px;
   }
   .pageTopSearch .container {
     font-size: var(--fz20);

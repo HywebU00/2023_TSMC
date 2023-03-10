@@ -365,6 +365,9 @@
   .kitFs14 {
     font-style: var(--fz14);
   }
+  .kitFs16 {
+    font-style: var(--fz16);
+  }
   .kitFs18 {
     font-style: var(--fz18);
   }
