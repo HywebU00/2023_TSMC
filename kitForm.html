@@ -73,62 +73,98 @@
     </select>
     <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
     <div class="helpAlert">說明文字 <a href="#">#角色與對應權限說明</a></div>
-    <h4>search</h4>
-    <div class="searchGrp">
-        <input name="" type="text" id="" placeholder="請輸入文字" title="">
-        <input name="" type="submit" id="" value="查詢" class="kitBtn kitBtn_search">
-    </div>
-    <div class="searchGrp withIcon">
-        <input name="" type="text" id="" placeholder="請輸入文字" title="">
-        <button class="kitBtn kitBtn_icon" type="button">
-            <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
-        </button>
-    </div>
-    <div class="searchGrp withIconr withFilter">
-        <section>
-            <input name="" type="text" id="" placeholder="請輸入文字" title="">
-            <button class="kitBtn kitBtn_icon" type="button">
-                <i class="kitIcon"><img src="images/icon/icon_close.svg.svg" alt="清除" /></i>
-            </button>
-            <button class="kitBtn kitBtn_icon" type="button">
-                <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="搜尋" /></i>
-            </button>
-            <button class="kitBtn kitBtn_icon" type="button">
-                <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="篩選" /></i>
-            </button>
-        </section>
-        <div class="filterSetting">
-            表單
-        </div>
-    </div>
-    <h4>日期區間</h4>
-    <div class="kitForm setInline">
-        <div class="formGrp">
-            <label for="" class="formTitle">日期（formContent / inlineGrp ）：</label>
-            <div class="formContent">
-                <div class="inlineGrp">
-                    <input type="date" id="" title="">
-                    <span>~</span>
-                    <input type="date" id="" title="" class="alert">
-                    <button class="kitBtn kitBtn_icon" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+    <h4>search（包 .pageTopSearch）</h4>
+    <div class="pageTopSearch">
+        <div class="container">
+            <div class="inlineGrp">
+                <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                    <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt=""></i>
                     </button>
                 </div>
-                <div class="helpAlert">說明文字</div>
+                <button class="kitBtn" type="button">搜尋</button>
             </div>
         </div>
     </div>
-    <div class="kitForm setInline setInline_center">
-        <div class="formGrp">
-            <label for="" class="formTitle">日期（formContent / inlineGrp ）：</label>
-            <div class="formContent">
-                <div class="inlineGrp">
-                    <input type="date" id="" title="">
-                    <span>~</span>
-                    <input type="date" id="" title="">
-                    <button class="kitBtn kitBtn_icon" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+    <div class="pageTopSearch">
+        <div class="container">
+            <div class="inlineGrp">
+                <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                    <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt=""></i>
                     </button>
+                </div>
+                <button class="kitBtn kitBtn_icon" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_search.svg" alt=""></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="pageTopSearch">
+        <div class="container">
+            <div class="inlineGrp">
+                <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                    <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt=""></i>
+                    </button>
+                </div>
+                <button class="kitBtn kitBtn_icon" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_search.svg" alt=""></i>
+                </button>
+                <button class="kitBtn kitBtn_icon" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_project.svg" alt="篩選"></i>
+                </button>
+            </div>
+            <div class="L_filterSetting">
+                <div class="kitForm">
+                    <div class="formGrp">
+                        <label for="" class="formTitle">input：</label>
+                        <div class="formContent">
+                            <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="alert">
+                            <div class="helpAlert">說明文字 <a href="#">#角色與對應權限說明</a></div>
+                        </div>
+                    </div>
+                    <div class="formGrp">
+                        <label for="" class="formTitle">input：</label>
+                        <div class="formContent">
+                            <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" class="">
+                            <div class="help">說明文字 <a href="#">#角色與對應權限說明</a></div>
+                        </div>
+                    </div>
+                    <div class="formGrp">
+                        <label for="" class="formTitle">select 下拉選單：</label>
+                        <div class="formContent">
+                            <select name="" id="">
+                                <option value="">台北市</option>
+                                <option value="">新北市</option>
+                                <option value="">桃園市</option>
+                                <option value="">新竹市</option>
+                                <option value="">...</option>
+                            </select>
+                            <!-- <div class="help">說明文字</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h4>日期區間（包 .pageTopSearch）</h4>
+    <div class="L_pageTopDate">
+        <div class="kitForm">
+            <div class="formGrp">
+                <label for="" class="formTitle">日期（formContent / inlineGrp ）：</label>
+                <div class="formContent">
+                    <div class="inlineGrp">
+                        <input type="date" id="" title="">
+                        <span>~</span>
+                        <input type="date" id="" title="">
+                        <button class="kitBtn kitBtn_icon" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
