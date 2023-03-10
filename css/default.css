@@ -1727,8 +1727,10 @@
   }
   .pagination .page {
     display: flex;
+    align-items: stretch;
   }
   .pagination .page li a {
+    height: 100%;
     background: #fff;
     border: 1px solid #d9d9d9;
     overflow: hidden;
@@ -1740,7 +1742,22 @@
   .pagination .page li.prev a, .pagination .page li.next a {
     width: auto;
     padding: 4px 16px;
-    aspect-ratio: unset;
+  }
+  .pagination .page li a {
+    display: block;
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    line-height: 1.4;
+    font-size: var(--fz18);
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 1000px) {
+    .pagination .page li a {
+      font-size: 1rem;
+    }
   }
   .pagination .page li.prev a {
     border-radius: 30px 0 0 30px;
@@ -1757,21 +1774,6 @@
     color: var(--grayColor5) !important;
     cursor: not-allowed;
     background: #fff !important;
-  }
-  .pagination .page a {
-    display: block;
-    padding: 4px;
-    width: 35px;
-    aspect-ratio: 1/1;
-    font-size: var(--fz18);
-    text-align: center;
-    font-weight: 300;
-    text-decoration: none;
-  }
-  @media screen and (max-width: 1000px) {
-    .pagination .page a {
-      font-size: 1rem;
-    }
   }
   .bottomBtnBox {
     display: flex;
