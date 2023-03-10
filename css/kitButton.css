@@ -56,12 +56,16 @@
   }
   .kitBtn.kitBtn_top {
     flex-direction: column;
+    height: auto;
     aspect-ratio: 1/1;
   }
   .kitBtn.kitBtn_top i {
     width: 40px;
     aspect-ratio: 1/1;
     margin-bottom: 5px;
+  }
+  .kitBtn.kitBtn_top i img {
+    width: 100%;
   }
   .kitBtn.kitBtn_icon {
     padding: 0 !important;

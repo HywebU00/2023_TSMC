@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #73aee8;
+  color: #666;
+  font-family: "Poppins", "Noto Sans TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: linear-gradient(150deg, #98c5f0 0%, #549be1 120%);
+}
+body * {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    position: relative;
+  }
+  body::before {
+    background-repeat: no-repeat;
+    background-position: center top 50%;
+    background-size: cover;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    height: 90vh;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+a {
+  outline: none;
+}
+
+.loginHere {
+  position: relative;
+  z-index: 9;
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 94%;
+  max-width: 550px;
+}
+.loginHere input {
+  outline: none;
+  transition: 0.2s;
+}
+.loginHere input[type=radio],
+.loginHere input[type=checkbox] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.loginHere input[type=text],
+.loginHere input[type=password] {
+  font-size: 1rem;
+  border: none;
+  background: #fff;
+}
+.loginHere input[type=text]:focus,
+.loginHere input[type=password]:focus {
+  box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px;
+}
+.loginHere input[type=checkbox] {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  margin: 0 0.8em 0 2px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.loginHere input[type=checkbox]:focus {
+  box-shadow: #2b90dc 0 0 0 2px;
+}
+.loginHere input[type=checkbox]:checked {
+  box-shadow: #fff 0 0 0 2px;
+  background-color: #2b90dc;
+}
+.loginHere input[type=checkbox]:checked::before {
+  display: block;
+}
+.loginHere input[type=checkbox]::before {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 0.65em;
+  height: 1.2em;
+  left: 0.5em;
+  top: 0.06em;
+  border: 4px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.loginHere ::-moz-placeholder {
+  color: #D1D2D3;
+  font-size: 0.875em;
+}
+.loginHere ::placeholder {
+  color: #D1D2D3;
+  font-size: 0.875em;
+}
+.loginHere :-ms-input-placeholder {
+  color: #D1D2D3;
+  font-size: 0.875em;
+}
+.loginHere ::-ms-input-placeholder {
+  color: #D1D2D3;
+  font-size: 0.875em;
+}
+.loginHere button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.loginHere button[class^=icon_] {
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.loginHere button[class^=icon_][class^=icon_]:hover, .loginHere button[class^=icon_][class^=icon_]:focus {
+  background-color: #d1f0f8;
+}
+.loginHere > header {
+  position: relative;
+  margin: 0 auto 20px;
+  text-align: center;
+  color: #fff;
+}
+.loginHere > header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding-top: 1.5em;
+}
+.loginHere > header img {
+  display: block;
+  margin: 0 auto;
+}
+.loginHere .formRow {
+  margin: 5px auto 30px;
+}
+.loginHere .formRow label {
+  display: block;
+  margin: 0 0 0.5em;
+  line-height: 1.3;
+}
+.loginHere .id,
+.loginHere .pw {
+  position: relative;
+}
+.loginHere .id input,
+.loginHere .pw input {
+  width: 100%;
+  height: 4.8em;
+  padding: 0 64px;
+  border-radius: 16px;
+}
+.loginHere .id::before,
+.loginHere .pw::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  width: 32px;
+  height: 32px;
+}
+.loginHere .id::before {
+  bottom: calc(2.4em - 16px);
+  background: url(../images/login/icon_id.svg) no-repeat center center;
+  background-size: 24px auto;
+}
+.loginHere .id label {
+  color: #fff;
+}
+.loginHere .pw {
+  margin-bottom: 20px;
+}
+.loginHere .pw::before {
+  top: calc(2.4em - 16px);
+  background: url(../images/login/icon_pw.svg) no-repeat center center;
+  background-size: 24px auto;
+}
+.loginHere .pw .icon_eye {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: calc(2.4em - 21px);
+  right: 8px;
+  background: url(../images/login/icon_eye.svg) no-repeat center center;
+  background-size: 38px auto;
+}
+.loginHere .pw .icon_eye.hide {
+  background-image: url(../images/login/icon_eyeHide.svg);
+}
+.loginHere .pw p {
+  margin: 14px 10px 0;
+  font-size: 0.875em;
+  text-align: right;
+  line-height: 1.1;
+  color: #FF4D4F;
+}
+.loginHere .pw p a {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 3px;
+  color: #FF4D4F;
+  text-decoration: none;
+}
+.loginHere .pw p a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: transparent;
+}
+.loginHere .pw p a:hover::after, .loginHere .pw p a:focus::after {
+  background-color: #FF4D4F;
+}
+.loginHere.rememberMe label {
+  line-height: 1.5;
+  cursor: pointer;
+}
+.loginHere.rememberMe label input {
+  margin-top: -0.1em;
+}
+.loginHere .captcha {
+  display: flex;
+  margin-top: 60px;
+}
+.loginHere .captcha > input {
+  flex: 1 1 60%;
+  height: 56px;
+  border-radius: 0;
+  padding: 0 0.5em;
+}
+.loginHere .captcha > .captchaCode {
+  flex: 0 1 40%;
+  margin: 0 0 0 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginHere .captcha > .captchaCode img {
+  height: 32px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 8px;
+}
+.loginHere .captcha > .captchaCode .icon_regen {
+  width: 44px;
+  height: 44px;
+  margin: 0 8px;
+  background: url(../images/login/icon_refresh.svg) no-repeat center center;
+  background-size: 22px;
+}
+.loginHere .btnDv {
+  margin: 30px auto;
+}
+.loginHere .btnDv input[type=button],
+.loginHere .btnDv input[type=submit],
+.loginHere .btnDv button {
+  font-size: 1.5rem;
+  height: 3.6em;
+  line-height: 2.8;
+  background-color: #2b90dc;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.loginHere .btnDv input[type=button]:only-child,
+.loginHere .btnDv input[type=submit]:only-child,
+.loginHere .btnDv button:only-child {
+  width: 100%;
+}
+.loginHere .btnDv input[type=button]:hover, .loginHere .btnDv input[type=button]:focus,
+.loginHere .btnDv input[type=submit]:hover,
+.loginHere .btnDv input[type=submit]:focus,
+.loginHere .btnDv button:hover,
+.loginHere .btnDv button:focus {
+  background-color: #096DD9;
+}
+.loginHere .btnDv input[type=button]:focus,
+.loginHere .btnDv input[type=submit]:focus,
+.loginHere .btnDv button:focus {
+  box-shadow: #096DD9 0 0 0 3px;
+}
+.loginHere .newAccount a,
+.loginHere .bottomLinks a {
+  position: relative;
+  text-decoration: none;
+}
+.loginHere .newAccount a::after,
+.loginHere .bottomLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+}
+.loginHere .newAccount a:hover::after, .loginHere .newAccount a:focus::after,
+.loginHere .bottomLinks a:hover::after,
+.loginHere .bottomLinks a:focus::after {
+  height: 2px;
+}
+.loginHere .newAccount {
+  margin: 2.5em 0;
+  text-align: center;
+  line-height: 1.5;
+}
+.loginHere .newAccount a {
+  display: inline-block;
+  margin-left: 1em;
+  color: #fff;
+}
+.loginHere .newAccount a::after {
+  background-color: #fff;
+}
+.loginHere .bottomLinks ul {
+  list-style: none;
+  margin: 3em 0 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+.loginHere .bottomLinks li {
+  margin: 0 0.7em;
+}
+.loginHere .bottomLinks li a {
+  display: block;
+  color: #666;
+}
+.loginHere .bottomLinks li a::after {
+  background-color: #666;
+}
+@media screen and (min-width: 1000px) {
+  .loginHere {
+    left: 2.5%;
+    width: 42%;
+    margin: 0;
+  }
+  .loginHere > header h1 {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1000px) and (min-height: 770px) {
+  .loginHere {
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .loginHere {
+    left: calc(50% - 760px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body::before {
+    background-image: url(../images/login/bodyBg-lab.jpg);
+  }
+  body::after {
+    left: 45%;
+    width: 52.5%;
+    background: url(../images/login/labBg.svg) no-repeat center center;
+  }
+}
+@media screen and (min-width: 1310px) {
+  body::after {
+    left: calc(550px + 3%);
+    max-width: 1110px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  body::after {
+    left: calc(50% - 202px);
+  }
+}/*# sourceMappingURL=login_lab.css.map */

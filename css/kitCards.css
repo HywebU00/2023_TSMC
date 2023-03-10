@@ -31,16 +31,21 @@
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 1em 2em 2em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   border-radius: 10px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_store {
+    padding: 1em 1.5em 2em;
+  }
 }
 .kitCard_store .kitCard_close {
   display: flex;
   justify-content: flex-end;
 }
 .kitCard_store .kitCard_title {
-  font-size: 1.5rem;
+  font-size: var(--fz24);
   padding: 0 0 0.5em 0;
   margin-bottom: 1em;
   border-bottom: 1px solid #ccc;
@@ -54,7 +59,7 @@
   list-style-type: none;
   margin: 0 0 1em;
   padding: 0 0 1em;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
   border-bottom: 1px solid #ccc;
 }
 .kitCard_store .kitCard_content ul li {
@@ -62,7 +67,7 @@
   margin-bottom: 0.5em;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .kitCard_store .kitCard_content ul li:last-child {
   margin-bottom: 0;
@@ -73,6 +78,7 @@
 .kitCard_store .kitCard_content ul li .kitCard_icon {
   margin-right: 0.5em;
   margin-left: -1.5em;
+  margin-top: 0.2em;
 }
 .kitCard_store .kitCard_content ul li .kitCard_icon img {
   left: -25px;
@@ -98,7 +104,7 @@
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 0;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   border-radius: 0 0 10px 10px;
 }
 .kitCard_supplier .kitCard_serialnumber {
@@ -108,21 +114,38 @@
   padding: 0.5em 1em;
   border-radius: 0 0 3px 0;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
 }
 .kitCard_supplier .kitCard_ordernumber {
   flex: 0 0 auto;
   padding: 0.5em 0;
   margin-right: 2em;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
+}
+@media screen and (max-width: 576px) {
+  .kitCard_supplier .kitCard_ordernumber {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    text-align: right;
+  }
 }
 .kitCard_supplier .kitCard_content {
   flex: 1 1 auto;
   flex-basis: 100%;
   display: flex;
   padding: 1em 2em 2em 4em;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
+}
+@media screen and (max-width: 768px) {
+  .kitCard_supplier .kitCard_content {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kitCard_supplier .kitCard_content {
+    padding: 1em 1.5em;
+  }
 }
 .kitCard_supplier .kitCard_content ul {
   flex: 1 1 auto;
@@ -130,6 +153,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_supplier .kitCard_content ul {
+    margin-bottom: 1em;
+  }
 }
 .kitCard_supplier .kitCard_content ul li {
   margin-bottom: 0.5em;
@@ -153,8 +181,13 @@
   border-radius: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects {
+    padding: 1em;
+  }
 }
 .kitCard_workprojects .kitCard_function {
   flex: 0 0 auto;
@@ -162,27 +195,40 @@
   display: flex;
   justify-content: flex-start;
 }
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects .kitCard_function {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+}
 .kitCard_workprojects .kitCard_content {
   flex: 1 1 auto;
 }
 .kitCard_workprojects .kitCard_content .kitCard_title {
-  font-size: 1.25rem;
+  font-size: var(--fz20);
   border-bottom: 1px solid #ccc;
   padding: 0 0 0.5em;
   margin-bottom: 0.6em;
 }
 .kitCard_workprojects .kitCard_close {
   flex: 0 0 auto;
-  flex-basis: 6%;
+  flex-basis: 12%;
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects .kitCard_close {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+  }
 }
 
 .kitCard_ordersetup {
   background-color: var(--primaryColor4);
   color: #fff;
   padding: 0;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -196,7 +242,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5em 1em;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
 }
 .kitCard_ordersetup .kitCard_more {
   flex: 0 0 auto;
@@ -207,8 +253,9 @@
   text-align: center;
   display: block;
   border-radius: 0 0 0 10px;
-  font-size: 1.125rem;
+  font-size: var(--fz18);
   background-color: var(--primaryColor4);
+  text-decoration: none;
 }
 .kitCard_ordersetup .kitCard_more a:hover {
   background-color: var(--primaryColor);
@@ -216,8 +263,18 @@
 .kitCard_ordersetup .kitCard_content {
   flex: 1 1 auto;
   flex-basis: 100%;
-  font-size: 1.125rem;
+  font-size: var(--fz18);
   padding: 1em 4em 2em;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_ordersetup .kitCard_content {
+    padding: 1em 2em 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kitCard_ordersetup .kitCard_content {
+    padding: 1em 1.5em 2em;
+  }
 }
 .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul {
   margin: 0;
@@ -232,7 +289,19 @@
   flex-basis: 48%;
   margin: 0 0 0.5em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
 .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li:last-child {
   margin: 0;
@@ -246,22 +315,32 @@
   display: inline-block;
   text-align: right;
 }
+@media screen and (max-width: 480px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
 
 .kitCard_tabblock {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .kitCard_tabblock .kitCard_tab {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_tab {
+    display: none;
+  }
+}
 .kitCard_tabblock .kitCard_tab button {
-  min-width: 180px;
-  padding: 0.5em 1em;
-  border: 1px solid var(--primaryColor);
-  font-size: 1.25rem;
+  min-width: 140px;
   border-radius: 3px 3px 0 0;
-  background-color: #fff;
   margin: 0;
-  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .kitCard_tabblock .kitCard_tab button span {
   margin-left: 0.4em;
@@ -271,17 +350,44 @@
   color: #fff;
 }
 .kitCard_tabblock .kitCard_content {
+  margin: 0 0 0.5em;
+}
+.kitCard_tabblock .kitCard_content button {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kitCard_tabblock .kitCard_content button.active {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.kitCard_tabblock .kitCard_content .tabtitle {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .tabtitle {
+    display: block;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_content_group {
   background-color: #fff;
   position: relative;
   padding: 2em 2em 0;
-  margin: 0 0 0.5em;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_content_group {
+    padding: 4em 1.5em 0;
+  }
 }
 .kitCard_tabblock .kitCard_content .kitCard_storename {
   padding: 0.5em 1em;
   text-align: center;
   display: block;
   border-radius: 0 0 0 10px;
-  font-size: 1.125rem;
+  font-size: var(--fz18);
   background-color: var(--primaryColor);
   color: #fff;
   position: absolute;
@@ -290,7 +396,7 @@
 }
 .kitCard_tabblock .kitCard_content .kitCard_serialnumber {
   margin-bottom: 1em;
-  font-size: 1.25rem;
+  font-size: var(--fz20);
   font-weight: 600;
 }
 .kitCard_tabblock .kitCard_content .kitCard_serialnumber .kitCard_newlabel {
@@ -299,7 +405,7 @@
   border-radius: 50px;
   padding: 0.2em 1em;
   margin-left: 0.5em;
-  font-size: 1.125rem;
+  font-size: var(--fz18);
   font-weight: 400;
 }
 .kitCard_tabblock .kitCard_content .kitCard_label {
@@ -332,6 +438,18 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--grayColor6);
+  }
+}
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li.kitCard_ordernumber {
   flex-basis: 100%;
   margin: 0 0 0.5em;
@@ -341,9 +459,21 @@
   display: inline-block;
   text-align: right;
 }
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist {
   flex: 0 0 auto;
   flex-basis: calc(100% - 200px);
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist {
+    flex-basis: 100%;
+  }
 }
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul {
   margin: 0;
@@ -357,7 +487,14 @@
   flex-basis: 100%;
   margin: 0 0 0.5em;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--grayColor6);
+  }
 }
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li.kitCard_ordernumber {
   flex-basis: 100%;
@@ -368,14 +505,26 @@
   display: inline-block;
   text-align: right;
 }
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock {
   flex: 0 0 auto;
   flex-basis: 200px;
 }
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock {
+    flex-basis: 100%;
+  }
+}
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock button {
   width: 100%;
   padding: 0.2em 0.8em;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em;
 }
 .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_program {
   flex: 1 1 auto;
@@ -390,6 +539,11 @@
   margin: 0 -2em;
   justify-content: flex-end;
   border-top: 1px solid #959595;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_orderwork {
+    margin: 0 -1.5em;
+  }
 }
 .kitCard_tabblock .kitCard_content .kitCard_orderwork .btn {
   margin: 0 0.3em;
@@ -427,13 +581,14 @@
   background-color: #fff;
   padding: 2em 0;
   position: relative;
+  margin-bottom: 2em;
 }
 .kitCard_figureinformation .kitCard_storename {
   padding: 0.5em 1em;
   text-align: center;
   display: block;
   border-radius: 0 0 0 10px;
-  font-size: 1.125rem;
+  font-size: var(--fz18);
   background-color: var(--primaryColor);
   color: #fff;
   position: absolute;
@@ -442,7 +597,21 @@
 }
 .kitCard_figureinformation .kitCard_figurelist {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_figureinformation .kitCard_figurelist {
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_figurelist {
+    padding: 0 1.5em;
+    justify-content: center;
+  }
 }
 .kitCard_figureinformation .kitCard_pic {
   flex: 0 0 auto;
@@ -451,10 +620,18 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_pic {
+    flex-basis: 100%;
+    flex: 1 1 auto;
+    margin-bottom: 1em;
+  }
+}
 .kitCard_figureinformation .kitCard_pic .kitCard_picimg {
   flex: 1 1 auto;
   flex-basis: 100%;
   text-align: center;
+  position: relative;
 }
 .kitCard_figureinformation .kitCard_pic .kitCard_picimg img {
   width: 100px;
@@ -473,9 +650,19 @@
   flex: 1 1 auto;
   position: relative;
 }
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information {
+    flex: 0 0 auto;
+  }
+}
 .kitCard_figureinformation .kitCard_information .kitCard_fullname {
-  font-size: 1.25rem;
+  font-size: var(--fz20);
   margin: 0 0 1em;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information .kitCard_fullname {
+    text-align: center;
+  }
 }
 .kitCard_figureinformation .kitCard_information ul {
   margin: 0 0 1.5em;
@@ -520,4 +707,9 @@
 }
 .kitCard_figureinformation .kitCard_information .kitCard_functionbtn .kitBtn {
   margin: 0;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information .kitCard_functionbtn {
+    right: 0;
+  }
 }/*# sourceMappingURL=kitCards.css.map */
