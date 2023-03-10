@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-01-02</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/UI-01-02.css" />
+  </head>
+  <body>
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+    <div class="wrapper">
+      <aside>
+        <!-- 主選單 -->
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <div class="headInfo">
+              <!-- 麵包屑 -->
+              <ul class="breadcrumb">
+                <li><a href="#">系統管理</a></li>
+                <li>角色設定</li>
+              </ul>
+
+              <!-- 右上角選單 -->
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- 上方搜尋區塊 -->
+          <script src="include/topSearch.js"></script>
+
+          <div class="main">
+            <div class="container">
+              <div class="kitFlex kitFlex_right">
+                <button class="kitBtn" type="button">新增角色</button>
+              </div>
+              <div class="kitTable kitTable_typeB">
+                <div class="kitTable_out">
+                  <table class="c_tablet">
+                    <thead>
+                      <th></th>
+                      <th>ID</th>
+                      <th>角色名稱</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>1234</td>
+                        <td>3M LAVA Plus</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <!-- 內容下方區塊 -->
+          <div class="container">
+            <!-- 頁數切換區塊 -->
+            <script src="include/pagination.js"></script>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
