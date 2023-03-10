@@ -201,11 +201,11 @@ a {
   height: 56px;
   top: calc(2.4em - 21px);
   right: 8px;
-  background: url(../images/icon_eye.svg) no-repeat center center;
+  background: url(../images/login/icon_eye.svg) no-repeat center center;
   background-size: 38px auto;
 }
 .loginHere .pw .icon_eye.hide {
-  background-image: url(../images/icon_eyeHide.svg);
+  background-image: url(../images/login/icon_eyeHide.svg);
 }
 .loginHere .pw p {
   margin: 14px 10px 0;
@@ -379,7 +379,7 @@ a {
 
 @media screen and (min-width: 1000px) {
   body::before {
-    background-image: url(../images/bodyBg-clinic.jpg);
+    background-image: url(../images/login/bodyBg-clinic.jpg);
   }
   body::after {
     left: 42%;

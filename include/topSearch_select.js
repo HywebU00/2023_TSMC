@@ -10,6 +10,12 @@
                       <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="" /></i>
                     </button>
                   </div>
+                  <select name="" id="">
+                    <option value="">請選擇項目</option>
+                    <option value="">項目1</option>
+                    <option value="">項目2</option>
+                    <option value="">項目3</option>
+                  </select>
                   <button class="kitBtn kitBtn_icon" type="button">
                     <i class="kitIcon"><img src="images/icon/icon_search.svg" alt="" /></i>
                   </button>

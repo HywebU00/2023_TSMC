@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-01-02</title>
+    <title>UI-01-04</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
@@ -27,7 +27,7 @@
               <!-- 麵包屑 -->
               <ul class="breadcrumb">
                 <li><a href="#">系統管理</a></li>
-                <li>角色設定</li>
+                <li>代碼管理</li>
               </ul>
 
               <!-- 右上角選單 -->
@@ -42,7 +42,7 @@
           <div class="main">
             <div class="container">
               <div class="kitFlex kitFlex_right">
-                <button class="kitBtn" type="button">新增角色</button>
+                <button class="kitBtn" type="button">新增項目</button>
               </div>
               <div class="kitTable kitTable_typeB">
                 <div class="kitTable_out">
@@ -50,13 +50,26 @@
                     <thead>
                       <th></th>
                       <th>ID</th>
-                      <th>角色名稱</th>
+                      <th>項目名稱</th>
+                      <th>細項代碼</th>
+                      <th class="last">設定細項代碼</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td><input type="checkbox" /></td>
                         <td>1234</td>
-                        <td>3M LAVA Plus</td>
+                        <td>啟用狀態</td>
+                        <td>啟用；不啟用</td>
+                        <td class="last">
+                          <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">設定細項代碼</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>22333</td>
+                        <td>是否試戴</td>
+                        <td></td>
+                        <td></td>
                       </tr>
                     </tbody>
                   </table>
