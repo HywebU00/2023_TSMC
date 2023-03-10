@@ -1,0 +1,715 @@
+.kitCard_figureinformation .kitCard_information ul li .kitCard_icon, .kitCard_store .kitCard_content ul li .kitCard_icon, .kitCard_tabblock .kitCard_content .kitCard_label .kitCard_icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+}
+.kitCard_figureinformation .kitCard_information ul li .kitCard_icon img, .kitCard_store .kitCard_content ul li .kitCard_icon img, .kitCard_tabblock .kitCard_content .kitCard_label .kitCard_icon img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  left: 0px;
+  filter: drop-shadow(25px 0 #fff);
+}
+
+.kitCard_tabblock .kitCard_content .kitCard_label {
+  background-color: var(--primaryColor);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 4px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.kitCard_store {
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1em 2em 2em;
+  margin-bottom: 3em;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_store {
+    padding: 1em 1.5em 2em;
+  }
+}
+.kitCard_store .kitCard_close {
+  display: flex;
+  justify-content: flex-end;
+}
+.kitCard_store .kitCard_title {
+  font-size: var(--fz24);
+  padding: 0 0 0.5em 0;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  color: #212b36;
+}
+.kitCard_store .kitCard_content {
+  text-align: center;
+}
+.kitCard_store .kitCard_content ul {
+  list-style-type: none;
+  margin: 0 0 1em;
+  padding: 0 0 1em;
+  font-size: var(--fz20);
+  border-bottom: 1px solid #ccc;
+}
+.kitCard_store .kitCard_content ul li {
+  padding: 0 0 0 1.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+}
+.kitCard_store .kitCard_content ul li:last-child {
+  margin-bottom: 0;
+}
+.kitCard_store .kitCard_content ul li a[href^=http] {
+  word-break: break-all;
+}
+.kitCard_store .kitCard_content ul li .kitCard_icon {
+  margin-right: 0.5em;
+  margin-left: -1.5em;
+  margin-top: 0.2em;
+}
+.kitCard_store .kitCard_content ul li .kitCard_icon img {
+  left: -25px;
+  filter: drop-shadow(25px 0 var(--primaryColor));
+}
+.kitCard_store .kitCard_content .kitCard_centerblock {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.kitCard_store .kitCard_content .kitCard_centerblock button {
+  flex: 0 0 auto;
+}
+.kitCard_store .kitCard_content .kitCard_centerblock textarea {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.kitCard_supplier {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0;
+  margin-bottom: 3em;
+  border-radius: 0 0 10px 10px;
+}
+.kitCard_supplier .kitCard_serialnumber {
+  flex: 0 0 auto;
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0 0 3px 0;
+  font-weight: 400;
+  font-size: var(--fz20);
+}
+.kitCard_supplier .kitCard_ordernumber {
+  flex: 0 0 auto;
+  padding: 0.5em 0;
+  margin-right: 2em;
+  font-weight: 400;
+  font-size: var(--fz20);
+}
+@media screen and (max-width: 576px) {
+  .kitCard_supplier .kitCard_ordernumber {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    text-align: right;
+  }
+}
+.kitCard_supplier .kitCard_content {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  display: flex;
+  padding: 1em 2em 2em 4em;
+  font-size: var(--fz20);
+}
+@media screen and (max-width: 768px) {
+  .kitCard_supplier .kitCard_content {
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kitCard_supplier .kitCard_content {
+    padding: 1em 1.5em;
+  }
+}
+.kitCard_supplier .kitCard_content ul {
+  flex: 1 1 auto;
+  flex-basis: calc(100% - 180px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_supplier .kitCard_content ul {
+    margin-bottom: 1em;
+  }
+}
+.kitCard_supplier .kitCard_content ul li {
+  margin-bottom: 0.5em;
+}
+.kitCard_supplier .kitCard_content ul li:last-child {
+  margin-bottom: 0em;
+}
+.kitCard_supplier .kitCard_content ul li span {
+  font-weight: bolder;
+}
+.kitCard_supplier .kitCard_content .printnum_btn {
+  flex: 0 0 auto;
+  flex-basis: 170px;
+  height: 42px;
+}
+
+.kitCard_workprojects {
+  background-color: #fff;
+  padding: 1em 2em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects {
+    padding: 1em;
+  }
+}
+.kitCard_workprojects .kitCard_function {
+  flex: 0 0 auto;
+  flex-basis: 12%;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects .kitCard_function {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+    margin-bottom: 1em;
+  }
+}
+.kitCard_workprojects .kitCard_content {
+  flex: 1 1 auto;
+}
+.kitCard_workprojects .kitCard_content .kitCard_title {
+  font-size: var(--fz20);
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0.5em;
+  margin-bottom: 0.6em;
+}
+.kitCard_workprojects .kitCard_close {
+  flex: 0 0 auto;
+  flex-basis: 12%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_workprojects .kitCard_close {
+    flex: 1 1 auto;
+    flex-basis: 100%;
+  }
+}
+
+.kitCard_ordersetup {
+  background-color: var(--primaryColor4);
+  color: #fff;
+  padding: 0;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.kitCard_ordersetup .kitCard_label {
+  flex: 0 0 auto;
+  background-color: var(--successColor);
+  color: #fff;
+  border-radius: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: var(--fz20);
+}
+.kitCard_ordersetup .kitCard_more {
+  flex: 0 0 auto;
+}
+.kitCard_ordersetup .kitCard_more a {
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+  display: block;
+  border-radius: 0 0 0 10px;
+  font-size: var(--fz18);
+  background-color: var(--primaryColor4);
+  text-decoration: none;
+}
+.kitCard_ordersetup .kitCard_more a:hover {
+  background-color: var(--primaryColor);
+}
+.kitCard_ordersetup .kitCard_content {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  font-size: var(--fz18);
+  padding: 1em 4em 2em;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_ordersetup .kitCard_content {
+    padding: 1em 2em 2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  .kitCard_ordersetup .kitCard_content {
+    padding: 1em 1.5em 2em;
+  }
+}
+.kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li {
+  flex: 0 0 auto;
+  flex-basis: 48%;
+  margin: 0 0 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+.kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li:last-child {
+  margin: 0;
+}
+.kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li.kitCard_ordernumber {
+  flex-basis: 100%;
+  margin: 0 0 0.5em;
+}
+.kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li span {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .kitCard_ordersetup .kitCard_content .kitCard_orderlist_twocolumns ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.kitCard_tabblock {
+  margin-bottom: 3em;
+}
+.kitCard_tabblock .kitCard_tab {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_tab {
+    display: none;
+  }
+}
+.kitCard_tabblock .kitCard_tab button {
+  min-width: 140px;
+  border-radius: 3px 3px 0 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kitCard_tabblock .kitCard_tab button span {
+  margin-left: 0.4em;
+}
+.kitCard_tabblock .kitCard_tab button.active {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.kitCard_tabblock .kitCard_content {
+  margin: 0 0 0.5em;
+}
+.kitCard_tabblock .kitCard_content button {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kitCard_tabblock .kitCard_content button.active {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.kitCard_tabblock .kitCard_content .tabtitle {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .tabtitle {
+    display: block;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_content_group {
+  background-color: #fff;
+  position: relative;
+  padding: 2em 2em 0;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_content_group {
+    padding: 4em 1.5em 0;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_storename {
+  padding: 0.5em 1em;
+  text-align: center;
+  display: block;
+  border-radius: 0 0 0 10px;
+  font-size: var(--fz18);
+  background-color: var(--primaryColor);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.kitCard_tabblock .kitCard_content .kitCard_serialnumber {
+  margin-bottom: 1em;
+  font-size: var(--fz20);
+  font-weight: 600;
+}
+.kitCard_tabblock .kitCard_content .kitCard_serialnumber .kitCard_newlabel {
+  background-color: var(--successColor);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.2em 1em;
+  margin-left: 0.5em;
+  font-size: var(--fz18);
+  font-weight: 400;
+}
+.kitCard_tabblock .kitCard_content .kitCard_label {
+  margin-right: 0.5em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_label .kitCard_icon {
+  width: 20px;
+  height: 20px;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns {
+  flex: 1 1 auto;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li {
+  flex: 0 0 auto;
+  flex-basis: 46%;
+  margin: 0 0 0.5em;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--grayColor6);
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li.kitCard_ordernumber {
+  flex-basis: 100%;
+  margin: 0 0 0.5em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li span {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist {
+  flex: 0 0 auto;
+  flex-basis: calc(100% - 200px);
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist {
+    flex-basis: 100%;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  margin: 0 0 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid var(--grayColor6);
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li.kitCard_ordernumber {
+  flex-basis: 100%;
+  margin: 0 0 0.5em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li span {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+}
+@media screen and (max-width: 480px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist ul li span {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock {
+  flex: 0 0 auto;
+  flex-basis: 200px;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock {
+    flex-basis: 100%;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_printblock button {
+  width: 100%;
+  padding: 0.2em 0.8em;
+  margin: 0 0 0.5em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_program {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  text-align: right;
+}
+.kitCard_tabblock .kitCard_content .kitCard_orderwork {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.2em 2em;
+  margin: 0 -2em;
+  justify-content: flex-end;
+  border-top: 1px solid #959595;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_tabblock .kitCard_content .kitCard_orderwork {
+    margin: 0 -1.5em;
+  }
+}
+.kitCard_tabblock .kitCard_content .kitCard_orderwork .btn {
+  margin: 0 0.3em;
+}
+.kitCard_tabblock .kitCard_content .kitCard_orderwork .workblock {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.kitCard_tabblock .kitCard_content .kitCard_orderwork .workblock span {
+  border-radius: 50px;
+  background-color: #d9d9d9;
+  padding: 0.5em 1em;
+  display: flex;
+  align-items: center;
+}
+.kitCard_tabblock .kitCard_content .kitCard_orderwork .workblock span em {
+  background-color: var(--primaryColor);
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+.kitCard_figureinformation {
+  background-color: #fff;
+  padding: 2em 0;
+  position: relative;
+  margin-bottom: 2em;
+}
+.kitCard_figureinformation .kitCard_storename {
+  padding: 0.5em 1em;
+  text-align: center;
+  display: block;
+  border-radius: 0 0 0 10px;
+  font-size: var(--fz18);
+  background-color: var(--primaryColor);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.kitCard_figureinformation .kitCard_figurelist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1em;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .kitCard_figureinformation .kitCard_figurelist {
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_figurelist {
+    padding: 0 1.5em;
+    justify-content: center;
+  }
+}
+.kitCard_figureinformation .kitCard_pic {
+  flex: 0 0 auto;
+  flex-basis: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_pic {
+    flex-basis: 100%;
+    flex: 1 1 auto;
+    margin-bottom: 1em;
+  }
+}
+.kitCard_figureinformation .kitCard_pic .kitCard_picimg {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  text-align: center;
+  position: relative;
+}
+.kitCard_figureinformation .kitCard_pic .kitCard_picimg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.5em;
+}
+.kitCard_figureinformation .kitCard_pic .kitCard_name {
+  flex: 1 1 auto;
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.kitCard_figureinformation .kitCard_information {
+  flex: 1 1 auto;
+  position: relative;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information {
+    flex: 0 0 auto;
+  }
+}
+.kitCard_figureinformation .kitCard_information .kitCard_fullname {
+  font-size: var(--fz20);
+  margin: 0 0 1em;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information .kitCard_fullname {
+    text-align: center;
+  }
+}
+.kitCard_figureinformation .kitCard_information ul {
+  margin: 0 0 1.5em;
+  padding: 0;
+  list-style-type: none;
+}
+.kitCard_figureinformation .kitCard_information ul li {
+  padding: 0 0 0 1.5em;
+  margin-bottom: 0.8em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.kitCard_figureinformation .kitCard_information ul li:last-child {
+  margin-bottom: 0;
+}
+.kitCard_figureinformation .kitCard_information ul li span {
+  min-width: 70px;
+}
+.kitCard_figureinformation .kitCard_information ul li a[href^="@"] {
+  word-break: break-all;
+}
+.kitCard_figureinformation .kitCard_information ul li .kitCard_icon {
+  margin-right: 0.5em;
+  margin-left: -1.5em;
+}
+.kitCard_figureinformation .kitCard_information ul li .kitCard_icon img {
+  left: -25px;
+  filter: drop-shadow(25px 0 var(--primaryColor));
+}
+.kitCard_figureinformation .kitCard_information .kitCard_joblabel {
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  padding: 0.2em 1em;
+  font-weight: 400;
+  display: inline-block;
+}
+.kitCard_figureinformation .kitCard_information .kitCard_functionbtn {
+  position: absolute;
+  right: 2em;
+  bottom: 0;
+}
+.kitCard_figureinformation .kitCard_information .kitCard_functionbtn .kitBtn {
+  margin: 0;
+}
+@media screen and (max-width: 640px) {
+  .kitCard_figureinformation .kitCard_information .kitCard_functionbtn {
+    right: 0;
+  }
+}/*# sourceMappingURL=kitCards.css.map */
