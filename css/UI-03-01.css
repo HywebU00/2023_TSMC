@@ -1,25 +1,26 @@
-.searchSupplier .formContent {
+.M-searchSupplier {
   display: flex;
 }
-.searchSupplier .formContent .searchGrp {
+.M-searchSupplier .searchGrp {
   flex: 1 1 auto;
   position: relative;
   height: auto;
 }
-.searchSupplier .formContent .searchGrp.withIcon input[type=text] {
+.M-searchSupplier .searchGrp.withIcon input[type=text] {
   padding-right: 60px;
 }
-.searchSupplier .formContent .searchGrp.withIcon button {
+.M-searchSupplier .searchGrp.withIcon button {
   width: 42px;
 }
-.searchSupplier .formContent .searchGrp input[type=text],
-.searchSupplier .formContent .searchGrp button {
+.M-searchSupplier .searchGrp input[type=text],
+.M-searchSupplier .searchGrp button {
   margin: 0.3rem 0;
 }
-.searchSupplier .formContent .kitBtn {
+.M-searchSupplier .kitBtn {
   margin: 0.3rem 0.25rem;
 }
-.searchSupplier .selectCheckbox {
+
+.selectCheckbox {
   position: absolute;
   right: 0;
   padding: 1rem;
@@ -27,7 +28,7 @@
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.searchSupplier .selectCheckbox .checkGrp {
+.selectCheckbox .checkGrp {
   flex-direction: column;
 }
 
