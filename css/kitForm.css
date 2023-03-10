@@ -130,6 +130,10 @@ select:-moz-focusring {
   right: 10px;
 }
 
+.L_full {
+  max-width: initial;
+}
+
 .L_filterSetting {
   margin: 0 0.25rem;
   padding: 1rem 2rem;
