@@ -1,5 +1,5 @@
 @layer kitTable {
-  .kitTable.kitTable_tableOut {
+  .kitTable .kitTable_out {
     overflow-x: auto;
   }
   .kitTable table {
@@ -62,17 +62,17 @@
       border-color: #fff;
     }
   }
+  .kitTable_typeC.kitTable_out {
+    border-bottom: #d9d9d9 1px solid;
+    padding-bottom: 20px;
+  }
+  .kitTable_typeC.kitTable_out + .title {
+    margin-top: 30px;
+  }
   .kitTable_typeC .kitTable_title {
     font-weight: 500;
     font-size: var(--fz24);
     padding: 15px 0;
-  }
-  .kitTable_typeC .kitTable_tableOut {
-    border-bottom: #d9d9d9 1px solid;
-    padding-bottom: 20px;
-  }
-  .kitTable_typeC .kitTable_tableOut + .title {
-    margin-top: 30px;
   }
   .kitTable_typeC tr {
     border: none;
