@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>default</title>
+    <title>UI-04-01-05</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
     <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <link rel="stylesheet" href="css/kitCards.css" />
     <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/UI-04-01-05.css" />
   </head>
   <body>
     <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
@@ -24,8 +27,9 @@
             <div class="headInfo">
               <!-- 麵包屑 -->
               <ul class="breadcrumb">
-                <li><a href="#">組織管理</a></li>
-                <li>平台商管理</li>
+                <li><a href="#">合作夥伴</a></li>
+                <li>合作牙醫診所</li>
+                <li>福家牙技所</li>
               </ul>
 
               <!-- 右上角選單 -->
@@ -42,10 +46,87 @@
             </div>
           </div>
 
-          <div class="main"><div class="container"></div></div>
-
           <div class="main">
-            <div class="container"></div>
+            <div class="container">
+              <!-- kitCard_tabblock start -->
+              <div class="kitCard_tabblock">
+                <div class="kitCard_tab">
+                  <button type="button" class="kitBtn kitBtn_w">醫師習性指引</button>
+                  <button type="button" class="kitBtn kitBtn_w active">診所使用補綴物</button>
+                  <button type="button" class="kitBtn kitBtn_w">設定補綴物價目</button>
+                </div>
+                <!-- 1 -->
+                <div class="kitCard_content"></div>
+                <!-- 2 -->
+                <div class="kitCard_content">
+                  <!-- rwd 手機版時顯示-->
+                  <button type="button" class="kitBtn kitBtn_w tabtitle">拒絕接單<span>(2)</span></button>
+                  <div class="kitCard_content_group">
+                    <div class="kitMessage">
+                      <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
+                      <p>可以選擇自行挑選補綴物或是選擇參考其他診所的設定</p>
+                    </div>
+                    <div class="kitFlex kitFlex_right">
+                      <button class="kitBtn" type="button">自行挑選補綴物</button>
+
+                      <div class="kitSelect kitSelect_icon">
+                        <i class="kitIcon"><img src="images/icon/icon_list.svg" alt="" /></i>
+                        <select name="" id="">
+                          <option value="">請選擇項目</option>
+                          <option value="">項目1</option>
+                          <option value="">項目2</option>
+                          <option value="">項目3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="kitTable">
+                      <div class="kitTable_out">
+                        <table class="c_tablet">
+                          <thead>
+                            <th class="first"></th>
+                            <th class="sec">No.</th>
+                            <th>補綴物類別</th>
+                            <th>補綴物名稱</th>
+                            <th>補綴物費用</th>
+                            <th>來源</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
+                                  <i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i>
+                                </button>
+                              </td>
+                              <td>1</td>
+                              <td><div class="title">植牙類</div></td>
+                              <td>3M LAVA Plus</td>
+                              <td>1,000</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
+                                  <i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i>
+                                </button>
+                              </td>
+                              <td>1</td>
+                              <td><div class="title">植牙類</div></td>
+                              <td>High Gold</td>
+                              <td>1,000</td>
+                              <td>寶貝兔青埔親子牙醫診所</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="kitCard_content"></div>
+              </div>
+              <!-- kitCard_tabblock end -->
+            </div>
           </div>
           <!-- flex end -->
         </main>

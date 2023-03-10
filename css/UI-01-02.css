@@ -1,10 +1,10 @@
-.c_tablet td:first-child,
-.c_tablet th:first-child {
+.c_tablet td.first,
+.c_tablet th.first {
   width: 80px;
   text-align: center;
 }
-.c_tablet td:nth-child(2),
-.c_tablet th:nth-child(2) {
+.c_tablet td.sec,
+.c_tablet th.sec {
   width: 20%;
 }
 .c_tablet .last {
