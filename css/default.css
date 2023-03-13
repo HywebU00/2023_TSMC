@@ -1330,6 +1330,12 @@
     width: 50px;
     z-index: 9;
   }
+  @media screen and (min-width: 1000px) {
+    aside {
+      width: 280px;
+      height: auto;
+    }
+  }
   @media screen and (max-width: 767px) {
     aside {
       height: 50px;
@@ -1352,12 +1358,23 @@
     height: 76px;
     margin-bottom: 25px;
   }
-  aside .logo img {
-    display: none;
+  @media screen and (min-width: 1000px) {
+    aside .logo {
+      padding: 8px 16px 0;
+    }
   }
   @media screen and (max-width: 767px) {
     aside .logo {
       height: 50px;
+    }
+  }
+  aside .logo img {
+    display: none;
+  }
+  @media screen and (min-width: 1000px) {
+    aside .logo img {
+      height: 36px;
+      display: block;
     }
   }
   aside .mainMenuBtn {
@@ -1371,6 +1388,12 @@
     transform: translateY(-50%) rotate(180deg);
     border: none;
     cursor: pointer;
+  }
+  @media screen and (min-width: 1000px) {
+    aside .mainMenuBtn {
+      right: 25px;
+      transform: translateY(-50%);
+    }
   }
   aside .mainMenuBtn::before {
     content: "";
@@ -1409,9 +1432,21 @@
     font-weight: 500;
     background: transparent;
     position: relative;
-    padding: 0px 0px 0 16px;
+    padding: 0px 0px 0 25px;
     border: none;
     cursor: pointer;
+  }
+  @media screen and (max-width: 1000px) {
+    aside nav > ul button {
+      padding: 0;
+      margin: 0 5px;
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      aspect-ratio: 1/1;
+      background: rgba(255, 255, 255, 0.2);
+    }
   }
   aside nav > ul button::before {
     content: "";
@@ -1424,8 +1459,18 @@
     top: 50%;
     transform: translateY(-80%) rotate(45deg);
   }
+  @media screen and (max-width: 1000px) {
+    aside nav > ul span {
+      display: none;
+    }
+  }
   aside nav > ul > li {
     margin-bottom: 28px;
+  }
+  @media screen and (max-width: 1000px) {
+    aside nav > ul > li {
+      margin-bottom: 10px;
+    }
   }
   aside nav > ul > li ul {
     display: none;
@@ -1457,10 +1502,20 @@
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-    margin: 0 16px 0 0;
+    margin: 0 10px 0 0;
+  }
+  @media screen and (max-width: 1000px) {
+    aside nav i {
+      margin: 0;
+    }
   }
   .mainContent {
     padding: 0 0px 0px 50px;
+  }
+  @media screen and (min-width: 1000px) {
+    .mainContent {
+      padding: 0 0px 0px 280px;
+    }
   }
   @media screen and (max-width: 767px) {
     .mainContent {
@@ -1706,7 +1761,6 @@
   }
   .pageTopSearch {
     padding: 20px 0 0;
-    max-width: 500px;
   }
   .pageTopSearch .container {
     font-size: var(--fz20);
@@ -1724,6 +1778,12 @@
     .pageTopSearch .container {
       margin: 0;
     }
+  }
+  .pageTopSearch .inlineGrp {
+    max-width: 500px;
+  }
+  .pageTopSearch.L_full .inlineGrp {
+    max-width: initial;
   }
   .pageTopSearch .formContent {
     position: relative;
@@ -1851,37 +1911,6 @@
     display: flex;
     justify-content: center;
   }
-  @media screen and (min-width: 1000px) {
-    aside {
-      width: 280px;
-      height: auto;
-    }
-    aside .logo {
-      padding: 8px 16px 0;
-    }
-    aside .logo img {
-      height: 36px;
-      display: block;
-    }
-    aside .mainMenuBtn {
-      right: 25px;
-      transform: translateY(-50%);
-    }
-    aside .mainMenu button {
-      padding: 0px 0px 0 25px;
-    }
-    aside .mainMenu i {
-      margin: 0 10px 0 0;
-    }
-    .mainContent {
-      padding-left: 280px;
-    }
-  }
-  @media screen and (min-width: 1000px) and (min-width: 1000px) and (max-width: 1000px) {
-    .mainContent {
-      padding-left: 0px;
-    }
-  }
   .sideMenuOpen aside {
     width: 280px;
     height: auto;
@@ -1914,11 +1943,24 @@
   .sideMenuClose aside {
     width: 50px;
   }
-  .sideMenuClose aside .mainMenu button {
-    padding: 0px 0px 0 14px;
+  .sideMenuClose aside .mainMenu nav button {
+    padding: 0;
+    margin: 0 5px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    aspect-ratio: 1/1;
+    background: rgba(255, 255, 255, 0.2);
   }
-  .sideMenuClose aside .mainMenu i {
-    margin: 0 15px 0 0;
+  .sideMenuClose aside .mainMenu nav span {
+    display: none;
+  }
+  .sideMenuClose aside .mainMenu nav i {
+    margin: 0;
+  }
+  .sideMenuClose aside .mainMenu nav > ul > li {
+    margin-bottom: 10px;
   }
   .sideMenuClose aside .logo {
     padding: 4px 10px 0px;
@@ -1928,7 +1970,11 @@
   }
   .sideMenuClose aside .mainMenuBtn {
     right: 12px;
+    margin: 0;
     transform: translateY(-50%) rotate(180deg);
+  }
+  .sideMenuClose .mainContent {
+    padding: 0 0px 0px 50px;
   }
   .demo .example {
     margin-bottom: 40px;

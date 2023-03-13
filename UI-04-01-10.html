@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/kitTable.css" />
     <link rel="stylesheet" href="css/kitCards.css" />
     <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/UI-04-01-05.css" />
+    <link rel="stylesheet" href="css/UI-04-01-10.css" />
   </head>
   <body>
     <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
@@ -57,39 +57,48 @@
                 </div>
                 <!-- 1 -->
                 <div class="kitCard_content">
-                  <div class="kitCard_content_group">
+                  <div class="kitCard_content_group c_figurelist">
+                    <div class="kitMessage">
+                      <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
+                      <p>可針對該診所的醫師設定重要習性說明</p>
+                    </div>
                     <div class="kitFlex kitFlex_right">
                       <button class="kitBtn" type="button">新增醫師習性</button>
                     </div>
+
                     <div class="kitCard_figureinformation">
-                      <div class="kitCard_figurelist c_figurelist">
-                        <div class="kitCard_pic">
-                          <div class="kitCard_picimg"><img src="images/KitCards_pic01.jpg" alt="" /></div>
-                          <div class="kitCard_name">Leonardo.s</div>
+                      <!--以下可新增-->
+                      <div class="kitCard_figurelist">
+                        <div class="kitCard_pic_block">
+                          <div class="kitCard_pic">
+                            <div class="image"><img src="images/KitCards_pic01.jpg" alt="照片" /></div>
+                          </div>
+                          <div class="kitCard_name">Leonardo</div>
                         </div>
                         <div class="kitCard_information">
                           <div class="kitCard_fullname">Leonardo · Wilhelm · DiCaprio</div>
                           <div class="designation">
                             醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言
                           </div>
-                          <div class="time kitFlex kitFlex_right kitFlex_vert_bottom kitAlign_right"><time>2022 / 12 / 31</time>Julia · Fiona · Roberts</div>
                         </div>
+                        <div class="time kitFlex kitFlex_right kitFlex_vert_bottom kitAlign_right"><time>2022 / 12 / 31</time>Julia · Fiona · Roberts</div>
                       </div>
-                    </div>
-                    <div class="kitCard_figureinformation">
-                      <div class="kitCard_figurelist c_figurelist">
-                        <div class="kitCard_pic">
-                          <div class="kitCard_picimg"><img src="images/KitCards_pic01.jpg" alt="" /></div>
-                          <div class="kitCard_name">Leonardo.s</div>
+                      <div class="kitCard_figurelist">
+                        <div class="kitCard_pic_block">
+                          <div class="kitCard_pic">
+                            <div class="image"><img src="images/KitCards_pic01.jpg" alt="照片" /></div>
+                          </div>
+                          <div class="kitCard_name">Leonardo</div>
                         </div>
                         <div class="kitCard_information">
                           <div class="kitCard_fullname">Leonardo · Wilhelm · DiCaprio</div>
                           <div class="designation">
                             醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言醫師的想法很多，可能需要時時注意醫生的留言
                           </div>
-                          <div class="time kitFlex kitFlex_right kitFlex_vert_bottom kitAlign_right"><time>2022 / 12 / 31</time>Julia · Fiona · Roberts</div>
                         </div>
+                        <div class="time kitFlex kitFlex_right kitFlex_vert_bottom kitAlign_right"><time>2022 / 12 / 31</time>Julia · Fiona · Roberts</div>
                       </div>
+                      <!--以上可新增-->
                     </div>
                   </div>
                 </div>
@@ -103,21 +112,7 @@
           </div>
           <!-- flex end -->
         </main>
-        <footer>
-          <!-- 內容下方區塊 -->
-          <div class="container">
-            <!-- 取消/確認按鈕 -->
-            <div class="bottomBtnBox">
-              <button class="kitBtn kitBtn_w" type="button">取消</button>
-              <button class="kitBtn" type="button">確認</button>
-            </div>
-
-            <!-- 頁數切換區塊 -->
-            <script src="include/pagination.js"></script>
-          </div>
-        </footer>
       </div>
     </div>
   </body>
-  <script></script>
 </html>

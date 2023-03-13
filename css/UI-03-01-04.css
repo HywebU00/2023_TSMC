@@ -61,4 +61,17 @@
 .formContent .spec ul li span {
   margin-right: 1rem;
   font-weight: bold;
+}
+
+.v_checkboxDropdown {
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  margin-top: -7px;
+  background: #efefef;
+}
+.v_checkboxDropdown ul li {
+  padding: 0.5rem;
+}
+.v_checkboxDropdown ul li:hover, .v_checkboxDropdown ul li:focus {
+  background: #ccc;
 }/*# sourceMappingURL=UI-03-01-04.css.map */

@@ -1,6 +1,8 @@
 @layer kitCards {
   .kitCard_figureinformation .kitCard_information ul li .kitCard_icon, .kitCard_store .kitCard_content ul li .kitCard_icon, .kitCard_tabblock .kitCard_content .kitCard_label .kitCard_icon {
     position: relative;
+    flex: 0 0 auto;
+    flex-basis: 24px;
     width: 24px;
     height: 24px;
     display: block;
@@ -343,7 +345,9 @@
     color: #fff;
   }
   .kitCard_tabblock .kitCard_content {
-    margin: 0;
+    margin: 0 0 1em;
+  }
+  .kitCard_tabblock .kitCard_content.kitCard_line {
     border: 1px solid var(--grayColor6);
   }
   .kitCard_tabblock .kitCard_content .tabtitle {
@@ -360,11 +364,11 @@
   .kitCard_tabblock .kitCard_content .kitCard_content_group {
     background-color: #fff;
     position: relative;
-    padding: 2em 2em 0;
+    padding: 2em 2em 1em;
   }
   @media screen and (max-width: 768px) {
     .kitCard_tabblock .kitCard_content .kitCard_content_group {
-      padding: 4em 1.5em 0;
+      padding: 4em 1.5em 1em;
     }
   }
   .kitCard_tabblock .kitCard_content .kitCard_storename {
@@ -403,7 +407,6 @@
   .kitCard_tabblock .kitCard_content .kitCard_data_block {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1em;
   }
   .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns {
     flex: 1 1 auto;
@@ -520,10 +523,10 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1.2em 2em;
-    margin: 0 -2em;
+    padding: 1em 2em 0;
+    margin: 0.5em -2em 0;
     justify-content: flex-end;
-    border-top: 1px solid #959595;
+    border-top: 1px solid #c8c7c7;
   }
   @media screen and (max-width: 768px) {
     .kitCard_tabblock .kitCard_content .kitCard_orderwork {

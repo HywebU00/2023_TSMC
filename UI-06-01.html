@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-01-04</title>
+    <title>UI-06-01</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
@@ -26,8 +26,8 @@
             <div class="headInfo">
               <!-- 麵包屑 -->
               <ul class="breadcrumb">
-                <li><a href="#">系統管理</a></li>
-                <li>代碼管理</li>
+                <li><a href="#">製程項目管理</a></li>
+                <li>公版工序管理</li>
               </ul>
 
               <!-- 右上角選單 -->
@@ -37,39 +37,43 @@
         </header>
         <main>
           <!-- 上方搜尋區塊 -->
-          <script src="include/topSearch.js"></script>
+          <script src="include/topSearch_filter.js"></script>
 
           <div class="main">
             <div class="container">
               <div class="kitFlex kitFlex_right">
-                <a class="kitBtn" href="#">新增項目</a>
+                <button class="kitBtn" type="button">新增公版工序</button>
               </div>
               <div class="kitTable kitTable_typeB">
                 <div class="kitTable_out">
                   <table class="c_tablet">
                     <thead>
-                      <th class="first"></th>
-                      <th class="sec">ID</th>
-                      <th>項目名稱</th>
-                      <th>細項代碼</th>
-                      <th class="last">設定細項代碼</th>
+                      <th></th>
+                      <th>公版工序名稱</th>
+                      <th>說明</th>
+                      <th class="last">啟用狀態</th>
                     </thead>
                     <tbody>
+                      <!--tr設定點擊事件連結-->
                       <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>1234</td>
-                        <td>啟用狀態</td>
-                        <td>啟用；不啟用</td>
-                        <td class="last">
-                          <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">設定細項代碼</button>
+                        <td>
+                          <div class="kitBtn kitBtn_icon noHover">
+                            <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
+                          </div>
                         </td>
+                        <td>牙托灌模</td>
+                        <td>全瓷冠的作法可改良傳統牙冠容易出現的牙齦染黑、顏色不自然等缺點，全瓷冠無論在色澤、透明度上都較接近真實的牙齒，擬真效果佳。</td>
+                        <td>啟用</td>
                       </tr>
                       <tr>
-                        <td><input type="checkbox" /></td>
-                        <td>22333</td>
-                        <td>是否試戴</td>
+                        <td>
+                          <div class="kitBtn kitBtn_icon noHover">
+                            <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
+                          </div>
+                        </td>
+                        <td>植牙類</td>
                         <td></td>
-                        <td></td>
+                        <td>停用</td>
                       </tr>
                     </tbody>
                   </table>

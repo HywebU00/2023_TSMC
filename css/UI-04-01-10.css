@@ -1,0 +1,59 @@
+.c_figurelist .kitCard_figurelist {
+  margin: 0;
+  padding: 15px;
+  background: #f6f6f6;
+  border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+  .c_figurelist .kitCard_figurelist {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.c_figurelist .kitCard_figurelist + .kitCard_figurelist {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .c_figurelist .kitCard_pic_block {
+    margin-right: 2rem;
+  }
+}
+.c_figurelist .kitCard_pic {
+  flex-basis: auto !important;
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .kitCard_pic {
+    max-width: 150px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .c_figurelist .designation {
+    margin-right: 2rem;
+  }
+}
+.c_figurelist .time {
+  font-size: var(--fz20);
+  color: var(--grayColor7);
+  white-space: nowrap;
+  align-self: flex-end;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .time {
+    font-size: var(--fz16);
+  }
+}
+@media screen and (max-width: 800px) {
+  .c_figurelist .time {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .time time {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=UI-04-01-10.css.map */

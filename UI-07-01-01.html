@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/kitIcon.css" />
   <link rel="stylesheet" href="css/kitForm.css" />
   <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/kitSteps.css" />
   <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/UI-03-01-04.css" />
 </head>
 
 <body>
@@ -45,10 +47,16 @@
 
         <div class="main">
           <div class="container">
-            <div class="kitFlex kitFlex_right">
-              <button class="kitBtn" type="button">
-                    <i class="kitIcon"><img src="images/icon/icon_trash.svg" alt=""></i>刪除功能選單
-                  </button>
+
+            <div class="kitSteps_block">
+              <ul>
+                <li class="active">
+                  <div>基本資料設定</div>
+                </li>
+                <li>
+                  <div>諮詢說明</div>
+                </li>
+              </ul>
             </div>
             <div class="kitForm">
               <form action="">
@@ -59,56 +67,61 @@
                 </div>
                 <hr>
                 <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>父級選單：</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>牙技所名稱：</label>
                   <div class="formContent">
                     <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
+                    <div class="v_checkboxDropdown">
+                      <ul>
+                        <li><label><input type="checkbox" class="checkbox" id="0" />福家牙技所</label></li>
+                        <li><label><input type="checkbox" class="checkbox" id="1" />達爾文牙技所</label></li>
+                        <li><label><input type="checkbox" class="checkbox" id="2" />123牙技所</label></li>
+                      </ul>
+                    </div>
                     <div class="inlineGrp">
                       <span class="inlineTitle">目前已選取：</span>
-                      <ul>
-                        <li>福家牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          達爾文牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          卡麗喵牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                      </ul>
+                      <button class="kitBtn kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_delete.svg" alt=""></i>福家牙技所
+                      </button>
+                      <button class="kitBtn kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_delete.svg" alt=""></i>福家牙技所
+                      </button>
+                      <button class="kitBtn kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_delete.svg" alt=""></i>福家牙技所
+                      </button>
                     </div>
                     <div class="help">說明文字</div>
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>標題：</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>牙醫師姓名：</label>
+                  <div class="formContent">
+                    <select name="" id="">
+                      <option value="">aaa</option>
+                      <option value="">aaa</option>
+                      <option value="">aaa</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">住院醫生：</label>
                   <div class="formContent">
                     <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>路徑：</label>
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr> 患者姓名：</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                    <div class="inlineGrp">
+                      <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                      <button class="kitBtn" type="button">檢視相關諮詢單</button>
+                    </div>
                   </div>
                 </div>
                 <div class="formGrp">
-                  <label for="" class="formTitle">角色：</label>
+                  <label for="" class="formTitle">備註：</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
-                  </div>
-                </div>
-                <div class="formGrp">
-                  <label for="" class="formTitle">角色：</label>
-                  <div class="formContent">
-                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <div class="help">字數限500字元內</div>
                   </div>
                 </div>
               </form>
