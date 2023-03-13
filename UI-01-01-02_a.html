@@ -61,30 +61,18 @@
                 <div class="formGrp">
                   <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>父級選單：</label>
                   <div class="formContent">
-                    <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
-                    <div class="inlineGrp">
-                      <span class="inlineTitle">目前已選取：</span>
-                      <ul>
-                        <li>福家牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          達爾文牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                          卡麗喵牙技所
-                          <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="help">說明文字</div>
+                    <select id="select">
+                      <optgroup label="Root">
+                        <optgroup label="-系統管理">
+                          <option value="category-two__first-option">功能目錄設定</option>
+                          <option value="category-two__second-option">角色設定</option>
+                        </optgroup>
+                      </optgroup>
+                      <optgroup label="Category two">
+                        <option value="category-two__first-option">First option</option>
+                        <option value="category-two__second-option">Second option</option>
+                      </optgroup>
+                    </select>
                   </div>
                 </div>
                 <div class="formGrp">
