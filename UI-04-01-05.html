@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
-    <div class="wrapper">
+    <div class="wrapper sideMenuClose">
       <aside>
         <!-- 主選單 -->
         <script src="include/menu.js"></script>
@@ -59,13 +59,11 @@
                 <div class="kitCard_content"></div>
                 <!-- 2 -->
                 <div class="kitCard_content">
-                  <!-- rwd 手機版時顯示-->
-                  <button type="button" class="kitBtn kitBtn_w tabtitle">拒絕接單<span>(2)</span></button>
-                  <div class="kitCard_content_group">
-                    <div class="kitMessage">
-                      <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
-                      <p>可以選擇自行挑選補綴物或是選擇參考其他診所的設定</p>
-                    </div>
+                  <div class="kitMessage">
+                    <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
+                    <p>可以選擇自行挑選補綴物或是選擇參考其他診所的設定</p>
+                  </div>
+                  <div class="kitCard_content_group c_tablet">
                     <div class="kitFlex kitFlex_right">
                       <button class="kitBtn" type="button">自行挑選補綴物</button>
 
@@ -82,7 +80,7 @@
 
                     <div class="kitTable">
                       <div class="kitTable_out">
-                        <table class="c_tablet">
+                        <table>
                           <thead>
                             <th class="first"></th>
                             <th class="sec">No.</th>
@@ -92,11 +90,10 @@
                             <th>來源</th>
                           </thead>
                           <tbody>
+                            <!--以下可新增-->
                             <tr>
                               <td>
-                                <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
-                                  <i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i>
-                                </button>
+                                <input type="checkbox" name="" value="" checked="" />
                               </td>
                               <td>1</td>
                               <td><div class="title">植牙類</div></td>
@@ -106,9 +103,7 @@
                             </tr>
                             <tr>
                               <td>
-                                <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
-                                  <i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i>
-                                </button>
+                                <input type="checkbox" name="" value="" checked="" />
                               </td>
                               <td>1</td>
                               <td><div class="title">植牙類</div></td>
@@ -116,6 +111,7 @@
                               <td>1,000</td>
                               <td>寶貝兔青埔親子牙醫診所</td>
                             </tr>
+                            <!--以上可新增-->
                           </tbody>
                         </table>
                       </div>
@@ -146,5 +142,4 @@
       </div>
     </div>
   </body>
-  <script></script>
 </html>

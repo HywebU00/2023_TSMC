@@ -1,0 +1,82 @@
+.c_accordion .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px 5px 15px;
+  color: #fff;
+  background: var(--primaryColor);
+}
+.c_accordion .title .btnBox {
+  display: flex;
+}
+.c_accordion .accordionList {
+  padding: 0px 15px 0px 0;
+  background: #eaeaea;
+  border: none;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.c_accordion .accordionList button.accordionBtn {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  border: none;
+  background: var(--primaryColor);
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+.c_accordion .accordionList button.accordionBtn::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0px 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 5px;
+  left: 7px;
+}
+.c_accordion .accordionList button.openBox {
+  flex-grow: 1;
+  display: block;
+  border: none;
+  background: none;
+  padding: 20px 20px 20px 0;
+  margin-left: 65px;
+  text-align: left;
+}
+.c_accordion .item > ul > li {
+  border-top: 1px #dbdada solid;
+}
+.c_accordion .accordionContent {
+  padding: 20px;
+  border: 1px #dbdada solid;
+  border-width: 1px 1px 0;
+  display: none;
+}
+.c_accordion .accordionContent table {
+  width: 100%;
+}
+.c_accordion .accordionContent table thead {
+  color: var(--grayColor6);
+}
+.c_accordion .accordionContent table tr {
+  border: 1px #dbdada solid;
+}
+.c_accordion .accordionContent table td {
+  padding: 10px;
+}
+.c_accordion .accordionContent table + table {
+  margin-top: 20px;
+}
+.c_accordion .active .accordionList button.accordionBtn::before {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+.c_accordion .active .accordionContent {
+  display: block;
+}/*# sourceMappingURL=UI-04-01-07.css.map */
