@@ -1,0 +1,60 @@
+.c_tablet td.first,
+.c_tablet th.first {
+  width: 80px;
+  text-align: center;
+}
+.c_tablet td.sec,
+.c_tablet th.sec {
+  width: 20px;
+}
+.c_tablet .title {
+  border-radius: 3px;
+  padding: 6px 10px 5px;
+  color: #fff;
+  display: inline-block;
+  background: var(--successColor);
+}
+
+.c_figurelist {
+  flex-wrap: nowrap !important;
+}
+@media screen and (max-width: 640px) {
+  .c_figurelist {
+    flex-direction: column;
+  }
+}
+.c_figurelist .kitCard_pic {
+  flex-basis: auto !important;
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .kitCard_pic {
+    max-width: 150px;
+  }
+}
+.c_figurelist .designation {
+  margin-right: 30%;
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .designation {
+    margin: 0 0 20px 0;
+  }
+}
+.c_figurelist .time {
+  font-size: var(--fz20);
+  color: var(--grayColor7);
+  white-space: nowrap;
+  align-self: flex-end;
+  flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .time {
+    flex-direction: row;
+    font-size: var(--fz16);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .c_figurelist .time time {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=UI-04-01-05.css.map */

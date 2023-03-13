@@ -29,13 +29,12 @@
     background: #cacaca !important;
   }
   .kitBtn i.kitIcon {
-    margin: -1px 5px 0 0;
-  }
-  .kitBtn.kitBtn_right {
-    padding: 4px 10px 3px;
+    margin-top: -1px;
+    margin-right: 4px;
   }
   .kitBtn.kitBtn_right i.kitIcon {
-    margin: -1px 0 0 4px;
+    margin-left: 4px;
+    margin-left: 0;
     order: 3;
   }
   .kitBtn.kitBtn_arrow {
@@ -73,6 +72,20 @@
   }
   .kitBtn.kitBtn_icon i {
     margin: 0 !important;
+  }
+  .kitBtn.kitBtn_icon_l {
+    padding: 0 !important;
+    aspect-ratio: 1/1;
+  }
+  .kitBtn.kitBtn_icon_l i {
+    width: 40px;
+    height: 40px;
+    padding: 0 !important;
+    margin: 0;
+  }
+  .kitBtn.kitBtn_icon_l img {
+    left: -42px;
+    filter: drop-shadow(42px 0 #fff) !important;
   }
   .kitBtn:hover, .kitBtn:active {
     border-color: var(--primaryColor2);
@@ -112,6 +125,31 @@
   }
   .kitBtn.kitBtn_gray i.kitIcon img {
     filter: drop-shadow(26px 0 #fff);
+  }
+  .kitBtn.kitBtn_t {
+    font-weight: 400;
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+  }
+  .kitBtn.kitBtn_t:hover, .kitBtn.kitBtn_t:active {
+    color: #fff;
+    background: var(--primaryColor);
+  }
+  .kitBtn.kitBtn_t.kitBtn_arrow::before {
+    border-color: #fff;
+  }
+  .kitBtn.kitBtn_t i.kitIcon img {
+    filter: drop-shadow(26px 0 #fff);
+  }
+  .kitBtn.kitBtn_t:disabled:hover, .kitBtn.kitBtn_t:disabled:active, .kitBtn.kitBtn_t:disabled {
+    color: var(--grayColor7) !important;
+    cursor: not-allowed;
+    border: transparent !important;
+    background: transparent !important;
+  }
+  .kitBtn.kitBtn_t:disabled:hover i.kitIcon img, .kitBtn.kitBtn_t:disabled:active i.kitIcon img, .kitBtn.kitBtn_t:disabled i.kitIcon img {
+    filter: drop-shadow(26px 0 var(--grayColor7));
   }
   .kitBtn.kitBtn_m {
     height: 32px;
@@ -169,8 +207,9 @@
   .kitBtn.kitBtn_full.kitBtn_arrow::before {
     position: relative !important;
     order: 3;
-    margin-left: 30px;
-    transform: translateY(-20%) rotate(45deg);
+    margin-left: 25px;
+    top: 0;
+    transform: rotate(45deg);
   }
   .kitBtn.kitBtn_radius {
     padding: 4px 12px 3px;
@@ -184,5 +223,54 @@
   }
   .kitBtn.kitBtn_radius.kitBtn_arrow::before {
     right: 15px;
+  }
+  .kitSelect {
+    position: relative;
+    margin: 5px;
+  }
+  .kitSelect::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    right: 12px;
+    border-style: solid;
+    border-width: 2px;
+    border-width: 0 2px 2px 0;
+    top: 50%;
+    transform: translateY(-80%) rotate(45deg);
+    border-color: #fff;
+  }
+  .kitSelect select {
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 6px 35px 5px 8px;
+    height: 42px;
+    background: var(--primaryColor) !important;
+    border-color: var(--primaryColor);
+    border-radius: 3px;
+    margin: 0;
+    color: #fff !important;
+    box-shadow: none;
+  }
+  .kitSelect select::-ms-expand {
+    display: none;
+  }
+  .kitSelect select:disabled:hover, .kitSelect select:disabled:active, .kitSelect select:disabled {
+    color: #fff !important;
+    cursor: not-allowed;
+    border: 1px solid #b4b4b4 !important;
+    background: #cacaca !important;
+  }
+  .kitSelect.kitSelect_icon select {
+    padding-left: 40px;
+  }
+  .kitSelect.kitSelect_icon .kitIcon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 } /*# sourceMappingURL=kitButton.css.map */

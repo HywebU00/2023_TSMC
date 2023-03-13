@@ -1,37 +1,3 @@
-.M-searchSupplier {
-  display: flex;
-}
-.M-searchSupplier .searchGrp {
-  flex: 1 1 auto;
-  position: relative;
-  height: auto;
-}
-.M-searchSupplier .searchGrp.withIcon input[type=text] {
-  padding-right: 60px;
-}
-.M-searchSupplier .searchGrp.withIcon button {
-  width: 42px;
-}
-.M-searchSupplier .searchGrp input[type=text],
-.M-searchSupplier .searchGrp button {
-  margin: 0.3rem 0;
-}
-.M-searchSupplier .kitBtn {
-  margin: 0.3rem 0.25rem;
-}
-
-.selectCheckbox {
-  position: absolute;
-  right: 0;
-  padding: 1rem;
-  background: #fff;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-.selectCheckbox .checkGrp {
-  flex-direction: column;
-}
-
 .notFound {
   display: flex;
   align-items: center;

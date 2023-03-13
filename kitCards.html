@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kit Cards</title>
     <link rel="stylesheet" href="css/variable.css" />
-    <link rel="stylesheet" href="css/kitButton.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
     <link rel="stylesheet" href="css/kitForm.css">
     <link rel="stylesheet" href="css/kitCards.css" />
     <link rel="stylesheet" href="css/default.css" />
@@ -58,7 +58,7 @@
                 </li>
             </ul>
             <div class="kitCard_centerblock">
-                <button class="kitBtn" type="button">
+                <button class="kitBtn " type="button">
                     <i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i>評價診所
                 </button>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -67,6 +67,34 @@
         </div>
     </div>
     <!-- kitCard_store 店家 end -->
+    <!-- kitCard_message 留言 start -->
+    <div class="kitCard_message">
+        <div class="kitCard_function_block">
+            <div class="kitCard_replace">C</div>
+            <div class="kitCard_function">
+                <button type="button" class="kitBtn kitBtn_t kitBtn_icon kitBtn_icon_l"><i class="kitIcon"><img src="images/icon/icon_edit.svg" alt="" /></i></button>
+                <button type="button" class="kitBtn kitBtn_t kitBtn_icon kitBtn_icon_l"><i class="kitIcon"><img src="images/icon/icon_trash.svg" alt="" /></i></button>
+            </div>
+        </div>
+        <div class="kitCard_content">
+            <div class="kitCard_listdata">
+                <div class="kitCard_number">1</div>
+                <div class="kitCard_name">Vicky Chung</div>
+                <div class="kitCard_date">2022/10/12</div>
+                <div class="kitCard_time">13:00</div>
+            </div>
+            <div class="kitCard_form">
+                <textarea name="" id="" cols="30" rows="10">就是這顆牙</textarea>
+            </div>
+            <div class="kitCard_btnGrp">
+                <button class="kitBtn kitBtn_w" type="button">取消</button>
+                <button class="kitBtn" type="button">儲存</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- kitCard_message 留言 end -->
     <!-- kitCard_supplier  供應商 start  -->
     <div class="kitCard_supplier">
         <div class="kitCard_serialnumber">S202108090009</div>
@@ -144,7 +172,6 @@
         </div>
         <!-- 1 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w active tabtitle">確認接單<span>(10)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -184,7 +211,6 @@
         </div>
         <!-- 2 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w tabtitle">為接單<span>(2)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -224,7 +250,6 @@
         </div>
         <!-- 3 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w tabtitle">拒絕接單<span>(2)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -274,7 +299,6 @@
         </div>
         <!-- 1 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w active tabtitle">我的訂單<span>(10)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -312,7 +336,6 @@
         </div>
         <!-- 2 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w tabtitle">待分派訂單<span>(2)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -355,7 +378,6 @@
         </div>
         <!-- 3 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w tabtitle">待檢查訂單<span>(2)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -393,7 +415,6 @@
         </div>
         <!-- 4 -->
         <div class="kitCard_content">
-            <button type="button" class="kitBtn kitBtn_w tabtitle">你可能想嘗試的<span>(2)</span></button>
             <div class="kitCard_content_group">
                 <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
                 <div class="kitCard_serialnumber">O202210171234
@@ -435,10 +456,17 @@
     <div class="kitCard_figureinformation">
         <div class="kitCard_storename">寶貝兔青埔親子牙醫診所</div>
         <div class="kitCard_figurelist">
-            <div class="kitCard_pic">
-                <div class="kitCard_picimg"><img src="images/KitCards_pic01.jpg" alt=""></div>
+            <div class="kitCard_pic_block">
+                <div class="kitCard_pic">
+                    <div class="image"><img src="images/KitCards_pic01.jpg" alt="照片"></div>
+                    <div class="kitCard_state check"><i class="kitIcon">
+                            <img src="images/icon/icon_check.svg" alt="" />
+                        </i>
+                    </div>
+                </div>
                 <div class="kitCard_name">Julia</div>
                 <button class="kitBtn" type="button">移除醫生</button>
+
             </div>
             <div class="kitCard_information">
                 <div class="kitCard_fullname">Julia · Fiona · Roberts</div>
@@ -449,12 +477,76 @@
                     <li>
                         <i class="kitCard_icon"><img src="images/icon/icon_phone.svg" alt=""></i><span>電話</span>0912345678
                     </li>
-
                 </ul>
-                <div class="kitCard_joblabel">牙醫師</div>
-                <div class="kitCard_functionbtn"><button type="button" class="kitBtn kitBtn_w kitBtn_m kitBtn_radius">重設密碼</button></div>
+                <div class="kitCard_footblock">
+                    <div class="kitCard_joblabel">牙醫師</div>
+                    <div class="kitCard_functionbtn"><button type="button" class="kitBtn kitBtn_w kitBtn_m kitBtn_radius">重設密碼</button></div>
+                </div>
             </div>
-
+        </div>
+    </div>
+    <!-- kitCard_figureinformation end -->
+    <!-- kitCard_figureinformation start -->
+    <div class="kitCard_figureinformation">
+        <div class="kitCard_label"><i class="kitIcon">
+                <img src="images/icon/icon_approve.svg" alt="" />
+            </i>等待審核</div>
+        <div class="kitCard_figurelist">
+            <div class="kitCard_pic_block">
+                <div class="kitCard_pic">
+                    <div class="image"><img src="images/KitCards_pic01.jpg" alt="照片"></div>
+                    <div class="kitCard_state check"><i class="kitIcon">
+                            <img src="images/icon/icon_check.svg" alt="" />
+                        </i>
+                    </div>
+                </div>
+                <div class="kitCard_name">Julia</div>
+            </div>
+            <div class="kitCard_information">
+                <div class="kitCard_fullname">Julia · Fiona · Roberts</div>
+                <ul>
+                    <li>
+                        <i class="kitCard_icon"><img src="images/icon/icon_mail.svg" alt=""></i><span>Email</span><a href="#">123456@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="kitCard_icon"><img src="images/icon/icon_phone.svg" alt=""></i><span>電話</span>0912345678
+                    </li>
+                </ul>
+                <div class="kitCard_footblock">
+                    <div class="kitCard_joblabel">牙醫師</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- kitCard_figureinformation end -->
+    <!-- kitCard_figureinformation start -->
+    <div class="kitCard_figureinformation">
+        <div class="kitCard_storename">台灣地區平台商</div>
+        <div class="kitCard_figurelist">
+            <div class="kitCard_pic_block">
+                <div class="kitCard_pic">
+                    <div class="kitCard_replace">A</div>
+                    <div class="kitCard_state warning"><i class="kitIcon">
+                            <img src="images/icon/icon_warning_y.svg" alt="" />
+                        </i>
+                    </div>
+                </div>
+                <div class="kitCard_name">Julia</div>
+            </div>
+            <div class="kitCard_information">
+                <div class="kitCard_fullname">Julia · Fiona · Roberts</div>
+                <ul>
+                    <li>
+                        <i class="kitCard_icon"><img src="images/icon/icon_mail.svg" alt=""></i><span>Email</span><a href="#">123456@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="kitCard_icon"><img src="images/icon/icon_phone.svg" alt=""></i><span>電話</span>0912345678
+                    </li>
+                </ul>
+                <div class="kitCard_footblock">
+                    <div class="kitCard_joblabel">Admin</div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- kitCard_figureinformation end -->
