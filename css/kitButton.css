@@ -73,6 +73,20 @@
   .kitBtn.kitBtn_icon i {
     margin: 0 !important;
   }
+  .kitBtn.kitBtn_icon_l {
+    padding: 0 !important;
+    aspect-ratio: 1/1;
+  }
+  .kitBtn.kitBtn_icon_l i {
+    width: 40px;
+    height: 40px;
+    padding: 0 !important;
+    margin: 0;
+  }
+  .kitBtn.kitBtn_icon_l img {
+    left: -42px;
+    filter: drop-shadow(42px 0 #fff) !important;
+  }
   .kitBtn:hover, .kitBtn:active {
     border-color: var(--primaryColor2);
     background: var(--primaryColor2);
@@ -119,10 +133,8 @@
     border-color: transparent;
   }
   .kitBtn.kitBtn_t:hover, .kitBtn.kitBtn_t:active {
-    color: var(--primaryColor);
-  }
-  .kitBtn.kitBtn_t:hover i.kitIcon img, .kitBtn.kitBtn_t:active i.kitIcon img {
-    filter: drop-shadow(26px 0 var(--primaryColor));
+    color: #fff;
+    background: var(--primaryColor);
   }
   .kitBtn.kitBtn_t.kitBtn_arrow::before {
     border-color: #fff;
