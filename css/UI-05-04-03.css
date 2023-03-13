@@ -1,0 +1,20 @@
+.c_nameBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.c_nameBox .formTitle {
+  margin-right: 10px;
+}
+.c_nameBox .time {
+  color: var(--grayColor7);
+  text-align: right;
+}
+
+.c_tablet thead span {
+  display: block;
+  font-weight: normal;
+  font-size: var(--fz16);
+  color: var(--grayColor7);
+}/*# sourceMappingURL=UI-05-04-03.css.map */

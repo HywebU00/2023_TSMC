@@ -1,16 +1,19 @@
 .c_tablet td.first,
 .c_tablet th.first {
   width: 80px;
-  text-align: center;
 }
 .c_tablet td.sec,
 .c_tablet th.sec {
   width: 20%;
 }
 .c_tablet .last {
-  text-align: center;
   width: 200px;
 }
 .c_tablet .last button {
   margin: 0 auto;
+}
+.c_tablet tbody tr:hover {
+  cursor: pointer;
+  color: #fff;
+  background: var(--primaryColor);
 }/*# sourceMappingURL=UI-01-02.css.map */

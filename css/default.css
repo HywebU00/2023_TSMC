@@ -1761,7 +1761,6 @@
   }
   .pageTopSearch {
     padding: 20px 0 0;
-    max-width: 500px;
   }
   .pageTopSearch .container {
     font-size: var(--fz20);
@@ -1779,6 +1778,12 @@
     .pageTopSearch .container {
       margin: 0;
     }
+  }
+  .pageTopSearch .inlineGrp {
+    max-width: 500px;
+  }
+  .pageTopSearch.L_full .inlineGrp {
+    max-width: initial;
   }
   .pageTopSearch .formContent {
     position: relative;
