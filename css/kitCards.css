@@ -324,15 +324,12 @@
   }
   .kitCard_tabblock .kitCard_tab {
     display: flex;
-  }
-  @media screen and (max-width: 768px) {
-    .kitCard_tabblock .kitCard_tab {
-      display: none;
-    }
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 0.5em;
   }
   .kitCard_tabblock .kitCard_tab button {
-    min-width: 140px;
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -347,15 +344,6 @@
   }
   .kitCard_tabblock .kitCard_content {
     margin: 0 0 0.5em;
-  }
-  .kitCard_tabblock .kitCard_content button {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .kitCard_tabblock .kitCard_content button.active {
-    background-color: var(--primaryColor);
-    color: #fff;
   }
   .kitCard_tabblock .kitCard_content .tabtitle {
     margin: 0;
