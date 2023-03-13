@@ -326,10 +326,10 @@
     display: flex;
     width: 100%;
     overflow-x: scroll;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
   }
   .kitCard_tabblock .kitCard_tab button {
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -343,7 +343,8 @@
     color: #fff;
   }
   .kitCard_tabblock .kitCard_content {
-    margin: 0 0 0.5em;
+    margin: 0 0 1em;
+    border: 1px solid var(--grayColor6);
   }
   .kitCard_tabblock .kitCard_content .tabtitle {
     margin: 0;
@@ -522,7 +523,7 @@
     padding: 1.2em 2em;
     margin: 0 -2em;
     justify-content: flex-end;
-    border-top: 1px solid #959595;
+    border-top: 1px solid #c8c7c7;
   }
   @media screen and (max-width: 768px) {
     .kitCard_tabblock .kitCard_content .kitCard_orderwork {
