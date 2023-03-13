@@ -324,15 +324,12 @@
   }
   .kitCard_tabblock .kitCard_tab {
     display: flex;
-  }
-  @media screen and (max-width: 768px) {
-    .kitCard_tabblock .kitCard_tab {
-      display: none;
-    }
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 0.5em;
   }
   .kitCard_tabblock .kitCard_tab button {
-    min-width: 140px;
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -347,15 +344,6 @@
   }
   .kitCard_tabblock .kitCard_content {
     margin: 0 0 0.5em;
-  }
-  .kitCard_tabblock .kitCard_content button {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .kitCard_tabblock .kitCard_content button.active {
-    background-color: var(--primaryColor);
-    color: #fff;
   }
   .kitCard_tabblock .kitCard_content .tabtitle {
     margin: 0;
@@ -778,4 +766,88 @@
   .kitCard_figureinformation .kitCard_information .kitCard_footblock .kitCard_functionbtn .kitBtn {
     margin: 0;
   }
+}
+.kitCard_message {
+  background-color: #2a3042;
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  margin-bottom: 3em;
+}
+.kitCard_message .kitCard_function_block {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #666;
+  padding-bottom: 1em;
+}
+.kitCard_message .kitCard_function_block .kitCard_replace {
+  background-color: #95ccff;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fz24);
+}
+.kitCard_message .kitCard_function_block .kitCard_function {
+  display: flex;
+}
+.kitCard_message .kitCard_content {
+  padding: 1em 0 0 0;
+}
+.kitCard_message .kitCard_content .kitCard_listdata {
+  display: flex;
+  margin-bottom: 1em;
+  color: #fff;
+  align-items: center;
+  font-size: var(--fz18);
+  padding-left: 1.5em;
+}
+@media screen and (max-width: 576px) {
+  .kitCard_message .kitCard_content .kitCard_listdata {
+    flex-wrap: wrap;
+  }
+}
+.kitCard_message .kitCard_content .kitCard_listdata .kitCard_number {
+  flex: 0 0 auto;
+  margin-right: 1em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primaryColor);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1.8em;
+}
+.kitCard_message .kitCard_content .kitCard_listdata .kitCard_name {
+  flex: 1 1 auto;
+}
+.kitCard_message .kitCard_content .kitCard_listdata .kitCard_date {
+  flex: 0 0 auto;
+  margin-left: 1em;
+}
+.kitCard_message .kitCard_content .kitCard_listdata .kitCard_time {
+  flex: 0 0 auto;
+  margin-left: 1em;
+}
+.kitCard_message .kitCard_content .kitCard_form {
+  width: 100%;
+}
+.kitCard_message .kitCard_content .kitCard_form textarea {
+  width: 100%;
+}
+.kitCard_message .kitCard_content .kitCard_btnGrp {
+  padding: 1em 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.kitCard_message .kitCard_content .kitCard_btnGrp button {
+  margin-right: 0;
+  margin-left: 0.8em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }/*# sourceMappingURL=kitCards.css.map */
