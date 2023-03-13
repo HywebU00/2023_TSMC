@@ -793,14 +793,6 @@
 .kitCard_message .kitCard_function_block .kitCard_function {
   display: flex;
 }
-.kitCard_message .kitCard_function_block .kitCard_function .kitIcon {
-  width: 36px;
-  height: 36px;
-}
-.kitCard_message .kitCard_function_block .kitCard_function .kitIcon img {
-  left: -32px;
-  filter: drop-shadow(33px 0 #fff);
-}
 .kitCard_message .kitCard_content {
   padding: 1em 0 0 0;
 }
