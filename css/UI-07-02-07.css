@@ -2,6 +2,10 @@
   align-items: center;
 }
 
+.m_noteTxt {
+  margin-top: 0.5rem;
+}
+
 .photoUpload_grp {
   border: 1px solid var(--grayColor6);
   padding: 1rem 0.5rem;
