@@ -33,6 +33,9 @@
   border: transparent;
   padding: 1rem 0;
 }
+.L_setKitCard_tabblock .kitTable thead {
+  background: #fff;
+}
 .L_setKitCard_tabblock .kitTable table table {
   border: solid 1px #d9d9d9;
   margin: 10px 0;
