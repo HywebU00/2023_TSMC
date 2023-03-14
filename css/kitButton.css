@@ -132,6 +132,21 @@
   .kitBtn.kitBtn_gray i.kitIcon img {
     filter: drop-shadow(26px 0 #fff);
   }
+  .kitBtn.kitBtn_darkGray {
+    font-weight: 400;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+    border-color: rgba(0, 0, 0, 0.75);
+  }
+  .kitBtn.kitBtn_darkGray:hover, .kitBtn.kitBtn_darkGray:active, .kitBtn.kitBtn_darkGray.active {
+    background: var(--grayColor7);
+  }
+  .kitBtn.kitBtn_darkGray.kitBtn_arrow::before {
+    border-color: #fff;
+  }
+  .kitBtn.kitBtn_darkGray i.kitIcon img {
+    filter: drop-shadow(26px 0 #fff);
+  }
   .kitBtn.kitBtn_t {
     font-weight: 400;
     color: #fff;
