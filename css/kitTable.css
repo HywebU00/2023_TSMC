@@ -22,8 +22,7 @@
     text-align: left;
     font-weight: 500;
   }
-  .kitTable tbody tr.active,
-  .kitTable tbody tr:hover:not(.title) {
+  .kitTable tbody tr.active {
     cursor: pointer;
     color: #fff;
     background: var(--primaryColor);
@@ -45,8 +44,12 @@
     text-align: left;
   }
   .kitTable.kitTable_typeB tr.active td:nth-child(1) button::before {
+    border-color: #fff;
     border-width: 2px 0 0 2px;
     transform: translateY(20%) rotate(45deg);
+  }
+  .kitTable.kitTable_typeB tr:hover td:nth-child(1) button::before {
+    border-color: #fff;
   }
   .kitTable.kitTable_typeB td:nth-child(1) button {
     background: none;
