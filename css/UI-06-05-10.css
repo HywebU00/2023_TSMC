@@ -1,0 +1,75 @@
+.subTitle {
+  font-size: var(--fz20);
+  color: var(--primaryColor4);
+  padding: 1.25rem 0;
+}
+
+.L_setKitCard .kitCard_orderlist_twocolumns > span {
+  display: block;
+}
+
+.L_kitCardStoreName .clinic,
+.L_kitCardStoreName .skill {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-bottom-left-radius: 20px;
+}
+.L_kitCardStoreName .clinic {
+  background: #A0AFDD;
+}
+.L_kitCardStoreName .skill {
+  background: #555B6D;
+}
+
+.L_setKitSteps {
+  padding: 0;
+}
+.L_setKitSteps .kitSteps_Processblock {
+  padding: 1.5rem 0;
+  border: solid 1px var(--grayColor6);
+}
+
+.L_setKitCard_tabblock .kitCard_content {
+  border: transparent;
+  padding: 1rem 0;
+}
+.L_setKitCard_tabblock .kitTable table table {
+  border: solid 1px #d9d9d9;
+  margin: 10px 0;
+}
+.L_setKitCard_tabblock .kitTable table table th {
+  background: #eee;
+}
+.L_setKitCard_tabblock .kitTable table .show {
+  display: table-cell;
+}
+.L_setKitCard_tabblock .kitTable table .hide {
+  display: none;
+}
+.L_setKitCard_tabblock .kitTable table .clinic_Name {
+  min-width: 150px;
+  max-width: 240px;
+}
+.L_setKitCard_tabblock .kitTable .L_setRight {
+  display: flex;
+  justify-content: flex-end;
+}
+.L_setKitCard_tabblock .col_444 {
+  flex-wrap: wrap;
+}
+.L_setKitCard_tabblock .col_444 .kitCard_store {
+  flex: 0 1 32%;
+  margin-bottom: 1.25rem;
+}
+.L_setKitCard_tabblock .col_444 .kitCard_store .kitCard_content {
+  border: none;
+}
+.L_setKitCard_tabblock .col_444 .kitCard_store .kitCard_content ul {
+  border: none;
+  padding: 0;
+  margin: 0.75rem 0;
+}
+.L_setKitCard_tabblock .col_444 .kitCard_store .kitCard_content ul li {
+  align-items: center;
+  font-size: var(--fz16);
+}/*# sourceMappingURL=UI-06-05-10.css.map */

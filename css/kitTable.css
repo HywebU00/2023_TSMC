@@ -80,5 +80,42 @@
   .kitTable.kitTable_typeC td {
     padding: 15px 10px;
   }
+  .kitTable.kitTable_typeD .kitTable_title {
+    color: var(--primaryColor);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .kitTable.kitTable_typeD .kitTable_title::after {
+    content: "";
+    height: 1px;
+    background: var(--primaryColor);
+    display: block;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .kitTable.kitTable_typeD .kitTable_out {
+    padding: 20px;
+    background: #efefef;
+  }
+  .kitTable.kitTable_typeD thead {
+    background: none;
+  }
+  .kitTable.kitTable_typeD tr {
+    border: none;
+  }
+  .kitTable.kitTable_typeD tr + tr:not(.title) {
+    border-top: #d9d9d9 1px solid;
+  }
+  .kitTable.kitTable_typeD tr.title {
+    font-weight: bold;
+  }
+  .kitTable.kitTable_typeD span.label {
+    display: block;
+  }
+  .kitTable.kitTable_typeD .kitIcon img {
+    filter: drop-shadow(26px 0 #2b90dc);
+  }
 
 }/*# sourceMappingURL=kitTable.css.map */

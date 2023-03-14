@@ -1,6 +1,8 @@
 @layer kitCards {
   .kitCard_figureinformation .kitCard_information ul li .kitCard_icon, .kitCard_store .kitCard_content ul li .kitCard_icon, .kitCard_tabblock .kitCard_content .kitCard_label .kitCard_icon {
     position: relative;
+    flex: 0 0 auto;
+    flex-basis: 24px;
     width: 24px;
     height: 24px;
     display: block;
@@ -227,26 +229,26 @@
     padding: 0;
     margin-bottom: 3em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    position: relative;
   }
   .kitCard_ordersetup .kitCard_label {
-    flex: 0 0 auto;
     background-color: var(--successColor);
     color: #fff;
     border-radius: 0 0 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.3em;
     font-size: var(--fz20);
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   .kitCard_ordersetup .kitCard_more {
     flex: 0 0 auto;
   }
   .kitCard_ordersetup .kitCard_more a {
     color: #fff;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.3em;
     text-align: center;
     display: block;
     border-radius: 0 0 0 10px;
@@ -256,6 +258,28 @@
   }
   .kitCard_ordersetup .kitCard_more a:hover {
     background-color: var(--primaryColor);
+  }
+  .kitCard_ordersetup .kitCard_clinicname {
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 0.5em 1em 0.3em;
+    background-color: var(--grayColor6);
+    border-radius: 0 0 0 10px;
+    font-size: var(--fz18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kitCard_ordersetup .kitCard_technologyname {
+    flex: 0 0 auto;
+    color: #fff;
+    padding: 0.5em 1em 0.3em;
+    background-color: var(--grayColor5);
+    border-radius: 0 0 0 10px;
+    font-size: var(--fz18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .kitCard_ordersetup .kitCard_content {
     flex: 1 1 auto;
@@ -319,6 +343,19 @@
       width: 100%;
     }
   }
+  .kitCard_ordersetup .kitCard_orderwork {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    margin: 1em 0 0;
+    justify-content: flex-end;
+    border-top: 1px solid #c8c7c7;
+  }
+  .kitCard_ordersetup .kitCard_orderwork .btn {
+    margin: 0 0.3em;
+  }
   .kitCard_tabblock {
     margin-bottom: 3em;
   }
@@ -344,6 +381,8 @@
   }
   .kitCard_tabblock .kitCard_content {
     margin: 0 0 1em;
+  }
+  .kitCard_tabblock .kitCard_content.kitCard_line {
     border: 1px solid var(--grayColor6);
   }
   .kitCard_tabblock .kitCard_content .tabtitle {
@@ -360,11 +399,11 @@
   .kitCard_tabblock .kitCard_content .kitCard_content_group {
     background-color: #fff;
     position: relative;
-    padding: 2em 2em 0;
+    padding: 2em 2em 1em;
   }
   @media screen and (max-width: 768px) {
     .kitCard_tabblock .kitCard_content .kitCard_content_group {
-      padding: 4em 1.5em 0;
+      padding: 4em 1.5em 1em;
     }
   }
   .kitCard_tabblock .kitCard_content .kitCard_storename {
@@ -403,7 +442,6 @@
   .kitCard_tabblock .kitCard_content .kitCard_data_block {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1em;
   }
   .kitCard_tabblock .kitCard_content .kitCard_data_block .kitCard_orderlist_twocolumns {
     flex: 1 1 auto;
@@ -520,8 +558,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1.2em 2em;
-    margin: 0 -2em;
+    padding: 1em 2em 0;
+    margin: 0.5em -2em 0;
     justify-content: flex-end;
     border-top: 1px solid #c8c7c7;
   }

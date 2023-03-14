@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-01-04</title>
+    <title>UI-05-02-04</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
@@ -26,8 +26,10 @@
             <div class="headInfo">
               <!-- 麵包屑 -->
               <ul class="breadcrumb">
-                <li><a href="#">系統管理</a></li>
-                <li>代碼管理</li>
+                <li><a href="#">材料管理</a></li>
+                <li><a href="#">供應商管理</a></li>
+                <li><a href="#">福家牙技所</a></li>
+                <li>崴仕專業牙材供應商</li>
               </ul>
 
               <!-- 右上角選單 -->
@@ -36,47 +38,58 @@
           </div>
         </header>
         <main>
+          <!-- 內容上方標題區塊 -->
+          <div class="pageTopInfo">
+            <div class="container">
+              <!-- 上一頁 -->
+              <a href="#" class="back">材料設定</a>
+            </div>
+          </div>
           <!-- 上方搜尋區塊 -->
           <script src="include/topSearch.js"></script>
 
           <div class="main">
             <div class="container">
               <div class="kitFlex kitFlex_right">
-                <button class="kitBtn" type="button">新增代碼</button>
+                <button class="kitBtn" type="button">新增產品</button>
               </div>
+              <h3>福家牙技所</h3>
               <div class="kitTable kitTable_typeB">
                 <div class="kitTable_out">
                   <table class="c_tablet">
                     <thead>
                       <tr>
-                        <th>No.</th>
-                        <th>ID</th>
-                        <th>項目名稱</th>
-                        <th>代碼ID</th>
-                        <th>代碼名稱</th>
+                        <th class="first">No.</th>
+                        <th>材料名稱</th>
+                        <th>產品名稱</th>
+                        <th>廠牌</th>
+                        <th>型號</th>
+                        <th>價格</th>
+                        <th>數量 / 單位</th>
+                        <th>供應商名稱</th>
                       </tr>
                     </thead>
                     <tbody>
+                      <!--tr設定點擊事件連結-->
                       <tr>
                         <td>1</td>
-                        <td>1234</td>
-                        <td>啟用狀態</td>
-                        <td></td>
-                        <td></td>
+                        <td>3M LAVA Esthetic</td>
+                        <td>“渥克”甘迪歐柏客樹脂瓷塊 / “VOCO” Grandio Blocs CAD/.....</td>
+                        <td>VOCO</td>
+                        <td>xxxxxxxxx</td>
+                        <td>1,500</td>
+                        <td>1 / 包</td>
+                        <td>崴仕專業牙材供應商</td>
                       </tr>
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>enable</td>
-                        <td>啟用</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>disable</td>
-                        <td>不啟用</td>
+                        <td>1</td>
+                        <td>3M LAVA Esthetic</td>
+                        <td>“渥克”甘迪歐柏客樹脂瓷塊 / “VOCO” Grandio Blocs CAD/.....</td>
+                        <td>VOCO</td>
+                        <td>xxxxxxxxx</td>
+                        <td>1,500</td>
+                        <td>1 / 包</td>
+                        <td>崴仕專業牙材供應商</td>
                       </tr>
                     </tbody>
                   </table>
@@ -95,5 +108,4 @@
       </div>
     </div>
   </body>
-  <script></script>
 </html>

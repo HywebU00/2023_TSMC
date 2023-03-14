@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-06-05-01</title>
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/kitCards.css" />
+  <link rel="stylesheet" href="css/kitSteps.css" />
+  <link rel="stylesheet" href="css/kitTable.css" />
+  <link rel="stylesheet" href="css/UI-06-05-10.css" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">製程項目管理</a></li>
+              <li><a href="#">補綴物管理</a></li>
+              <li>福家牙技所</li>
+            </ul>
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 內容上方標題區塊 -->
+        <div class="pageTopInfo">
+          <div class="container">
+            <!-- 上一頁 -->
+            <a href="#" class="back">3M LAVA Plus</a>
+          </div>
+        </div>
+        <div class="main">
+          <div class="container">
+            <div class="kitCard_ordersetup">
+              <div class="kitCard_label">訂單成立</div>
+              <div class="kitCard_more">
+                <a href="#">More</a>
+              </div>
+              <div class="kitCard_content">
+                <div class="kitCard_orderlist_twocolumns">
+                  <ul>
+                    <li class="kitCard_ordernumber"><span>診所訂單編號：</span>C202210171234</li>
+                    <li>
+                      <span>患者：</span>陳大明<button type="button" class="kitBtn kitBtn_w kitBtn_m">檢視相關諮詢單</button>
+                    </li>
+                    <li>
+                      <span>牙技所名稱：</span>福家牙祭所
+                    </li>
+                    <li>
+                      <span>試戴需求日：</span>2022/11/30 上午
+                    </li>
+                    <li>
+                      <span>牙醫師姓名：</span>Julia · Fiona · Roberts
+                    </li>
+                    <li>
+                      <span>預計完成日：</span>2022 / 12 / 30 上午
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="kitCard_ordersetup">
+              <!-- <div class="kitCard_label">訂單成立</div> -->
+              <div class="L_kitCardStoreName">
+                <span class="clinic">診所名稱</span>
+                <span class="skill">牙技所名稱</span>
+              </div>
+              <div class="kitCard_content">
+                <div class="kitCard_orderlist_twocolumns">
+                  <ul>
+                    <li class="kitCard_ordernumber"><span>診所訂單編號：</span>C202210171234</li>
+                    <li>
+                      <span>患者：</span>陳大明<button type="button" class="kitBtn kitBtn_w kitBtn_m">檢視相關諮詢單</button>
+                    </li>
+                    <li>
+                      <span>牙技所名稱：</span>福家牙祭所
+                    </li>
+                    <li>
+                      <span>試戴需求日：</span>2022/11/30 上午
+                    </li>
+                    <li>
+                      <span>牙醫師姓名：</span>Julia · Fiona · Roberts
+                    </li>
+                    <li>
+                      <span>預計完成日：</span>2022 / 12 / 30 上午
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="kitAlign_right">
+                <button class="kitBtn kitBtn_radius" type="button">檢視保固單</button>
+              </div>
+            </div>
+            <!-- 附項材料設定 -->
+            <div class="kitTable kitTable_typeD">
+              <div class="kitTable_title">附項材料設定</div>
+              <div class="kitTable_out">
+                <table>
+                  <tbody>
+                    <tr class="title">
+                      <td>附項類型2</td>
+                      <td colspan="4">作法</td>
+                      <td colspan="2">多選</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>附項設定值1</td>
+                      <td>
+                        <div class="label">名稱</div>
+                        牙肉色陶瓷
+                      </td>
+                      <td>
+                        <div class="label">附項材料</div>
+                        VITA瓷粉
+                      </td>
+                      <td>
+                        <div class="label">費用</div>
+                        2022 / 11 / 03 起 收費1,000 TWD
+                      </td>
+                      <td>開放折讓</td>
+                      <td>
+                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>附項設定值2</td>
+                      <td>
+                        <div class="label">名稱</div>
+                        牙肉色陶瓷
+                      </td>
+                      <td>
+                        <div class="label">附項材料</div>
+                        VITA瓷粉
+                      </td>
+                      <td>
+                        <div class="label">費用</div>
+                        2022 / 11 / 03 起 收費1,000 TWD
+                      </td>
+                      <td>開放折讓</td>
+                      <td>
+                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                      </td>
+                    </tr>
+                    <tr class="title">
+                      <td>附項類型2</td>
+                      <td colspan="4">作法</td>
+                      <td colspan="2">單選</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>附項設定值1</td>
+                      <td>
+                        <div class="label">名稱</div>
+                        Screw Retained
+                      </td>
+                      <td>
+                        <div class="label">附項材料</div>
+                        免材料
+                      </td>
+                      <td>
+                        <div class="label">費用</div>
+                        2022 / 11 / 03 起 收費1,000 TWD
+                      </td>
+                      <td>開放折讓</td>
+                      <td>
+                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- 所需工序 -->
+            <div class="kitSteps_Processflow L_setKitSteps">
+              <h3 class="subTitle">所需工序</h3>
+              <div class="kitSteps_Processblock">
+                <!-- 1 -->
+                <div class="kitSteps_Processlist pass">
+                  <div class="kitSteps_title">牙托灌模</div>
+                  <!-- <div class="kitSteps_content">
+                    <div class="kitSteps_date">2022 / 11 / 10 15:29</div>
+                    <p>Leonardo · Wilhelm · DiCaprio</p>
+                  </div> -->
+                </div>
+                <!-- 2 -->
+                <div class="kitSteps_Processlist active">
+                    <div class="kitSteps_title">模型製作</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+                <!-- 3 -->
+                <div class="kitSteps_Processlist">
+                    <div class="kitSteps_title">處理之台齒</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+                <!-- 4 -->
+                <div class="kitSteps_Processlist">
+                    <div class="kitSteps_title">掃描</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+                <!-- ５ -->
+                <div class="kitSteps_Processlist">
+                    <div class="kitSteps_title">CAD設計</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+                <!-- ６ -->
+                <div class="kitSteps_Processlist">
+                    <div class="kitSteps_title">CAD設計</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+                <!-- ７ -->
+                <div class="kitSteps_Processlist">
+                    <div class="kitSteps_title">CAD設計</div>
+                    <div class="kitSteps_content"></div>
+                </div>
+              </div>
+            </div>
+            <!-- 有使用此補綴物的診所 -->
+            <section>
+              <h3 class="subTitle">有使用此補綴物的診所</h3>
+              <div class="kitCard_tabblock L_setKitCard_tabblock">
+                <div class="kitCard_tab">
+                    <button type="button" class="kitBtn kitBtn_w">全部<span>(10)</span></button>
+                    <button type="button" class="kitBtn kitBtn_w active">自訂調整補綴物的診所<span>(3)</span></button>
+                    <button type="button" class="kitBtn kitBtn_w">使用原定價及金額的診所<span>(7)</span></button>
+                </div>
+                <!-- 1：全部 -->
+                <div class="kitCard_content">
+                  <div class="col_444">
+                    <div class="kitCard_store">
+                      <h3>福家牙技所</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 2</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 3</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 4</h3>
+                      <div class="kitCard_content">
+                        <!-- <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul> -->
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 5</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 6</h3>
+                      <div class="kitCard_content">
+                        <!-- <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2：自訂調整補綴物的診所 -->
+                <div class="kitCard_content">
+                    <div class="kitTable">
+                      <div class="kitTable_out">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>診所名稱</th>
+                              <th>項目名稱</th>
+                              <th class="L_setRight">
+                                <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">
+                                  <i class="kitIcon"><img src="images/icon/icon_minus.svg" alt=""></i>全部展開
+                                </button>
+                                <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">
+                                  <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>全部收合
+                                </button>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="clinic_Name">高醫牙科門診部</td>
+                              <td colspan="2" class="show">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th width="20%">公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>3M LAVA PLus-高醫</td>
+                                      <td>2,000</td>
+                                      <td>3M LAVA PLus</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱-小項細節</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th width="20%">公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>牙肉色陶瓷-高醫</td>
+                                      <td>2,000</td>
+                                      <td>牙肉色陶瓷</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>邊緣陶瓷-高醫</td>
+                                      <td>2,000</td>
+                                      <td>邊緣陶瓷</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱-作法</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th>公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Cement Retained</td>
+                                      <td>2,000</td>
+                                      <td>Cement Retained</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="clinic_Name">寶貝兔牙醫診所</td>
+                              <td colspan="2" class="hide">
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th width="20%">公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>3M LAVA PLus-高醫</td>
+                                      <td>2,000</td>
+                                      <td>3M LAVA PLus</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱-小項細節</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th width="20%">公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>牙肉色陶瓷-高醫</td>
+                                      <td>2,000</td>
+                                      <td>牙肉色陶瓷</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                    <tr>
+                                      <td>邊緣陶瓷-高醫</td>
+                                      <td>2,000</td>
+                                      <td>邊緣陶瓷</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th width="40%">自訂名稱-作法</th>
+                                      <th width="20%">自訂費用</th>
+                                      <th width="20%">材料名稱</th>
+                                      <th>公定價</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Cement Retained</td>
+                                      <td>2,000</td>
+                                      <td>Cement Retained</td>
+                                      <td>1,000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+                <!-- 3：使用原定價及金額的診所 -->
+                <div class="kitCard_content">
+                  <div class="col_444">
+                    <div class="kitCard_store">
+                      <h3>福家牙技所</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 2</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 3</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 4</h3>
+                      <div class="kitCard_content">
+                        <!-- <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul> -->
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 5</h3>
+                      <div class="kitCard_content">
+                        <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="kitCard_store">
+                      <h3>福家牙技所 6</h3>
+                      <div class="kitCard_content">
+                        <!-- <ul>
+                          <li>
+                              <i class="kitCard_icon"><img src="images/icon/icon_groups.svg" alt=""></i>聯盟
+                              <button class="kitBtn kitBtn_m" type="button">牙技師聯盟</button>
+                          </li>
+                        </ul> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 取消/確認按鈕 -->
+          <div class="bottomBtnBox">
+            <button class="kitBtn kitBtn_w" type="button">取消</button>
+            <button class="kitBtn" type="button">確認</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>
