@@ -1,7 +1,6 @@
-.subTitle {
-  font-size: var(--fz20);
-  color: var(--primaryColor4);
-  padding: 1.25rem 0;
+.main .container > div,
+.main .container > section {
+  margin: 2rem 0;
 }
 
 .L_setKitCard .kitCard_orderlist_twocolumns > span {
@@ -33,12 +32,25 @@
   border: transparent;
   padding: 1rem 0;
 }
+.L_setKitCard_tabblock .kitTable thead {
+  background: #fff;
+}
+.L_setKitCard_tabblock .kitTable table > tbody tr:hover {
+  background: var(--primaryColor3);
+  color: #222;
+}
 .L_setKitCard_tabblock .kitTable table table {
   border: solid 1px #d9d9d9;
   margin: 10px 0;
 }
 .L_setKitCard_tabblock .kitTable table table th {
   background: #eee;
+}
+.L_setKitCard_tabblock .kitTable table table td {
+  background: #fff;
+}
+.L_setKitCard_tabblock .kitTable table table > tbody tr:hover {
+  color: var(--primaryColor2);
 }
 .L_setKitCard_tabblock .kitTable table .show {
   display: table-cell;

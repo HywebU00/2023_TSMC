@@ -32,8 +32,8 @@
   .kitCard_store {
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 1em 2em 2em;
-    margin-bottom: 3em;
+    padding: 1em 2em;
+    margin-bottom: 2em;
     border-radius: 10px;
     box-sizing: border-box;
   }
@@ -98,6 +98,9 @@
     margin: 1em 0;
     width: 100%;
   }
+  .kitCard_store .kitCard_content .kitCard_centerblock p {
+    color: #000 !important;
+  }
   .kitCard_supplier {
     display: flex;
     justify-content: space-between;
@@ -105,7 +108,7 @@
     background-color: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 0;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     border-radius: 0 0 10px 10px;
   }
   .kitCard_supplier .kitCard_serialnumber {
@@ -181,7 +184,7 @@
     border-radius: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     align-items: center;
   }
   @media screen and (max-width: 576px) {
@@ -227,7 +230,7 @@
     background-color: var(--primaryColor4);
     color: #fff;
     padding: 0;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -357,7 +360,7 @@
     margin: 0 0.3em;
   }
   .kitCard_tabblock {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
   .kitCard_tabblock .kitCard_tab {
     display: flex;
@@ -810,7 +813,7 @@
   background-color: #2a3042;
   border-radius: 10px;
   padding: 1.5em 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 .kitCard_message .kitCard_function_block {
   display: flex;

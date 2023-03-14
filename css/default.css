@@ -1539,6 +1539,21 @@
       margin: 0;
     }
   }
+  .subTitle {
+    color: var(--primaryColor);
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .subTitle::after {
+    content: "";
+    height: 1px;
+    background: var(--primaryColor);
+    display: block;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
   header {
     background: #fff;
   }

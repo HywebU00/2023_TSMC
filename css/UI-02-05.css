@@ -1,0 +1,21 @@
+.flexEqual_3 .col .kitCard_store {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.a_business_Information {
+  font-size: var(--fz20);
+}
+.a_business_Information ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.a_business_Information ul li {
+  margin-bottom: 0.5em;
+}
+.a_business_Information ul li span {
+  margin-right: 1em;
+  min-width: 100px;
+  display: inline-block;
+}/*# sourceMappingURL=UI-02-05.css.map */

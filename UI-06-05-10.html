@@ -60,9 +60,9 @@
                     <li><span>補綴物屬性：</span>全瓷類</li>
                     <li><span>材料：</span>3M LAVA Plus</li>
                     <li><span>計量單位：</span>顎(副)</li>
-                    <li><span>費用：</span>2022 / 11 / 03 起 收費1,000 TWD
-                      <button class="kitBtn kitBtn_m" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>開放折讓
+                    <li><span>費用：</span>2022 / 11 / 03 起 收費1,000 TWD 開放折讓
+                      <button class="kitBtn" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>
                       </button>
                       <!-- <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
                         <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>
@@ -123,7 +123,7 @@
             </div>
             <!-- 附項材料設定 -->
             <div class="kitTable kitTable_typeD">
-              <div class="kitTable_title">附項材料設定</div>
+              <div class="subTitle">附項材料設定</div>
               <div class="kitTable_out">
                 <table>
                   <tbody>
@@ -149,7 +149,9 @@
                       </td>
                       <td>開放折讓</td>
                       <td>
-                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                        <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
+                          <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>
+                        </button>
                       </td>
                     </tr>
                     <tr>
@@ -169,7 +171,9 @@
                       </td>
                       <td>開放折讓</td>
                       <td>
-                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                        <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
+                          <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>
+                        </button>
                       </td>
                     </tr>
                     <tr class="title">
@@ -194,7 +198,9 @@
                       </td>
                       <td>開放折讓</td>
                       <td>
-                        <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt="" /></i>
+                        <button class="kitBtn kitBtn_icon kitBtn_m" type="button">
+                          <i class="kitIcon"><img src="images/icon/icon_discount.svg" alt=""></i>
+                        </button>
                       </td>
                     </tr>
                   </tbody>
@@ -203,7 +209,7 @@
             </div>
             <!-- 所需工序 -->
             <div class="kitSteps_Processflow L_setKitSteps">
-              <h3 class="subTitle">所需工序</h3>
+              <div class="subTitle">所需工序</div>
               <div class="kitSteps_Processblock">
                 <!-- 1 -->
                 <div class="kitSteps_Processlist pass">
@@ -247,7 +253,7 @@
             </div>
             <!-- 有使用此補綴物的診所 -->
             <section>
-              <h3 class="subTitle">有使用此補綴物的診所</h3>
+              <div class="subTitle">有使用此補綴物的診所</div>
               <div class="kitCard_tabblock L_setKitCard_tabblock">
                 <div class="kitCard_tab">
                   <button type="button" class="kitBtn kitBtn_w">全部<span>(10)</span></button>
@@ -335,18 +341,18 @@
                             <th>診所名稱</th>
                             <th>項目名稱</th>
                             <th class="L_setRight">
-                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">
-                                  <i class="kitIcon"><img src="images/icon/icon_minus.svg" alt=""></i>全部展開
-                                </button>
-                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">
-                                  <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>全部收合
-                                </button>
+                              <button class="kitBtn kitBtn_radius kitBtn_m" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_minus.svg" alt=""></i>全部展開
+                              </button>
+                              <button class="kitBtn kitBtn_radius kitBtn_m" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>全部收合
+                              </button>
                             </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="clinic_Name">高醫牙科門診部</td>
+                            <td class="clinic_Name">高醫牙科門診部（展開：show）</td>
                             <td colspan="2" class="show">
                               <table>
                                 <thead>
@@ -411,7 +417,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td class="clinic_Name">寶貝兔牙醫診所</td>
+                            <td class="clinic_Name">寶貝兔牙醫診所（收合：hide）</td>
                             <td colspan="2" class="hide">
                               <table>
                                 <thead>
