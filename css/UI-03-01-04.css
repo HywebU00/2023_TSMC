@@ -74,4 +74,13 @@
 }
 .v_checkboxDropdown ul li:hover, .v_checkboxDropdown ul li:focus {
   background: #ccc;
+}
+
+.checkGrp.v_3 {
+  flex-wrap: wrap;
+}
+.checkGrp.v_3 label {
+  width: 32%;
+  margin: 10px 0.5%;
+  white-space: normal;
 }/*# sourceMappingURL=UI-03-01-04.css.map */
