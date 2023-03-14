@@ -1,6 +1,46 @@
+.c_table table button {
+  margin: 0;
+}
+.c_table table table {
+  position: relative;
+  font-size: var(--fz14);
+}
+.c_table table table::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1px;
+  top: 55px;
+  bottom: 0;
+  background: #ccc;
+}
 .c_table table table tr {
   border: none;
 }
+.c_table table table th:first-child {
+  padding-left: 20px;
+}
+.c_table table table td {
+  position: relative;
+}
+.c_table table table td:first-child {
+  padding-left: 20px;
+}
+.c_table table table td:first-child::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 15px;
+  border-radius: 100%;
+  background: #ccc;
+  width: 6px;
+  height: 6px;
+}
 .c_table table table thead {
   background: none;
+}
+.c_table table > tbody tr.active {
+  cursor: pointer;
+  color: #fff;
+  background: var(--primaryColor);
 }/*# sourceMappingURL=UI-07-01.css.map */
