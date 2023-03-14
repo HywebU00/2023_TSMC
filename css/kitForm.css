@@ -201,6 +201,21 @@ select:-moz-focusring {
   filter: drop-shadow(26px 0 #52C41A);
 }
 
+.v_checkboxDropdown {
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  margin-top: -7px;
+  background: #efefef;
+}
+
+.v_checkboxDropdown ul li {
+  padding: 0.5rem;
+}
+
+.v_checkboxDropdown ul li:hover, .v_checkboxDropdown ul li:focus {
+  background: #ccc;
+}
+
 @layer kitForm {
   [class^=i_]:before {
     content: "";
@@ -325,6 +340,11 @@ select:-moz-focusring {
   .kitForm.setInline .checkGrp {
     margin: 1rem 0.25rem;
   }
+  .kitForm .innerGrp {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 1rem 1.5rem;
+  }
   .kitForm .btnGrp {
     display: flex;
     justify-content: center;
@@ -365,9 +385,10 @@ select:-moz-focusring {
   }
   .kitForm .checkGrp.setGrid .innerGrp,
   .kitForm .radioGrp.setGrid .innerGrp {
+    border: none;
+    background: #f5f5f5;
     flex: 1 1 100%;
     padding: 0.5rem 0 0 3rem;
-    background: #f5f5f5;
   }
   .kitForm .checkGrp.setGrid .innerGrp .checkGrp label,
   .kitForm .checkGrp.setGrid .innerGrp .radioGrp label,
@@ -448,6 +469,11 @@ select:-moz-focusring {
     align-items: center;
     padding: 0.5rem 0;
     flex-wrap: wrap;
+  }
+  .inlineGrp .inlineGrp,
+  .checkedList .inlineGrp {
+    width: 100%;
+    background: #f5f5f5;
   }
   .inlineGrp input,
   .inlineGrp button,
@@ -564,6 +590,10 @@ select:-moz-focusring {
   }
   .inlineBox input, .inlineBox select, .inlineBox button {
     margin: 0 0.5rem;
+  }
+  .uploadGrp input[type=file] {
+    width: 100%;
+    border: none;
   }
   input,
   textarea,
