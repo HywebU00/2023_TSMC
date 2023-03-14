@@ -382,20 +382,44 @@
   }
   @media (min-width: 992px) {
     .flexEqual_3 .flexSet .col {
-      flex-basis: calc(100% / 3 - 4px);
-      max-width: calc(100% / 3 - 4px);
+      flex-basis: calc(100% / 2 - 4px);
+      max-width: calc(100% / 2 - 4px);
     }
-    .flexEqual_3 .flexSet .col:last-child:nth-child(3n) {
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-1) {
       margin-right: 0;
     }
-    .flexEqual_3 .flexSet .col:last-child:nth-child(3n-1) {
-      margin-right: calc((100% / 3 - 4px) *1 + (4px*3) *1 / (3 - 1));
-    }
-    .flexEqual_3 .flexSet .col:last-child:nth-child(3n) {
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-2) {
       margin-right: 0;
     }
-    .flexEqual_3 .flexSet .col:last-child:nth-child(3n-2) {
-      margin-right: calc((100% / 3 - 4px) *2 + (4px*3) *2 / (3 - 1));
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-3) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-4) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-5) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-6) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-7) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-8) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-9) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-10) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-11) {
+      margin-right: 0;
+    }
+    .flexEqual_3 .flexSet .col:last-child:nth-child(12n-12) {
+      margin-right: 0;
     }
   }
   @media (min-width: 1400px) {
@@ -1330,7 +1354,7 @@
     width: 50px;
     z-index: 9;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     aside {
       width: 280px;
       height: auto;
@@ -1358,7 +1382,7 @@
     height: 76px;
     margin-bottom: 25px;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     aside .logo {
       padding: 8px 16px 0;
     }
@@ -1371,7 +1395,7 @@
   aside .logo img {
     display: none;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     aside .logo img {
       height: 36px;
       display: block;
@@ -1389,7 +1413,7 @@
     border: none;
     cursor: pointer;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     aside .mainMenuBtn {
       right: 25px;
       transform: translateY(-50%);
@@ -1436,7 +1460,7 @@
     border: none;
     cursor: pointer;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     aside nav > ul button {
       padding: 0;
       margin: 0 5px;
@@ -1459,7 +1483,7 @@
     top: 50%;
     transform: translateY(-80%) rotate(45deg);
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     aside nav > ul span {
       display: none;
     }
@@ -1504,7 +1528,7 @@
     height: 20px;
     margin: 0 10px 0 0;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     aside nav i {
       margin: 0;
     }
@@ -1512,7 +1536,7 @@
   .mainContent {
     padding: 0 0px 0px 50px;
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 1200px) {
     .mainContent {
       padding: 0 0px 0px 280px;
     }
