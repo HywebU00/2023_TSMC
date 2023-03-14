@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-07-02</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <link rel="stylesheet" href="css/kitCards.css" />
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+
+  <body>
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+    <div class="wrapper">
+      <aside>
+        <!-- 主選單 -->
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <div class="headInfo">
+              <!-- 麵包屑 -->
+              <ul class="breadcrumb">
+                <li><a href="#">訂單管理</a></li>
+                <li>假牙訂單管理</li>
+              </ul>
+
+              <!-- 右上角選單 -->
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <h2>現在，正視雞蛋的問題，是非常非常重要的。</h2>
+          <!-- 上方搜尋區塊 -->
+          <script src="include/topSearch_filter.js"></script>
+
+          <div class="main">
+            <div class="container">
+              <div class="kitFlex kitFlex_right">
+                <button type="button" class="kitBtn kitBtn_icon active">
+                  <div class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></div>
+                </button>
+                <button type="button" class="kitBtn kitBtn_icon">
+                  <div class="kitIcon"><img src="./images/icon/icon_date.svg" alt="" /></div>
+                </button>
+                <button type="button" class="kitBtn">新增訂單</button>
+              </div>
+
+              <!-- kitCard_tabblock start -->
+              <div class="subTitle">福家牙技所</div>
+              <div class="kitCard_tabblock">
+                <div class="kitCard_tab">
+                  <button type="button" class="kitBtn kitBtn_w active">進行中訂單</button>
+                  <button type="button" class="kitBtn kitBtn_w">等待接單</button>
+                  <button type="button" class="kitBtn kitBtn_w">已完成訂單</button>
+                  <button type="button" class="kitBtn kitBtn_w">不成立訂單</button>
+                  <button type="button" class="kitBtn kitBtn_w">暫存訂單</button>
+                </div>
+                <!-- 1 -->
+                <div class="kitCard_content">
+                  <div class="kitTable kitTable_typeB">
+                    <div class="kitTable_out">
+                      <table class="c_tablet">
+                        <thead>
+                          <tr>
+                            <th>訂單編號</th>
+                            <th>患者姓名</th>
+                            <th>醫生姓名</th>
+                            <th>牙技所名稱</th>
+                            <th>預計試戴日</th>
+                            <th>預計完成日</th>
+                            <th>訂單狀態</th>
+                            <th class="last"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>O202210171234</td>
+                            <td>陳大明</td>
+                            <td>Julia · Fiona · Roberts</td>
+                            <td>福家牙技所</td>
+                            <td>2022 / 11 / 30</td>
+                            <td>2022 / 12 / 05</td>
+                            <td>等待收模</td>
+                            <td class="last">
+                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">訂單歷程</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>O202210171234</td>
+                            <td>陳大明</td>
+                            <td>Julia · Fiona · Roberts</td>
+                            <td>福家牙技所</td>
+                            <td>2022 / 11 / 30</td>
+                            <td>2022 / 12 / 05</td>
+                            <td>試戴中</td>
+                            <td class="last">
+                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">訂單歷程</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>O202210171234</td>
+                            <td>陳大明</td>
+                            <td>Julia · Fiona · Roberts</td>
+                            <td>福家牙技所</td>
+                            <td>2022 / 11 / 30</td>
+                            <td>2022 / 12 / 05</td>
+                            <td>等待收貨</td>
+                            <td class="last">
+                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">訂單歷程</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>O202210171234</td>
+                            <td>陳大明</td>
+                            <td>Julia · Fiona · Roberts</td>
+                            <td>福家牙技所</td>
+                            <td>2022 / 11 / 30</td>
+                            <td>2022 / 12 / 05</td>
+                            <td>模型確認中</td>
+                            <td class="last">
+                              <button class="kitBtn kitBtn_w kitBtn_radius kitBtn_m" type="button">訂單歷程</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- kitCard_tabblock end -->
+            </div>
+          </div>
+        </main>
+        <footer>
+          <!-- 內容下方區塊 -->
+          <div class="container">
+            <!-- 頁數切換區塊 -->
+            <script src="include/pagination.js"></script>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

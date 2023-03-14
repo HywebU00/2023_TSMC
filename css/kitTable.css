@@ -32,7 +32,6 @@
   }
   .kitTable td {
     padding: 8px 10px;
-    line-height: 1.4;
   }
   .kitTable.kitTable_typeB tr.kitTable_nextLv td::before {
     display: none;
