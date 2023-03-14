@@ -35,12 +35,22 @@
 .L_setKitCard_tabblock .kitTable thead {
   background: #fff;
 }
+.L_setKitCard_tabblock .kitTable table > tbody tr:hover {
+  background: var(--primaryColor3);
+  color: #222;
+}
 .L_setKitCard_tabblock .kitTable table table {
   border: solid 1px #d9d9d9;
   margin: 10px 0;
 }
 .L_setKitCard_tabblock .kitTable table table th {
   background: #eee;
+}
+.L_setKitCard_tabblock .kitTable table table td {
+  background: #fff;
+}
+.L_setKitCard_tabblock .kitTable table table > tbody tr:hover {
+  color: var(--primaryColor2);
 }
 .L_setKitCard_tabblock .kitTable table .show {
   display: table-cell;
