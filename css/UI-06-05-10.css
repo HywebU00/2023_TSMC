@@ -1,3 +1,7 @@
+.main .container > div {
+  margin: 2rem 0;
+}
+
 .L_setKitCard .kitCard_orderlist_twocolumns > span {
   display: block;
 }
