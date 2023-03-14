@@ -46,7 +46,7 @@
   }
 }
 .formContent .spec {
-  background: #efefef;
+  background: #f5f5f5;
   padding: 1rem;
   margin-top: 4px;
   border-radius: 2px;
@@ -67,7 +67,7 @@
   border: 1px solid #ccc;
   border-radius: 0 0 4px 4px;
   margin-top: -7px;
-  background: #efefef;
+  background: #f5f5f5;
 }
 .v_checkboxDropdown ul li {
   padding: 0.5rem;
@@ -78,9 +78,16 @@
 
 .checkGrp.v_3 {
   flex-wrap: wrap;
+  padding: 10px;
+  background: #f5f5f5;
+  margin-bottom: 1rem;
 }
 .checkGrp.v_3 label {
   width: 32%;
   margin: 10px 0.5%;
   white-space: normal;
+  align-items: flex-start;
+}
+.checkGrp.v_3 label input {
+  flex-shrink: 0;
 }/*# sourceMappingURL=UI-03-01-04.css.map */
