@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-07-02</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <link rel="stylesheet" href="css/kitCards.css" />
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+
+  <body>
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+    <div class="wrapper">
+      <aside>
+        <!-- 主選單 -->
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <div class="headInfo">
+              <!-- 麵包屑 -->
+              <ul class="breadcrumb">
+                <li><a href="#">訂單管理</a></li>
+                <li>諮詢管理</li>
+              </ul>
+
+              <!-- 右上角選單 -->
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <!-- 上方搜尋區塊 -->
+          <script src="include/topSearch_filter.js"></script>
+
+          <div class="main">
+            <div class="container">
+              <!-- kitCard_tabblock start -->
+              <div class="subTitle">福家牙技所</div>
+              <div class="kitCard_tabblock">
+                <div class="kitCard_tab">
+                  <button type="button" class="kitBtn kitBtn_w active">未回覆</button>
+                  <button type="button" class="kitBtn kitBtn_w">已回覆</button>
+                </div>
+                <!-- 1 -->
+                <div class="kitCard_content">
+                  <div class="kitTable kitTable_typeB">
+                    <div class="kitTable_out">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>諮詢單單號</th>
+                            <th>患者姓名</th>
+                            <th>醫生姓名</th>
+                            <th>諮詢時間</th>
+                            <th>診所名稱</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>O202210171234</td>
+                            <td>陳大明</td>
+                            <td>Julia · Fiona · Roberts</td>
+                            <td>2022 / 11 / 30</td>
+                            <td>福家牙技所</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- kitCard_tabblock end -->
+            </div>
+          </div>
+        </main>
+        <footer>
+          <!-- 內容下方區塊 -->
+          <div class="container">
+            <!-- 頁數切換區塊 -->
+            <script src="include/pagination.js"></script>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
