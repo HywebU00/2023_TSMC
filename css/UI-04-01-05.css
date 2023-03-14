@@ -10,7 +10,15 @@
 .c_tablet th.sec {
   width: 20px;
 }
-.c_tablet .title {
+.c_tablet td.last,
+.c_tablet th.last {
+  width: 200px;
+}
+.c_tablet td.last button,
+.c_tablet th.last button {
+  margin: 0 auto;
+}
+.c_tablet .block {
   border-radius: 3px;
   padding: 6px 10px 5px;
   color: #fff;

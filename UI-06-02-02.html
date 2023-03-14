@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-06-01</title>
-    <link rel="stylesheet" href="css/variable.css" />
-    <link rel="stylesheet" href="css/kitIcon.css" />
-    <link rel="stylesheet" href="css/kitForm.css" />
-    <link rel="stylesheet" href="css/kitButton.css" />
-    <link rel="stylesheet" href="css/kitTable.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/UI-01-02.css" />
-  </head>
-  <body>
-    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
-    <div class="wrapper">
-      <aside>
-        <!-- 主選單 -->
-        <script src="include/menu.js"></script>
-      </aside>
-      <div class="mainContent">
-        <header>
-          <div class="container">
-            <div class="headInfo">
-              <!-- 麵包屑 -->
-              <ul class="breadcrumb">
-                <li><a href="#">製程項目管理</a></li>
-                <li>公版工序管理</li>
-              </ul>
 
-              <!-- 右上角選單 -->
-              <script src="include/topnav.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-06-02-02</title>
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/kitTable.css" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/UI-01-02.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">製程項目管理</a></li>
+              <li>公版工序管理</li>
+            </ul>
+
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 上方搜尋區塊 -->
+        <script src="include/topSearch.js"></script>
+
+        <div class="main">
+          <div class="container">
+            <div class="kitFlex kitFlex_right">
+              <button class="kitBtn" type="button">新增工序</button>
+            </div>
+            <h3>福家牙技所</h3>
+            <div class="kitTable kitTable_typeB">
+              <div class="kitTable_out">
+                <table class="c_tablet">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th class="first">No.</th>
+                      <th>公版工序名稱</th>
+                      <th>說明</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!--tr設定點擊事件連結-->
+                    <tr>
+                      <td>
+                        <div class="kitBtn kitBtn_icon noHover">
+                          <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
+                        </div>
+                      </td>
+                      <td>1</td>
+                      <td>牙托灌模</td>
+                      <td>全瓷冠的作法可改良傳統牙冠容易出現的牙齦染黑、顏色不自然等缺點，全瓷冠無論在色澤、透明度上都較接近真實的牙齒，擬真效果佳。</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="kitBtn kitBtn_icon noHover">
+                          <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
+                        </div>
+                      </td>
+                      <td>2</td>
+                      <td>植牙類</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </header>
-        <main>
-          <!-- 上方搜尋區塊 -->
-          <script src="include/topSearch.js"></script>
-
-          <div class="main">
-            <div class="container">
-              <div class="kitFlex kitFlex_right">
-                <button class="kitBtn" type="button">新增工序</button>
-              </div>
-              <h3>福家牙技所</h3>
-              <div class="kitTable kitTable_typeB">
-                <div class="kitTable_out">
-                  <table class="c_tablet">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th class="first">No.</th>
-                        <th>公版工序名稱</th>
-                        <th>說明</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <!--tr設定點擊事件連結-->
-                      <tr>
-                        <td>
-                          <div class="kitBtn kitBtn_icon noHover">
-                            <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
-                          </div>
-                        </td>
-                        <td>1</td>
-                        <td>牙托灌模</td>
-                        <td>全瓷冠的作法可改良傳統牙冠容易出現的牙齦染黑、顏色不自然等缺點，全瓷冠無論在色澤、透明度上都較接近真實的牙齒，擬真效果佳。</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="kitBtn kitBtn_icon noHover">
-                            <i class="kitIcon"><img src="./images/icon/icon_list.svg" alt="" /></i>
-                          </div>
-                        </td>
-                        <td>2</td>
-                        <td>植牙類</td>
-                        <td></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <footer>
-          <!-- 內容下方區塊 -->
-          <div class="container">
-            <!-- 頁數切換區塊 -->
-            <script src="include/pagination.js"></script>
-          </div>
-        </footer>
-      </div>
+        </div>
+      </main>
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 頁數切換區塊 -->
+          <script src="include/pagination.js"></script>
+        </div>
+      </footer>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

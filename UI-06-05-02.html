@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI-04-01-05</title>
+    <title>UI-06-05-02</title>
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/kitIcon.css" />
     <link rel="stylesheet" href="css/kitForm.css" />
@@ -33,7 +33,7 @@
               </ul>
 
               <!-- 右上角選單 -->
-              <script src="include/topnav.js"></script>
+              <script src="include/topnav_filter.js"></script>
             </div>
           </div>
         </header>
@@ -59,22 +59,8 @@
                 <div class="kitCard_content"></div>
                 <!-- 2 -->
                 <div class="kitCard_content c_tablet">
-                  <div class="kitMessage">
-                    <i class="kitIcon"><img src="images/icon/icon_info_y.svg" alt="" /></i>
-                    <p>可以選擇自行挑選補綴物或是選擇參考其他診所的設定</p>
-                  </div>
                   <div class="kitFlex kitFlex_right">
-                    <button class="kitBtn" type="button">自行挑選補綴物</button>
-
-                    <div class="kitSelect kitSelect_icon">
-                      <i class="kitIcon"><img src="images/icon/icon_reference.svg" alt="" /></i>
-                      <select name="" id="">
-                        <option value="">請選擇項目</option>
-                        <option value="">項目1</option>
-                        <option value="">項目2</option>
-                        <option value="">項目3</option>
-                      </select>
-                    </div>
+                    <button class="kitBtn" type="button">新增補綴物</button>
                   </div>
 
                   <div class="kitTable">
@@ -82,35 +68,33 @@
                       <table>
                         <thead>
                           <tr>
-                            <th class="first"></th>
-                            <th class="sec">No.</th>
-                            <th>補綴物類別</th>
+                            <th class="first">No.</th>
                             <th>補綴物名稱</th>
-                            <th>補綴物費用</th>
-                            <th>來源</th>
+                            <th>補綴物類別</th>
+                            <th>主要材料</th>
+                            <th>工序</th>
+                            <th>使用診所</th>
+                            <th>啟用狀態</th>
+                            <th>自訂診所<br />名稱及費用</th>
+                            <th>複製補綴物</th>
                           </tr>
                         </thead>
                         <tbody>
                           <!--以下可新增-->
                           <tr>
-                            <td>
-                              <input type="checkbox" name="" value="" checked="" />
-                            </td>
                             <td>1</td>
-                            <td><div class="block">植牙類</div></td>
+                            <td>3M LAVA PLus</td>
+                            <td><div class="block">複製補綴物</div></td>
                             <td>3M LAVA Plus</td>
-                            <td>1,000</td>
-                            <td></td>
-                          </tr>
-                          <tr>
+                            <td>5 道</td>
+                            <td>5 間</td>
+                            <td>啟用</td>
                             <td>
-                              <input type="checkbox" name="" value="" checked="" />
+                              <button class="kitBtn kitBtn_w kitBtn_m" type="button">設定</button>
                             </td>
-                            <td>1</td>
-                            <td><div class="block">植牙類</div></td>
-                            <td>High Gold</td>
-                            <td>1,000</td>
-                            <td>寶貝兔青埔親子牙醫診所</td>
+                            <td>
+                              <button class="kitBtn kitBtn_w kitBtn_m" type="button">複製</button>
+                            </td>
                           </tr>
                           <!--以上可新增-->
                         </tbody>
