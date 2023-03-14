@@ -1,3 +1,4 @@
+@import url(../css/variable.css);
 .kitForm.kitFlex {
   width: 100%;
   flex-direction: column;
@@ -131,4 +132,16 @@
   .v_5 label {
     width: 100%;
   }
+}
+
+.v_status {
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0 0 3px 0;
+  font-weight: 400;
+  background-color: var(--primaryColor);
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
 }/*# sourceMappingURL=UI-03-01-04.css.map */
