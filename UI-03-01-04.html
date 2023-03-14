@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI-03-01-04</title>
+  <link rel="stylesheet" href="css/variable.css" />
+  <link rel="stylesheet" href="css/kitIcon.css" />
+  <link rel="stylesheet" href="css/kitForm.css" />
+  <link rel="stylesheet" href="css/kitButton.css" />
+  <link rel="stylesheet" href="css/kitSteps.css" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/UI-03-01-04.css" />
+</head>
+
+<body>
+  <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+  <div class="wrapper">
+    <aside>
+      <!-- 主選單 -->
+      <script src="include/menu.js"></script>
+    </aside>
+    <div class="mainContent">
+      <header>
+        <div class="container">
+          <div class="headInfo">
+            <!-- 麵包屑 -->
+            <ul class="breadcrumb">
+              <li><a href="#">會員帳號管理</a></li>
+              <li>牙技所帳號</li>
+            </ul>
+
+            <!-- 右上角選單 -->
+            <script src="include/topnav.js"></script>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- 內容上方標題區塊 -->
+        <div class="pageTopInfo">
+          <div class="container">
+            <!-- 上一頁 -->
+            <a href="#" class="back">新增工作人員</a>
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="container">
+            <div class="kitSteps_block">
+              <ul>
+                <li class="active">
+                  <div>基本資料設定</div>
+                </li>
+                <li>
+                  <div>角色權限設定</div>
+                </li>
+              </ul>
+            </div>
+            <div class="kitFlex kitFlex_right">
+              <button class="kitBtn" type="button">
+                <i class="kitIcon"><img src="images/icon/icon_trash.svg" alt=""></i>刪除帳號
+              </button>
+            </div>
+            <div class="kitForm kitFlex">
+              <form action="">
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>帳號：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="Julia" title="請輸入文字" class="alert" />
+                    <div class="helpAlert">此為必填欄位</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>姓：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>名：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>密碼：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                    <div class="help">8-20碼，需含英數字。</div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>確認密碼：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">電子郵件：</label>
+                  <div class="formContent">
+                    <input type="text" id="" placeholder="請輸入文字" title="請輸入文字" />
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>電話：</label>
+                  <div class="formContent">
+                    <div class="col_48">
+                      <input type="text" id="" placeholder="區號" title="" value="" />
+                      <input type="text" id="" placeholder="市內電話號碼" title="" value="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>啟用狀態：</label>
+                  <div class="formContent">
+                    <div class="radioGrp">
+                      <label><input type="radio" name="sampleRadio" value="" checked="">啟用</label>
+                      <label><input type="radio" name="sampleRadio" value="">停用</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="formGrp">
+                  <label for="" class="formTitle">角色設定：</label>
+                  <div class="formContent">
+                    <div class="checkGrp">
+                      <label><input type="checkbox" name="" value="" checked="check">Admin</label>
+                      <label><input type="checkbox" name="" value="">SuperAdmin</label>
+                      <label><input type="checkbox" name="" value="">SuperAdmin</label>
+                      <label><input type="checkbox" name="" value="">SuperAdmin</label>
+                    </div>
+                    <div class="help">
+                      <a href="">※角色與對應權限說明</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="formRight">
+                <div class="pic">
+                  <button class="kitBtn kitBtn_w" type="button">上傳圖片</button>
+                </div>
+                <div class="kitAlign_left">建議圖片尺寸250*250px</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <!-- 內容下方區塊 -->
+        <div class="container">
+          <!-- 取消/確認按鈕 -->
+          <div class="bottomBtnBox">
+            <button class="kitBtn kitBtn_w" type="button">取消</button>
+            <button class="kitBtn" type="button">確認</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+<script></script>
+
+</html>

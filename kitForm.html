@@ -342,27 +342,27 @@
             <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>5-2）input 下拉輸入框（需工程師協助） formContent / inlineGrp ：</label>
             <div class="formContent">
                 <input type="text" id="" placeholder="綜合 select、checkbox、search、btn、list" title="" class="multiInput">
+                <div class="v_checkboxDropdown">
+                    <ul>
+                        <li><label><input type="checkbox" class="checkbox" id="0" />福家牙技所</label></li>
+                        <li><label><input type="checkbox" class="checkbox" id="1" />達爾文牙技所</label></li>
+                        <li><label><input type="checkbox" class="checkbox" id="2" />123牙技所</label></li>
+                    </ul>
+                </div>
                 <div class="inlineGrp">
                     <span class="inlineTitle">目前已選取：</span>
-                    <ul>
-                        <li>福家牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                            達爾文牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                        <li>
-                            卡麗喵牙技所
-                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
-                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
-                            </button>
-                        </li>
-                    </ul>
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        福家牙技所
+                    </button>
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        達爾文牙技所
+                    </button>
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        卡麗喵牙技所
+                    </button>
                 </div>
                 <div class="help">說明文字</div>
             </div>
@@ -432,6 +432,79 @@
                     <label><input type="radio" name="sampleRadio" value="">高雄市</label>
                     <label><input type="radio" name="sampleRadio" value="">宜蘭縣</label>
                     <label><input type="radio" name="sampleRadio" value="">新竹縣</label>
+                </div>
+                <div class="help">8-20碼，需含英數字。</div>
+            </div>
+        </div>
+        <div class="formGrp">
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>radio 選項按鈕（嵌套）：</label>
+            <div class="formContent">
+                <div class="radioGrp">
+                    <label><input type="radio" name="sampleRadio" value="" checked="">是</label>
+                    <label><input type="radio" name="sampleRadio" value="">否</label>
+                </div>
+                <div class="innerGrp">
+                    <div class="checkGrp">
+                        <label><input type="checkbox" name="" value="" checked="">牙模已灌模</label>
+                        <label><input type="checkbox" name="" value="">牙模未灌模</label>
+                        <label><input type="checkbox" name="" value="">Wax-up蠟</label>
+                        <label><input type="checkbox" name="" value="">牙托</label>
+                    </div>
+                    <div class="inlineGrp">
+                        <div class="formGrp">
+                            <label for="" class="formTitle">自訂項目：</label>
+                            <div class="formContent">
+                                <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                            </div>
+                        </div>
+                        <button class="kitBtn" type="button">新增</button>
+                        <div class="formGrp">
+                            <label for="" class="formTitle">廠牌：</label>
+                            <div class="formContent">
+                                <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                            </div>
+                        </div>
+                        <div class="formGrp">
+                            <label for="" class="formTitle">網址下載：</label>
+                            <div class="formContent">
+                                <input type="text" id="" placeholder="請輸入文字" title="請輸入文字">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inlineGrp">
+                        <span class="inlineTitle">目前已選取：</span>
+                        <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            福家牙技所
+                        </button>
+                        <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            達爾文牙技所
+                        </button>
+                        <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                            <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            卡麗喵牙技所
+                        </button>
+                        <ul>
+                        <li>福家牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            達爾文牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            卡麗喵牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
                 <div class="help">8-20碼，需含英數字。</div>
             </div>
@@ -637,25 +710,47 @@
         </div>
         <!-- 綜合 -->
         <div class="formGrp">
-            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>13）工序設定（formContent / inlineGrp ）：</label>
+            <label for="" class="formTitle"><abbr class="necessary" title="必填欄位">*</abbr>13）工序設定、檔案上傳（formContent / inlineGrp ）：</label>
             <div class="formContent">
                 <button class="kitBtn kitBtn_m" type="button">
                     <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>加入工序模板
                 </button>
+                <button class="kitBtn kitBtn_m" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>新增檔案
+                </button>
                 <div class="inlineGrp">
                     <span class="inlineTitle">目前已選取：</span>
-                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
-                        按鈕1
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        福家牙技所
                     </button>
-                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
-                        按鈕2
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        達爾文牙技所
                     </button>
-                    <button class="kitBtn kitBtn_m kitBtn_right" type="button">
-                        <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt=""></i>
-                        按鈕3
+                    <button class="kitBtn kitBtn_w kitBtn_m kitBtn_right" type="button">
+                        <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                        卡麗喵牙技所
                     </button>
+                    <!-- <ul>
+                        <li>福家牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            達爾文牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                        <li>
+                            卡麗喵牙技所
+                            <button class="kitBtn kitBtn_m kitBtn_icon" type="button">
+                                <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="刪除"></i>
+                            </button>
+                        </li>
+                    </ul> -->
                 </div>
                 <!-- <div class="help">說明文字</div> -->
             </div>

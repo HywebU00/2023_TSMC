@@ -1,3 +1,4 @@
+@import url(../css/variable.css);
 .kitForm.kitFlex {
   width: 100%;
   flex-direction: column;
@@ -46,7 +47,7 @@
   }
 }
 .formContent .spec {
-  background: #efefef;
+  background: #f5f5f5;
   padding: 1rem;
   margin-top: 4px;
   border-radius: 2px;
@@ -67,11 +68,80 @@
   border: 1px solid #ccc;
   border-radius: 0 0 4px 4px;
   margin-top: -7px;
-  background: #efefef;
+  background: #f5f5f5;
 }
 .v_checkboxDropdown ul li {
   padding: 0.5rem;
 }
 .v_checkboxDropdown ul li:hover, .v_checkboxDropdown ul li:focus {
   background: #ccc;
+}
+
+.v_3,
+.v_5 {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.v_3 .checkGrp,
+.v_5 .checkGrp {
+  flex-wrap: wrap;
+  padding: 10px;
+  background: #f5f5f5;
+}
+.v_3 .checkGrp label,
+.v_5 .checkGrp label {
+  margin: 10px 0.5%;
+  white-space: normal;
+  align-items: flex-start;
+}
+@media (min-width: 375px) {
+  .v_3 .checkGrp label,
+  .v_5 .checkGrp label {
+    margin: 10px 0;
+  }
+}
+.v_3 .checkGrp label input,
+.v_5 .checkGrp label input {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.v_3 label {
+  width: 32%;
+}
+@media (max-width: 768px) {
+  .v_3 label {
+    width: 49%;
+  }
+}
+@media (max-width: 375px) {
+  .v_3 label {
+    width: 100%;
+  }
+}
+
+.v_5 label {
+  width: 19%;
+}
+@media (max-width: 768px) {
+  .v_5 label {
+    width: 49%;
+  }
+}
+@media (max-width: 375px) {
+  .v_5 label {
+    width: 100%;
+  }
+}
+
+.v_status {
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0 0 3px 0;
+  font-weight: 400;
+  background-color: var(--primaryColor);
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 0;
 }/*# sourceMappingURL=UI-03-01-04.css.map */
