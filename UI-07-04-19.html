@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-07-04-19</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitSteps.css" />
+    <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitTable.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/UI-07-02-07.css" />
+  </head>
+
+  <body>
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+    <div class="wrapper">
+      <aside>
+        <!-- 主選單 -->
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <div class="headInfo">
+              <!-- 麵包屑 -->
+              <ul class="breadcrumb">
+                <li><a href="#">訂單管理</a></li>
+                <li><a href="#">假牙訂單管理</a></li>
+                <li>高醫牙科門診部</li>
+              </ul>
+              <!-- 右上角選單 -->
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="pageTopInfo">
+            <div class="container">
+              <!-- 上一頁 -->
+              <a href="#" class="back">新增訂單</a>
+            </div>
+          </div>
+          <div class="main">
+            <div class="container">
+              <div class="kitSteps_block">
+                <ul>
+                  <li class="active">
+                    <div>訂單基本資料設定</div>
+                  </li>
+                  <li>
+                    <div>相關附件說明</div>
+                  </li>
+                  <li>
+                    <div>確認訂單</div>
+                  </li>
+                </ul>
+              </div>
+              <h2>比色照</h2>
+              <div class="inlineGrp m_inlineCenter">
+                <div class="checkGrp">
+                  <label><input type="checkbox" name="" value="" checked="" />牙齒需進行前後色彩比對</label>
+                </div>
+                <button class="kitBtn kitBtn_s kitBtn_radius" type="button">
+                  <i class="kitIcon"><img src="images/icon/icon_info.svg" alt="" /></i>拍照技巧請看我
+                </button>
+              </div>
+              <div class="subTitle">閃光</div>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+              <div class="subTitle">偏光</div>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+              <h2>照片</h2>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+              <h2>附件</h2>
+              <button class="kitBtn" type="button">
+                <i class="kitIcon"><img src="images/icon/icon_plus.svg" alt="" /></i>Add
+              </button>
+              <hr />
+              <div class="kitForm">
+                <div class="formGrp">
+                  <label for="" class="formTitle">備註</label>
+                  <div class="formContent">
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <!-- 內容下方區塊 -->
+          <div class="container">
+            <!-- 取消/下一步按鈕 -->
+            <div class="bottomBtnBox">
+              <button class="kitBtn kitBtn_w" type="button">取消</button>
+              <button class="kitBtn" type="button">暫存</button>
+              <button class="kitBtn" type="button">確認訂單</button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
