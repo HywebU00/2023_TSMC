@@ -1,3 +1,7 @@
+.m_inlineCenter .checkGrp {
+  align-items: center;
+}
+
 .photoUpload_grp {
   border: 1px solid var(--grayColor6);
   padding: 1rem 0.5rem;
