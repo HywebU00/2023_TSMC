@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-03-01</title>
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/kitForm.css" />
+    <link rel="stylesheet" href="css/kitIcon.css" />
+    <link rel="stylesheet" href="css/kitButton.css" />
+    <link rel="stylesheet" href="css/kitSteps.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/UI-07-02-07.css" />
+  </head>
+
+  <body>
+    <!-- 選單按鈕(mainMenuBtn) wrapper 增加 sideMenuOpen = 選單開起 / sideMenuClose = 選單關閉 -->
+    <div class="wrapper">
+      <aside>
+        <!-- 主選單 -->
+        <script src="include/menu.js"></script>
+      </aside>
+      <div class="mainContent">
+        <header>
+          <div class="container">
+            <div class="headInfo">
+              <!-- 麵包屑 -->
+              <ul class="breadcrumb">
+                <li><a href="#">訂單管理</a></li>
+                <li>假牙訂單管理</li>
+              </ul>
+              <!-- 右上角選單 -->
+              <script src="include/topnav.js"></script>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="main">
+            <div class="container">
+              <div class="kitSteps_block">
+                <ul>
+                  <li class="active">
+                    <div>訂單基本資料設定</div>
+                  </li>
+                  <li>
+                    <div>相關附件說明</div>
+                  </li>
+                  <li>
+                    <div>確認訂單</div>
+                  </li>
+                </ul>
+              </div>
+              <h2>比色照</h2>
+              <div class="inlineGrp">
+                <div class="checkGrp inlineGrp">
+                  <label><input type="checkbox" name="" value="" checked="" />牙齒需進行前後色彩比對</label>
+                </div>
+                <button class="kitBtn kitBtn_s kitBtn_radius" type="button">
+                  <i class="kitIcon"><img src="images/icon/icon_info.svg" alt="" /></i>拍照技巧請看我
+                </button>
+              </div>
+              <div class="subTitle">閃光</div>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <!-- 圖片顯示區塊 -->
+                  <a href="javascript:;" class="photoUpload_preview">
+                    <img src="images/demo/01.jpg" alt="" />
+                  </a>
+                  <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon photoUpload_delete" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="" /></i>
+                  </button>
+                  <div class="photoUpload_name">灰卡.jpg</div>
+                  <time>2022 / 10 /21 4:57</time>
+                </div>
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+              <div class="subTitle">偏光</div>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+              <h2>照片</h2>
+              <div class="photoUpload_grp">
+                <div class="photoUpload_block">
+                  <!-- 圖片顯示區塊 -->
+                  <a href="javascript:;" class="photoUpload_preview">
+                    <img src="images/demo/01.jpg" alt="" />
+                  </a>
+                  <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon photoUpload_delete" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="" /></i>
+                  </button>
+                  <div class="photoUpload_name">灰卡.jpg</div>
+                  <time>2022 / 10 /21 4:57</time>
+                </div>
+                <div class="photoUpload_block">
+                  <!-- 圖片顯示區塊 -->
+                  <a href="javascript:;" class="photoUpload_preview">
+                    <span class="commentNum">2</span>
+                    <img src="images/demo/01.jpg" alt="" />
+                  </a>
+                  <button class="kitBtn kitBtn_radius kitBtn_s kitBtn_icon photoUpload_delete" type="button">
+                    <i class="kitIcon"><img src="images/icon/icon_close.svg" alt="" /></i>
+                  </button>
+                  <div class="photoUpload_name">陳大明口掃照.jpg</div>
+                  <time>2022 / 10 /21 4:57</time>
+                </div>
+                <div class="photoUpload_block">
+                  <label class="photoUpload">
+                    <i class="kitIcon">
+                      <img src="images/icon/icon_plus.svg" alt="" />
+                    </i>
+                    <input class="" type="file" accept="image/*" />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script></script>
+</html>
